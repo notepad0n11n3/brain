@@ -1,0 +1,21 @@
+
+:::  kill %      mata el proceso en segundo plano
+
+:::  xargs        aparte de concatenar algunos comandos tambi]en agrupa resultados en una sola linea
+
+::: grep -oP '\d{1,5}/open'
+
+    -oP           Filtrar por expresiones regulares
+    '\d{1,5}'     un digito de 1 a 5 caracteres de logitud
+
+    '/open'       /open    literal :u
+
+
+::: awk '{print $1}' FS="/"       ======          cut -d '/' -f 1    
+
+    '{print $1}'     obtener el primer elemento
+    FS="/"           el delimitador es...  /
+
+
+
+::: tr -d '\n'       borra los salos de linea 

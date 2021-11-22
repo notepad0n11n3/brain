@@ -1,0 +1,19 @@
+
+  ls -lah /etc/
+  cd /etc/cron.d
+
+
+    # verificaci[on del servicio  activo/inactivo
+::: service cron status
+
+pwd ==>> /etc/cron.d
+
+  ::: touch aeo8Tarea
+    
+    v:: vim aeo8Tarea
+        {
+          * * * * * root /home/aeo8/Desktop/archivoHere.*   # se ejecutara cada minuto
+        }
+
+  ::: touch /home/aeo8/Desktop/archivohere.*
+  ::: chmod +x archivoHere.*

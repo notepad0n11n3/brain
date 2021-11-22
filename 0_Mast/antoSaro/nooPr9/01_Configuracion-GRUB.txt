@@ -1,0 +1,25 @@
+
+::: cat /etc/default/grub
+
+::: vim /etc/default/grub
+  #   info -f grub -n 'Simple configuration'
+
+  GRUB_DEFAULT=0             <<<----------
+  GRUB_TIMEOUT=5             <<<----------
+  GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
+  GRUB_CMDLINE_LINUX_DEFAULT="quiet"
+  GRUB_CMDLINE_LINUX=""
+
+
+  GRUB_DEFAULT=0                                  ubuntu ----->0
+                                                  Opciones avanzadas de ubuntu  ------>1
+                                                  Windows   ------>2
+                                                  uefi    ----->3
+
+para tener windows como inicio por default==>> GRUB_DEFAULT=2  
+opciones avanzadas por default ==>>  GRUB_DEFAULT=1
+
+
+::: /boot/grub/grub.cfg             <<-- script puro y duro, necesita el archivo anterior para poder modificar las opciones, necesita ejecutar el comando ::: sudo update-grub    para poder actualizar los cambios
+
+::: sudo update-grub       #! leera el archivo /etc/default/grub para actualizar el /boot/grub/grub.cfg

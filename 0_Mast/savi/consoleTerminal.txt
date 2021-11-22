@@ -1,0 +1,8 @@
+
+  ::: env       //muestra las variables de entorno
+
+
+
+  ::: strings binarioCompiladoC       //muestra las cadenas de texto legibles de un binario 
+
+  

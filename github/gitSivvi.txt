@@ -1,0 +1,15 @@
+
+::: git log -p    #print log de los commits mostrando LOS CAMBIOS REALIZADOS
+
+::: git log --oneline -p    :) :) :)
+
+
+ramas despues del clonar RAMAS DEPUES DE CLONAR REPOSITORIO ****************
+::: git branch -r        ## tanto busque esto :')
+***************
+
+
+tags en git TAGS EN GIT *******
+::: git tag
+::: git show sauron     ## sauron=$(git tag)
+*****

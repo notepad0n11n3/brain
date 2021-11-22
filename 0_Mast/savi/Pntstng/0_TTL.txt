@@ -1,0 +1,6 @@
+
+  Device/OS                     TTL
+
+   *nix(Linux/Unix)             64
+   Windows                      128
+   Solaris/AIX                  254

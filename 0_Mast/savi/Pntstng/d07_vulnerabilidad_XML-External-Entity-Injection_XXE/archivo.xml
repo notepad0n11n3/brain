@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE foo [
+  <!ELEMENT foo ANY>
+  <!ELEMENT xxe SYSTEM "file:///etc/passwd" >]>  
+<elements>
+  <Author>&xxe;</Author>
+  <Subject>Esto es una prueba</Subject>
+  <Content>Contenido</Content>
+</elements>

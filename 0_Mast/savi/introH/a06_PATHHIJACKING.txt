@@ -1,0 +1,14 @@
+
+1./ creamos un binario que ejecuta un el comando ps en sitema.
+
+2./ el binario es de propiedad root y tiene chmod 4755, y de extra tiene ' setuid(0) ' dentro del codigo
+
+3./ con ::: strings binarioHere  vemos que comandos esta ejecutando el binario
+
+4./ en /tmp  creamos un archivo con permisos de ejecuci[on total con el nombre del comando que ejecuta el binario
+
+5./ alteramos el $PATH para que use nuestro supuesto comando de sistema, ::: export PATH=/tmp:$PATH  
+
+
+6./ el binario llama un comando del sistema, el remplazo del binario devolver[a bash como root gracias al flag -p
+    bash -p

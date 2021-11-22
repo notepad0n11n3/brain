@@ -1,0 +1,7 @@
+                #! systemd    es el programa que se encarga de manejar el arranque del PC  systemd, el anterior era systemv
+
+::: systemctl status mongodb
+
+::: sudo systemctl enable mongodb         #!inicia el proceso/demonio en segundo plano desde el arranque del sistema
+
+::: sudo systemctl disable mongodb        #!deja de iniciar el proceso desde el arranque del sistema, arranque manual necesario

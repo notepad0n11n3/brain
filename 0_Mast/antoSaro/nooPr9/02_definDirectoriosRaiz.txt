@@ -1,0 +1,46 @@
+
+*bin -> usr/bin ------ binarios/programas usados por el systemas "ls/sudo/su/ln/mkdir/chmod"
+
+*boot ------ archivos necesarios para el arranque del sistema
+
+*dev ------ discosDuros, particiones y otros tipos de dispositivos que tenemos en el Pc
+
+*etc ------ archivos de configuraci[on "/etc/dafault/grub    /etc/passwd   /etc/shadow "
+
+*home ------ directorios de los usuarios
+
+ initrd.img -> boot/initrd.img-5.10.0-kali9-amd64
+ initrd.img.old -> boot/initrd.img-5.10.0-kali7-amd64
+
+*lib -> usr/lib         los programas usan librerias,..
+*lib32 -> usr/lib32           las librerias...
+*lib64 -> usr/lib64                 ...del sistemas se
+*libx32 -> usr/libx32                               ..almacena ah[i (codigoDeTerceros)
+
+*lost+found ------ almacena archivos corruptos, se va la luz o apagaPc o explota elSistemaDficheros, si alg[un fichero se corrompe se va almacenar aqu[i para ver si se puede recuperar algo :)
+
+*media ------ se montan USB CD 
+
+*mnt ------ sirve para montar temporalmente sistemas de ficheros
+
+*opt ------ lugar donde se intala software noOpenSouce (chrome/etc...)
+
+*proc ------ almacena informaci[on del systema
+
+*root ------ home de superUser
+
+*run ------ almacena datos importantes de las aplicaciones
+
+*sbin -> usr/sbin ------ similar a bin, contiene programas exclusivos del usuario ROOT
+
+*srv ------ basicamente para servicios que proporciona una sistema, es posible almacenar inforDel servidor here o la propia paginaWeb
+
+*sys ------ informaci[on del systema y del Hardware
+
+*tmp ------ archivos temporales
+
+*usr ------  aplicaciones datos programas que se usan por los  usuario  /usr/bin /usr/sbin 
+
+*var ------ archivos varios, LOGS de programas 
+              /var/log/apt/history.log   historyLog de terminal??
+

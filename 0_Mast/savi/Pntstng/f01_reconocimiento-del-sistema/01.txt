@@ -1,0 +1,16 @@
+
+goog:: linux smart enum
+    
+    https://github.com/diego-treitos/linux-smart-enumeration/blob/master/lse.sh
+
+::: git clone https://github.com/diego-treitos/linux-smart-enumeration
+::: cd linux-smart-enumeration
+
+::: cp lse.sh /home/pepe/
+
+::: cd /home/pepe
+
+::: ./lse.sh          ##!! pedir[a password del usuario actual(pepe)
+
+
+  ::  ./lse.sh -h   ##!! help

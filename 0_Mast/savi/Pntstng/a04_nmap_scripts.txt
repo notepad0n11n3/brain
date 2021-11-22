@@ -1,0 +1,29 @@
+
+::: nmap -sC -sV  -p88,80,145  192.168.0.69 -oN targeted
+
+      -sC     scripts b]asicos de n[umeraci[on
+      -sV     detecta la versi[on y servicios que corren para estos puertos
+
+
+
+:::  updatedb          actualiza una base de datos para poder encontrar archivos buscando por nombre con 'locate nombreArchivo' 
+
+
+:::  locate nombreArchivo
+     locate .vimrc
+     locate .nse      # .nse   scripts de nmap (lenguaje Lua)
+     locate .nse | wc -l
+
+      locate .nse | xargs grep "categories"     #de formaParalela por cada uno de estos resultados quiero que me aplique un grep de "categories"
+
+
+
+     locate .nse | xargs grep "categories" | grep -oP '".*?"' | sort -u          |                  wc -l         ### todas las categorias de los scripts de nmap 
+
+     locate .nse | xargs grep "categories" | grep -oP '".*?"' | sort -u  | tr -d '"'
+
+
+:::   nmap -p445    192.168.0.16  --script "vuln and safe"  -oN smbScanGoro               #lanzara todos los script de la categoria "vuln and safe"  al puerto 445
+
+
+

@@ -1,0 +1,12 @@
+
+con export podemos alterar una variable de entorno
+
+::: export PATH=.:$PATH
+  .  ==> ruta actual 
+  :$PATH ==>> valor anterior de path
+
+ :: export PATH=/tmp:$PATH
+      //agregar el directorio /tmp al path
+
+("al parecer los cambios son temporales por cada sesi[on :u ")
+

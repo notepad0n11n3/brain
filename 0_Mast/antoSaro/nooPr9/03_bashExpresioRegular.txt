@@ -1,0 +1,12 @@
+          []  --- un solo caracter            {} --- varios caracteres
+::: rm fichero[AB].txt        elimina todos los ficheros que terminen en A y B ficheroA.txt ficheroB.txt
+
+::: rm fichero[^AB].txt       no eliminar ficheroA.txt ficheroB.txt todo lo demas SI... 
+
+::: rm f{AB,AC,AD}.txt        elimina  fAB.txt fAC.txt fAD.txt
+
+::: rm f[1-7]         elimina f1 f2 f3 f4 f5 f6 f7
+
+::: rm f[0-9][0-9]    elimina f2digitosHere
+
+::: rm f[a-cA-C]     elimina  fa fb fc   fA fB fC

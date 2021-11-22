@@ -1,0 +1,5 @@
+
+::: gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --url http://10.10.10.69
+
+    dir      Uses directory/file brutceforcing mode
+    -t 100        trabajar con 100 hilos (de formaParalela)

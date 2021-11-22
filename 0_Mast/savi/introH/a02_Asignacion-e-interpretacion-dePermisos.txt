@@ -1,0 +1,61 @@
+:::chown userHere archivoDirectorio   # cambio de propietario
+:::chgrp grupo archivoDirectorio         # cambio de grupo
+::: usermod -a -G grupoHere userHere    # agregar al usuarioHere al grupoHere
+
+
+          archivo        carpeta
+    r     lectura       listado de elementos
+    w     escritura      modificacionElementos
+    x     ejecuci[on      acceso al directorio
+
+    u  due~o de larchivo o directorio
+    g  grupo al que pertenece el archivo
+    o  otros
+
+::: chmod o+r+w archivo.sh
+::: chmod g+r-w-x archivo.sh
+
+::: chmod ugo+rwm archivo.txt   ========   chmod 777 archivo.txt
+::: chmod g-w,o+w directorio
+
+
+
+
+   1X2     *******************************************
+setuid
+El bit setuid es asignable a ficheros ejecutables y permite que cuando un suario ejecute dicho fichero, el proceso adquiera los permisos del propietario del fichero ejecutado. El ejemplo m[as claro de fichero ejecutable y con el bit setuid es:  $su  ::: su          ls -lah /bin/su
+
+::: chmod g+s archivoHere
+-rwSr--r-- 1 aeo8 aeo8    0 Jul  4 22:45 helloGo
+
+  **!!! utilizar este bit con extremo cuidado, puede provocar una escalada de privilegios en nuestro sistema
+
+setgid 
+El bit setid permite adquirir los privilegios del grupo asignado al fichero, tambi[en es asignable a directorios. ESto ser[a muy [util cuando varios usuarios de un mismo grupo necesiten trabajar con recurssos dentro de un mismo directorio
+
+::: chmod g+s /carpeta_compartida
+::: chmod g-s /carpeta_compartida
+
+drwsr-xr-x 2 aeo8 aeo8 4.0K Jul  4 22:48 carpetD
+
+****************
+
+sticky *************
+Este bit suele asignarse en directorios a los que todos los usuarios tienen acceso, y permite evitar que un usuario pueda borrar ficheros/directorios de otro usuario dentro de ese directorio, ya que todos tienen permiso de escritura. 
+
+::: chmod o+t carpetaHere
+
+drwxr-xr-t 2 aeo8 aeo8 4.0K Jul  4 22:52 likeAtmp
+
+::: chmod o-t carpetaHere
+
+***********
+
+
+permisos avanzados attr *******************8
+  ni root podra borrar el archivo, como medida de protecci[on
+
+::: chattr +i -V archivoHere
+::: lsattr archivoHere
+
+*******************

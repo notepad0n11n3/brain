@@ -1,0 +1,21 @@
+
+::: useradd pepe -d /home/pepe -s /bin/bash
+
+::: passwd pepe
+
+::: sudo nano /etc/sudoers   ##!! sudo obligado, oh no mostrara nada :(
+       # User privilege specification
+       root  ALL=(ALL:ALL) ALL
+       pepe ALL=(root) NOSPASSWD: /usr/bin/zip
+         
+       # Allow members of group sudo to execute any comand
+       %sudo ALL=(ALL:ALL) ALL
+
+
+::: sudo -l      ##!! lista los privilegios para ciertos binarios/programas
+
+
+https://gtfobins.github.io
+
+gtfobins.github.io :::> zip   :::>   sudo 
+

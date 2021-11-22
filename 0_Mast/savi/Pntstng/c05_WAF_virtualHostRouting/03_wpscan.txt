@@ -1,0 +1,8 @@
+    #   WordPress Security Scanner 
+
+::: wpscan --url http://example.com -e vp,u
+
+
+  -e  busca
+      vp    vulnerable plugins
+      u     usuarios existentes
