@@ -1,0 +1,25 @@
+
+
+::: nmap -sS 192.168.111.125-135 
+  
+  -sU  busqueda par apuertos UDP ...!!! PUERTOS EXTRA PROTEGIDOS POR FIREWALL, :) :) :) ...!!!!
+
+
+  -sS  realiza un scaneo de los puertos del sistema de manera individual, no completa el TCP 80,443 (MENOS RUIDOSO QUE -sMENOS RUIDOSO QUE -sTT) ( ES UNA SEMI CONEXI[ON, NO COMPLETA EL PROTOCOLO TCP )
+
+  -sT  realiza en scaneo de puertos completando el protocolo TCP 80,443 (muy RUIDOSO)
+
+
+
+  .0/24    del 0 al 255
+  .125-135         de las ip.final  en 125 al 135
+
+
+## los servicios que aparecen son sugerencias predeterminadas almacenadas en el archivo:  
+                    /usr/share/nmap/nmap-services
+   no son los servicios reales que corren en los puertos, solo sugerencias predeterminadas :)
+
+
+
+
+    -O   versi[on del sistema operativo

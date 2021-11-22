@@ -1,0 +1,39 @@
+
+    g:: Google Hacking Database
+
+g:: site:goro.des filetype:pdf
+
+g:: "index of" / "chat/logs" 
+
+g:: filetype:sql "MySQL dump" (pass|password|passwd|pwd)
+
+g:: inurl:index.php?id=   site:goro.des
+
+g:: site:gov  filetype:pdf   allintitle:restricted
+
+g:: intext:"@gmail.com"  intext:"password"  inurl:/files/  ext:txt
+
+
+
+  *  filetype:    ====   ext:    (.py|.exe|.pdf)
+  *  site:goro.des
+  *  cache:url      muestra copia de la web que tiene  bot de google 
+
+  *  allinurl: text here go
+  *  inurl:"textHere/go"
+
+  *  allintext: text here go
+  *  intext:"textHere/go"
+
+  *  allintitle:terminos
+  *  intitle:termino
+    
+
+                  OPERADORES BOOLEANOS GOOGLE HACKING
+
+ " "     Buaca las palabras exactas.
+  -      Excluye una palabra de la b[usqueda  Ej: gmail -hotmail
+
+OR (o |)   Un termino u otro 
+
+  *     Utilizado para sustituir una palabra

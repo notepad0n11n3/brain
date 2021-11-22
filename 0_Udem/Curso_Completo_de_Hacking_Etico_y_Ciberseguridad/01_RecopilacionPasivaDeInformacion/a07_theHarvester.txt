@@ -1,0 +1,9 @@
+
+
+::: theHarvester -h           
+
+::: theHarvester -d udemy.com -b google -l 100 -f resultados.html
+::: theHarvester -d mastermind.ac -b linkedin -l 100
+
+
+    -l numberHere         limite de resultados

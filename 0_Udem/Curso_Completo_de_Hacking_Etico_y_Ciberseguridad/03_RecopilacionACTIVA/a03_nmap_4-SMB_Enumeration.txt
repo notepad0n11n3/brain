@@ -1,0 +1,30 @@
+
+      ###  139/tcp  445/tcp           utiliza diferentes puertos, casi siempre 139/tcp  445/tcp
+                                      utiliza en conbinaci[on con netbios el 139/tcp
+                                      y otra serie de puertos UDP 
+
+SMB    protocolo de red windows para compartir archivos/carpetaCompartidas/impresoras/ etc...
+
+              !!! /usr/share/nmap/scripts     <<<---- scripts con tareas automatizadas de recolecci[on de informaci[on y tambi[en scripts de explotaci[on
+
+::: sudo nmap -v -sS -p 139,445  192.168.111.ip
+
+
+::: cd /usr/share/nmap/scripts    #! ls /usr/share/nmap/scripts/smb*   poco legible :(
+ :: ls smb*
+
+
+
+
+ ::: sudo nmap -v -sS -p 139,445 --script=smb-os-discovery  192.168.111.186
+            script para detecci[on de sistema operativo, muy preciso
+
+ ::: sudo nmap -v -sS -p 139,445 --script=smb-enum-shares 192.168.111.186
+            script para detecci[on de carpetas compartidas
+
+ ::: sudo nmap -v -sS -p 139,445 --script=smb-enum-users  192.168.111.186
+                        detecci[on de usuarios
+
+
+
+

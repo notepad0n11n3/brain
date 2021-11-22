@@ -1,0 +1,30 @@
+
+!!!!!!! LOS PAQUETES ARP SON MENOS INTRUSIVOS EN TODOS LOS EJEMPLOS ....... !!!!!!!!!!!!!
+
+
+
+
+    #muy intrusiva, intenta establecer una conexi[on en los puertos 80,334
+
+::: nmap -sn   
+                       #(protocol TCP) usa una conexion TCP en el puerto80,443 para verificar si el host esta UP, si no tiene ningun servicio en 80,443 puede que de un falso negativo, usa USO
+
+
+
+    #menos intrusiva, solo manda un paquete ARP a toda la red,    TIENE UNA RESPUESTA M[AS R[APIDA
+
+::: sudo nmap -sn
+                       #(protocol ARP) usa ARP para preguntar a todos los host/nodosDlaRed quien es el propietario de la ip para obtener la la direccion fisica solo para saber si el HOST esta UP
+    
+
+    -sn    (No port scan)  solo para ver host que estan corectados a una red 
+    -Pn    (No Ping)
+
+
+
+
+::: namp -sn 192.168.111.0/24         #primero envia paquetes ARP, si tiene exito intenta por TCP a 80,443
+  
+        0/24      rango de IP de 0 a 255
+        
+    !!::: sudo nmap -sn ipHere.0/24   #igual que en los ejemplos anteriores, solo utiliza protocoloARP para verificar los host en la red, muestra mas host si usamos el sudo, a[un tengo que darle una mirada m[as profunda.

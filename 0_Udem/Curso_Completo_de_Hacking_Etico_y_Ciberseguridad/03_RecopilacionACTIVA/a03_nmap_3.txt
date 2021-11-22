@@ -1,0 +1,18 @@
+
+
+::: nmap -sV ipHere 
+
+    -sV     ver el servicio y la versi[on que esta corriendo en los puertos (ya no hace uso de el fichero predeterminado sobre los servicios sujeridos para los puertos)
+              
+    -O   versi[on del sistema operativo
+
+
+
+##extra  resultados preInforme
+
+  ::: sudo nmap -v --reason -sV -oX servicios.xml --stylesheet="https://svn.nmap.org/nmap/docs/nmap.xsl"
+
+  ::: sudo chmod 777 servicios.xml
+
+  ::: firefox  servicios.xml      
+

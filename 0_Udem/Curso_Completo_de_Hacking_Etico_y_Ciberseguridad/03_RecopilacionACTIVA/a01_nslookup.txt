@@ -1,0 +1,20 @@
+
+            WINDOWS///linux no funciona bien, windows READY
+
+::: set type=ns
+
+::: gorogoro.des
+    > zonetransfer.me
+    Server:         192.168.111.2
+    Address:        192.168.111.2#53
+
+    Non-authoritative answer:
+    zonetransfer.me nameserver = nsztm1.digi.ninja.
+    zonetransfer.me nameserver = nsztm2.digi.ninja.
+
+
+::: set type=any
+
+::: server nsztm1.digi.ninja.
+
+::: ls -d gorogoro.des        #en windows si funciona, en linux tiene problemas :(

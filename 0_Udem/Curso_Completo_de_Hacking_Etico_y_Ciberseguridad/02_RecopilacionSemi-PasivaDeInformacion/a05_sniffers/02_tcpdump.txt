@@ -1,0 +1,17 @@
+
+::: tcpdump -D
+        -D      muestra las interfaces de red y cuales estan activas
+
+::: tcpdump -i eth0         ::: tcpdump -v -i eth0
+
+::: tcpdump icmp
+
+::: tcpdump host ipDominioHere        # solo captura paquetes del dominio
+
+::: tcpdump -i eth0 -w archivo.pcap
+                    -w carpeta/archivo.pcap
+
+::: tcpdump -r archivo.pcap         # leer archivo  de paquetes capturados
+
+
+::: tcpdump -n port 80  -v  -r archivo.pcap
