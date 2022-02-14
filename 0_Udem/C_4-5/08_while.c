@@ -14,4 +14,6 @@ int main(){
   while(n<10 && x<10){
     printf("no print here U.U");
   }
+
+  return 0;
 }

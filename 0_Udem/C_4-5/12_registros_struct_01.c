@@ -93,4 +93,6 @@ int main(){
       printf("El nombre del jugador de mayor altura es %s y su edad es %d\n",nombre_mayor_altura, edad_mayor_altura);
     }
   }
+
+  return 0;
 }

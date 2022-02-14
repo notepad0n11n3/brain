@@ -26,4 +26,6 @@ int main(){
   else{
     printf("El caracter %c no se encuentra en la cadena %s",caracter, cadena);
   }
+
+  return 0;
 }

@@ -24,4 +24,6 @@ int main(){
   //scanf("%s",x89p); //  solo hasta el espacio
   gets(x89p);
   printf("-->> %s",x89p);
+
+  return 0;
 }

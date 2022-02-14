@@ -18,4 +18,6 @@ int main(){
   }
 
   printf("Valor m[aximo: %d\n Valor m[inimo: %d",maximo,minimo);
+
+  return 0;
 }

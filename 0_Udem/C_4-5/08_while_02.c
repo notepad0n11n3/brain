@@ -23,4 +23,6 @@ int main(){
   }
 
   printf("El n[umero de aprobador es: %d y el n[umero de suspendidos es: %d\n",contador_aprobados, contador_suspendidos);
+
+  return 0;
 }

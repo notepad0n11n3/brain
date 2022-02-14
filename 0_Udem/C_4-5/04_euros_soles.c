@@ -9,4 +9,6 @@ int main() {
 
   //soles a euros 
   printf("%.2f Euros equivalen a %.2f soles",euros,euros*4.33);
+
+  return 0;
 }

@@ -24,4 +24,6 @@ int main(){
 
   printf("%d",variable2.variable1.entero1);
 
+
+  return 0;
 }

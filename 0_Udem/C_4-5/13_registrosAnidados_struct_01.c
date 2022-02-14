@@ -63,4 +63,6 @@ int main(){
       scanf("%c",&continuar);
     }
   }
+
+  return 0;
 }

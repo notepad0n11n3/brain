@@ -37,4 +37,6 @@ int main(){
       printf("\n\t\t\t Error... Fucking noob.   U.U");
       break;
   }
+
+  return 0;
 }

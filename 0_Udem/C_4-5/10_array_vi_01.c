@@ -27,4 +27,5 @@ int main(){
 
   printf("Promedio temporada baja: %.2f\n Promedio temporada media: %.2f\n Promedio temporada alta: %.2f",promedio_temp_baja, promedio_temp_media, promedio_temp_alta);
 
+  return 0;
 }

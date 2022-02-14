@@ -27,4 +27,6 @@ int main(){
 
   printf("cantidad de mayoresIguales al promedio: %d, cantidad de menores al promedio: %d",cont_mayor_igual,cont_menor);
   printf("\n\t\tEl promeido es: %.2f",promedio);
+
+  return 0;
 }

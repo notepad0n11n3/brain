@@ -23,4 +23,6 @@ int main(){
   else{
     printf("\n\t\tNota invalida...  U.U ");
   }
+
+  return 0;
 }

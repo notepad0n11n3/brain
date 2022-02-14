@@ -13,4 +13,7 @@ int main(){
   for(int y=0; y<10; y=y+2){
     printf("%d\n",y);
   }
+
+
+  return 0;
 }

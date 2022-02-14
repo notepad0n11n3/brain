@@ -43,4 +43,6 @@ int main(){
   printf("El campo num de la estructura a la que apunta r2 es: %d \n", (*r2).num );
   printf("El campo car de la estructura r1 es: %c \n", r1.car);
 
+
+  return 0;
 }

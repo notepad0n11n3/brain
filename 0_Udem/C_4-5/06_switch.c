@@ -19,4 +19,7 @@ int main(){
       printf("La variable no contiene los valores 1, 2 [o 3  :( ");
       break;
   }
+
+
+  return 0;
 }

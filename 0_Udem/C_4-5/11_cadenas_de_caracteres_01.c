@@ -22,4 +22,6 @@ int main(){
   scanf("%s",cadena4);
 
   printf("%s-%s-%s-%s",cadena1, cadena2, cadena3, cadena4);
+
+  return 0;
 }

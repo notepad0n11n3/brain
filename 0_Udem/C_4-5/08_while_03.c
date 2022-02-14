@@ -13,4 +13,6 @@ int main(){
   }
   float promedio=suma/contador;
   printf("La suma de todos los n[umeros es: %d y el promedio es: %.2f",suma, promedio);
+
+  return 0;
 }

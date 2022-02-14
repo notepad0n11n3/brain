@@ -27,4 +27,6 @@ int main(){
 
   panda8hat[0].dato_entero=7;
   printf("El dato de tipo entero del primer elemento del vector es: %d",panda8hat[0].dato_entero);
+
+  return 0;
 }

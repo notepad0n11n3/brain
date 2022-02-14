@@ -8,4 +8,6 @@ int main(){
   scanf("%d",&n);
 
   printf("El n[umero introducido es: %d", n);
+
+  return 0;
 }

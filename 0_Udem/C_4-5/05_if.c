@@ -18,4 +18,6 @@ int main(){
   else{
     printf("Ninguno de los n[umeros es positivo");
   }
+
+  return 0;
 }

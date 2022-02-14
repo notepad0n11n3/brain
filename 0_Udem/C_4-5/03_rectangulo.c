@@ -12,4 +12,6 @@ int main(){
 
   float area = base * altura;
   printf("El area del rectangulo de base %.2f y altura %.2f es: %.2f",base,altura,area);
+
+  return 0;
 }
