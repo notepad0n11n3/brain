@@ -1,0 +1,7 @@
+  printf("Ingrese su edad:\n");
+  scanf("%d",&edad);
+  getchar();              << == getchar();  se encargar[a de el '\n'
+
+  printf("Ingrese su sexo:\n"); char mango[10];
+  fgets(mango, 10, stdin);                         // fgets(variable,tama~oArray,stdin);
+  strtok(mango,"\n");     << == strtock();  se engargar[a de el '\n'  esta dentroDe 'string.h'
