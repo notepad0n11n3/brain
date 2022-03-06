@@ -1,0 +1,4 @@
+
+::: cd C:\Windows\Temp\x89p\
+
+::: upload /home/aeo8/Downloads/winPEASx64.exe        /// caseSensitive  OJOojo   downloads != Downloads
