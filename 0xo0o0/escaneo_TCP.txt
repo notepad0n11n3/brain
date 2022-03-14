@@ -1,0 +1,6 @@
+nmap -p- --open -sS --min-rate 5000 -vv -n -Pn ipHere -oG archivoSalidaHere
+
+      -n    no aplica resolucion DNS
+      -Pn   
+
+nmap -T1 -T2 -T3 -T4 -T5
