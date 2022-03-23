@@ -5,7 +5,7 @@
 int main(){
 
   int totalAlumnos=0, mujeres=0, hombres=0;
-  char sexo[11];
+  char sexo[11];  // con 10 no se suficiente espacio, la palabra masculino rompeDeja floatndo un '\n'
 
   printf("Ingresa el n[umero total de alumnos: ");
   scanf("%i",&totalAlumnos); getchar();
