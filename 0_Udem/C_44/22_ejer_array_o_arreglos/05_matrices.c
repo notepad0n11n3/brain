@@ -8,6 +8,7 @@ int main(){
     for(columnas=0; columnas<3; columnas++){
       printf("%i ", matriz[filas][columnas] );
     }
+    printf("\n");
   }
   return 0;
 }
