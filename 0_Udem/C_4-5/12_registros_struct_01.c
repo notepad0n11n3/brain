@@ -17,7 +17,7 @@ int main(){
   for(int i=0; i<5; i++){
 
     printf("Ingrese el nombre del jugador n[umero %d\n",i+1);
-    fgets(jugadores[i].nombre, 50, stdin);
+    fgets(jugadores[i].nombre, 50, stdin); strtok(jugador[i].nombre,"\n");  //<< add strtok();
 
 
     jugadores[i].nombre[strcspn(jugadores[i].nombre, "\n")]=0;
@@ -29,11 +29,11 @@ int main(){
     */
 
     printf("Introduce la edad del jugador n[umero %d\n",i+1);
-    scanf("%d",&jugadores[i].edad);
+    scanf("%d",&jugadores[i].edad); getchar(); //<- add getchar();
     fflush(stdin); //limpiar el buffer de los \n que puedan quedar y ser recogidos por fgets en la siguienteVuelta
 
     printf("Introduce la altura del jugador n]umero %d\n",i+1);
-    scanf("%f",&jugadores[i].altura);
+    scanf("%f",&jugadores[i].altura); getchar(); //<- add getchar();
 
     fflush(stdin); //limpiar el buffer de los \n que puedan quedar y ser recogidos por fgets en la siguienteVuelta
 
@@ -42,7 +42,7 @@ int main(){
   int opcion_usuario=-1;
   while(opcion_usuario != 0){
     printf("Opciones disponibles:\n 1-Listar jugador\n 2-Buscar jugador\n 3-Jugador m[as alto\n 0-Salir");
-    scanf("%d",&opcion_usuario);
+    scanf("%d",&opcion_usuario); getchar();  //<- getchar();
 
     fflush(stdin);
 
