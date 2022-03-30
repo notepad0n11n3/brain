@@ -12,6 +12,7 @@ int main(){
     char nombreDes[80];
   };
   struct molde test1;
+
   strcpy(test1.nombreDes, "stringA_structPostDeclaraci[on");
 
   printf("\n -=> %s",test1.nombreDes);
