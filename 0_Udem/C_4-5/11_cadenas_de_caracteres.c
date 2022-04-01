@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 
 int main(){
   char x89p[100]="Esto es una cadena U.U";   //    acaba en \0
@@ -20,9 +20,9 @@ int main(){
   printf("%s",x89p2);
 
 
-  printf("Introduce una cadena: \n");
+  printf("\n\nIntroduce una cadena: ");
   //scanf("%s",x89p); //  solo hasta el espacio
-  gets(x89p);
+  fgets(x89p, 40, stdin); strtok(x89p, "\n");
   printf("-->> %s",x89p);
 
   return 0;

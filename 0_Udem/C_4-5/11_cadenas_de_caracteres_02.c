@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 // Pide una cadena y un caracter, print el lugar de la primera aparici[on del caracter en la cadena
 int main(){
@@ -7,10 +8,10 @@ int main(){
   char caracter;
 
   printf("Introduce una cadena:\n");
-  fgets(cadena, 50, stdin);
+  fgets(cadena, 50, stdin); strtok(cadena, "\n");
 
   printf("Ingroduce un caracter:\n");
-  caracter = getchar();
+  caracter = getchar();     // <- si... extra~o pero funciona <3
 
   int i=0;
   int pos=-1;
