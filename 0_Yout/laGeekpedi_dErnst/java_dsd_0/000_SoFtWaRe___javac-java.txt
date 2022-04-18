@@ -9,3 +9,10 @@
 
 ::: sudo apt install default-jdk
  :: javac --vercion               /// si javac  'c'
+
+
+
+
+::: javac  nombreArchivo.java   /// compila el archivo
+
+::: java nombreArchivo      /// ejecuta el archivo 
