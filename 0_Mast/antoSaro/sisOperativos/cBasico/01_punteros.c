@@ -2,8 +2,7 @@
           //  Libreria del sistema va entre <>    <stdio.h>
           //  Librefia PROPIA va entre ""        <gorox89p>
 
-
-int main() {       // 'tipoDeRetorno' main() 
+int main() { 
   int a = 5;
 
   int *pointerGoro_a= &a;    //  &  sirve para sacar la direcci[on en memoria de una variable
