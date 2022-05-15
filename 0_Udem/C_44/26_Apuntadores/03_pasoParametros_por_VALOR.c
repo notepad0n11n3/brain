@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+                      // El valor de la variable no se modifica, al pasar por valor a la funci[on se cr[ea una copia
 void agregar(int a){
   a += 10;
   printf("\n\t\t Dentro de la funcion: %d", a);
