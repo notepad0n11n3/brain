@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main(){
+int main(){
 
   int w=10, x=20, y=30, z=40, r1, r2, r3;
   int *p1, *p2, *p3, *p4;
