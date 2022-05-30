@@ -10,10 +10,11 @@ int main(void){
   mango = fopen(direccion, "r");  // "r" = read 
 
   if (mango == NULL){
-    printf("El archivo no existe\n");
+    printf("\n\tEl archivo no existe\n");
+    printf("\n\t\t :(   %s <--!!!\n", direccion);
   }else {
-    printf("Se encontro el archivo\n");
-    printf("Su ubicaci[on es: %s\n", direccion);
+    printf("\n\tSe encontro el archivo\n");
+    printf("\n\tSu ubicaci[on es: %s\n", direccion);
   }
 
   return 0;
