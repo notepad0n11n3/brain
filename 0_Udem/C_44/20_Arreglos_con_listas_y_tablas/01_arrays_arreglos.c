@@ -1,4 +1,6 @@
 #include <stdio.h>
+            //   void mi_funcion(int mango[], int 10);          int array_Here[10];
+            //   mi_funcion(array_here, size_array);         // por default creo que se pasa por referencia(los cambios afectaran al arrayOriginal)
 
 int main(){
   int array[3]={24,5,88};

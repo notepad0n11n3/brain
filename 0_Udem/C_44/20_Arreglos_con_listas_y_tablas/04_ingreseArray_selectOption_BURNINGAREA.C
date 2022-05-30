@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+            //   void mi_funcion(int mango[], int 10);
+            //   mi_funcion(array_here, size_array);         // por default creo que se pasa por referencia(los cambios afectaran al arrayOriginal)
 void sumar(int user_data[]); void multiplicar(int user_data[]); void user_get(int user_data[]); void multiplos_3(int user_data[]); void por_tres(int user_data[]);
 
 int main(){
