@@ -37,3 +37,21 @@
             rewind()            Coloca el localizador de posici[on del archivo al principio del mismo.
             remove()            Borra un archivo.
             fflush()            Vacia un archivo.
+
+
+          MODO                    SIGNIFICADO
+          r                 Abre un archivo de texto para lectura
+          w                 Crea un archivo de texto para escritura // si existe, se sobrescribe. no testeado
+          a                 Abre o Crea un archivo de texto para a;adir
+
+          rb                Abre un archivo BINARIO para lectura
+          wb                Crea un archivo BINARIO para escritura
+          ab                Abre un archivo BINARIO para a;adir
+
+          r+                Abre un archivo de texto para lectura/escritura
+          w+                Crea un archivo de texto para lectura/escritura
+          a+                A~ade o Crea un archivo de texto para lectura/escritura
+
+          r+b               Abre un archivo BINARIO para lectura/escritura
+          w+b               Crea un archivo BINARIO para lectura/escritura
+          a+b               A~ade o Crea un archivo BINARIO para lectura/escritura

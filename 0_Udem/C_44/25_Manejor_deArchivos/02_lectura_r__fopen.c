@@ -17,5 +17,7 @@ int main(void){
     printf("\n\tSu ubicaci[on es: %s\n", direccion);
   }
 
+  fclose(mango);
+
   return 0;
 }
