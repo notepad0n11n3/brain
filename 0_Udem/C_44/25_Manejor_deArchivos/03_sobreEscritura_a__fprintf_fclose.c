@@ -3,7 +3,7 @@
 int main(void){
 
   FILE *puntero_Archivo;
-  puntero_Archivo = fopen("03_test.txt", "a");
+  puntero_Archivo = fopen("03.txt", "a");
 
   if( puntero_Archivo == NULL ){
     printf("\n\tEl archivo no existe :(");   // esto nunca se va a ejecutar, "a" crea automaticamente el archivo y agrega el texto al final.

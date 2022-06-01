@@ -5,7 +5,7 @@ int main(void){
   FILE *mango;
 
 //char direccion[] = "E:\\carpeta_Here\\archivo_Here.txt" ;
-  char direccion[] = "/home/aeo8/Desktop/brain/0_Udem/C_44/25_Manejor_deArchivos/02_test.txt";
+  char direccion[] = "/home/aeo8/Desktop/brain/0_Udem/C_44/25_Manejor_deArchivos/02.txt";
 
   mango = fopen(direccion, "r");  // "r" = read 
 
