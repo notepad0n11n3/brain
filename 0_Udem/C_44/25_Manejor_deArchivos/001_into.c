@@ -19,7 +19,8 @@
 
 
 
-
+            char mango;         char mango[];       char mango[8888];
+            fputc('\n', apuntador_Archivo);  fputc(mango, apuntador);
 
 
 
