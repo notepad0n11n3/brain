@@ -8,6 +8,8 @@
 
   ::: git log --stat -p --oneline archivoHere.xxx    // si... se pueden juntar <3 <3 <3
 
+  ::: git log --oneline --stat     // cuando el repositorio es muyGrande esto es una bendici[on <3
+
 
 # Regresa el archivo seleccionado al estado de el commit seleccionado, para dar una mirada rapida
                                                                                   
