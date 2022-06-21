@@ -1,0 +1,16 @@
+
+            *** *** *** s4vi git... ordenar please
+ramas despues del clonar RAMAS DEPUES DE CLONAR REPOSITORIO ****************
+::: git branch -r        ## tanto busque esto :')
+***************
+
+ramas despues del clonar RAMAS DEPUES DE CLONAR REPOSITORIO ****************
+::: git branch -r        ## tanto busque esto :')
+***************
+
+tags en git TAGS EN GIT *******
+::: git tag
+::: git show sauron     ## sauron=$(git tag)
+
+  En Git, una etiqueta o tag sirve básicamente como una rama firmada que no permuta, es decir, siempre se mantiene inalterable. Sencillamente es una cadena arbitraria que apunta a un commit específico. Puede decirse que un tag es un nombre que puedes usar para marcar un punto específico en la historia de un repositorio.
+*****

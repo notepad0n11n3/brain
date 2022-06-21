@@ -1,0 +1,14 @@
+
+# LISTA DE PARAMETROS PARA git config
+
+  ::: git config
+
+  ::: git config --list             // configuraci[on por defecto de mi GIT
+
+
+  ::: git config --list --show-origin    // ubicaci[on_configuraci[onesGuardada
+
+
+  ::: git config --global user.name "User Name Here"
+
+  ::: git config --global user.email "local@host.com"

@@ -35,6 +35,8 @@
     ::: git branch   # muestra los branch 
     ::: git branch nameHere  # Crea un branch del proyecto
 
+    ::: git branch -m newNameHere       #renombrar el nombre de la rama
+
     ::: git checkout nameBrancHere   # pasamos a trabajar en otro brach del proyecto
 
 
