@@ -1,0 +1,7 @@
+
+
+# CREAR BRANCH/RAMA/CABECERA
+  ::: git branch nameNewBranch
+
+
+  ::: git checkout nameBranchCabecera      // saltar entre ramas/cabeceras

@@ -1,0 +1,6 @@
+
+
+#FUNSION DE GIT ADD Y GIT COMMIT, solo funciona en archivos elLos que se uso git add previamente
+  ::: git commit -am "mensaje para el commit" 
+
+        # para archivos nuevos no funciona, es obligado el git add newFile.txt   <<<...!!!
