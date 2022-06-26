@@ -12,3 +12,11 @@ master  ---#---#---#---#---#---#
 
  :: git merge newBranch       
 
+
+#SOLUCIONAR CONFLICTOS EN MERGE
+
+  ::: git status
+
+      // retoca el\los archivos 
+
+            lee los output del los comandos (merge && commit), es todo esta detallado <3
