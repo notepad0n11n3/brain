@@ -1,0 +1,10 @@
+
+# RENOMBRAR RAMA ACTUAL
+  ::: git branch -m newNameCurrentBranch
+
+
+# CREAR BRANCH/RAMA/CABECERA
+  ::: git branch nameNewBranch          // no deja crear una rama si no tienes un archivoConCommit antes en el repositorio
+
+
+  ::: git checkout nameBranchCabecera      // saltar entre ramas/cabeceras
