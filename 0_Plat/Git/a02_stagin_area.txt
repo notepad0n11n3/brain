@@ -4,7 +4,7 @@
                                               . para todos los archivos
                                               * para todos los archivos  *.txt  *.c *.py *.js *.sh 
 
-# QUITAR ARCHIVOS DE STAGIN AREA
+# QUITAR ARCHIVOS DE   STAGIN AREA (ram)
   ::: git rm --cached archivo.txt         git rm --cached *
                                                     * para todos los archivos  *.c *.py *.txt *.pdf *.*
 

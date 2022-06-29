@@ -1,3 +1,5 @@
+## MUESTRA COMMITS REALIZADO'S POR UN USUARIO'S   usuario--titulo del commit 
+  ::: git shortlog
 
 # Historia de commit con su cambios detallados y en bits por archivo
   ::: git log -p       // muestra todos los commit y sus CAMBIOS REALIZAODS()

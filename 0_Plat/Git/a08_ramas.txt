@@ -8,3 +8,8 @@
 
 
   ::: git checkout nameBranchCabecera      // saltar entre ramas/cabeceras
+
+
+
+# CREA UNA RAMA Y NOS MUEVE A ELLA AUTO.  git branch mango + git checkout mango === git checkout -b mango
+::: git checkout -b nameBranchCabecera   
