@@ -16,5 +16,6 @@ hint:   git config pull.ff only       # fast-forward only
 
 
 ## REFUSING TO MERGE UNRELATED HISTORIES
+    el historial de el repoRemoto no coincide con el historial del repoLocal
 
   ::: git pull origin master --allow-unrelated-histories
