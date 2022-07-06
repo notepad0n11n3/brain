@@ -3,13 +3,27 @@
   ::: git branch -m newNameCurrentBranch
 
 
-# CREAR BRANCH/RAMA/CABECERA
-  ::: git branch nameNewBranch          // no deja crear una rama si no tienes un archivoConCommit antes en el repositorio
+## CREAR RAMAS
+  ::: git branch name_newBranch
+  ::: git checkout -b name_newBranch
+       // no deja crear una rama si no tienes un archivoConCommit antes en el repositorio
+
 
 
   ::: git checkout nameBranchCabecera      // saltar entre ramas/cabeceras
 
 
-
 # CREA UNA RAMA Y NOS MUEVE A ELLA AUTO.  git branch mango + git checkout mango === git checkout -b mango
 ::: git checkout -b nameBranchCabecera   
+
+
+
+
+
+## MUESTRA RAMAS EXISTENTES Y SU HISTORIA
+  ::: git show-branch
+  ::: git show-branch --all
+
+##  PUSH RAMAS A REPO_REMOTO
+  ::: git checkout nameBranchHere
+  ::: git push origin nameBranchHere

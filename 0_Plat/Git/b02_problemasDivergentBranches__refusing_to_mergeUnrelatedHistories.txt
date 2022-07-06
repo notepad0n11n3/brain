@@ -1,4 +1,6 @@
 
+::: git push -f origin master    <-- Despu[es de hacer un HARD_RESET
+
 
 hint:   git config pull.rebase false  # merge
 hint:   git config pull.rebase true   # rebase

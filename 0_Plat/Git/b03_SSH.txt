@@ -1,7 +1,7 @@
-Las claves ssh(privada/publicas) no son por repositorio o proyecto, si no por PERSONA
+Las ssh(privada/publicas) no son por repositorio o proyecto, si no por PERSONA
 
 cada usuario/computadora/persona tiene que tener su propia clavePu/Pri
-      3pc  3 claves
+      3pc  3 claves  // una vez por computadora
 
 ## GENERAR CLAVE SSH
 
@@ -20,15 +20,14 @@ cada usuario/computadora/persona tiene que tener su propia clavePu/Pri
 
 
 
-
-
 ## SSH al REPOSITORIO  (clone && ssh(copiLinkSsh_option)) <3 <3 <3
   ::: cd  ~/Desktop/repoFolder_Here
   ::: git remote -v
 
   ::: git remote set-url git@github.com:notepad0n11n3/hyperblog.git
+  ::: git remote set-url origin url_SSH_del_repositorio_en_Github
 
-  ::: git remote -
+  ::: git remote -v
 
   ::: git pull
    :: git pull origin master
@@ -58,5 +57,5 @@ cada usuario/computadora/persona tiene que tener su propia clavePu/Pri
             IdentityFile ~/.ssh/id_rsa
   }
 
-  ::: ssh-add -K ~/.ssh/id_rsa
+  ::: ssh-add -K ~/.ssh/id_rsa   <-- si da problemas daleSin la -K
   ::: ssh-add ~/.ssh/id_rsa

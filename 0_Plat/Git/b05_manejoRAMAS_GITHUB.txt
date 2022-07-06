@@ -1,0 +1,13 @@
+## CREAR RAMAS
+  ::: git branch name_newBranch
+  ::: git checkout -b name_newBranch
+
+
+## MUESTRA RAMAS EXISTENTES Y SU HISTORIA
+  ::: git show-branch
+  ::: git show-branch --all
+
+
+##  PUSH RAMAS A REPO_REMOTO
+  ::: git checkout nameBranchHere
+  ::: git push origin nameBranchHere
