@@ -1,3 +1,7 @@
+
+    #!#! TIENES QUE HACER PULL A CADA RAMA IGUAL QUE EN MASTER <-!!!
+  !!!    ::: git pull origin nombre_BranchLIKEaMASTER     !!! 
+  
 ## CREAR RAMAS
   ::: git branch name_newBranch
   ::: git checkout -b name_newBranch
@@ -11,3 +15,11 @@
 ##  PUSH RAMAS A REPO_REMOTO
   ::: git checkout nameBranchHere
   ::: git push origin nameBranchHere
+
+
+## TRAER OTRA RAMAS DE REPO_REMOTO
+  ::: git pull origin master
+   :: git checkout nameBranch
+   :: git pull origin nameBranch
+
+  'despu[es de g pull ori nameBranch haces git branch || show-branch || etc no saldra la rama, con show-branch --all podemos ver las origin/nameBranch, usa checkout nameBranch y despues git branch.
