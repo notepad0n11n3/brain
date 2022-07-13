@@ -1,0 +1,16 @@
+
+    ::: curl -v http://url_Here         // sin httpS es m[as limpio el output
+
+    
+ ::: curl -v    -> verbose,  vista completa de solicitud y respuesta http
+          -vvv
+
+## USER AGENT PROPIO XD
+  ::: curl -v http://url_HEre.com -A 'MozillO/5.0'
+                                  -A "mangoCaliente/69.4"
+
+## IGNORAR LOS CERTIFICADOS SSL NO VALIDOS O DESACTUALIZADO
+  ::: curl -k https://url_Here.com
+
+
+##   -i -I    CORS   -->> lee el post UmU
