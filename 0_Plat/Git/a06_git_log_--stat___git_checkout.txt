@@ -21,3 +21,9 @@
   ::: git checkout master archivoHere.txt  // regresar estadoArchivo alUltimoCommitRamaMaster
 
 
+
+
+
+ ::: git log --graph --decorate --stat --oneline -p
+          stat   lista archivosModificados
+          p      compara los cambios realizados de los archivos
