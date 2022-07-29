@@ -1,3 +1,4 @@
+//SMB 445  OBTENER INFORMACION DEL TARGED
 ::: crackmapexec smb ipTargetHere
 
           SMB         10.10.11.106    445    DRIVER           [*] Windows 10 Enterprise 10240 x64 (name:DRIVER) (domain:DRIVER) (signing:False) (SMBv1:True)
