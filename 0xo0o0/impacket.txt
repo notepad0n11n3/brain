@@ -2,5 +2,19 @@ pre  google.com/search?q=impacket
 
 ::: git clone https://github.com/SecureAuthCorp/impacket.git 
 
+    !!!  Desde la version v0.10  se quit[o el soporte para python2
+ https://github.com/SecureAuthCorp/impacket/releases/tag/impacket_0_9_24    <<--==obten la repo ah[i
+      ::: less README.md
+            Installing
+            ----------
+            In order to install the source execute the following command from the
+            directory where the Impacket's distribution has been unpacked: `python3 -m pip install .` (`python2 -m pip install . `for Python 2.x).
+            This will install the classes into the default
+            Python modules path; note that you might need special permissions to
+            write there.
+
+      :: cd impacket_0_9*
+      :: python2 -m pip install . 
+      
  :: cd impacket
  :: sudo python3 ./setup.py install

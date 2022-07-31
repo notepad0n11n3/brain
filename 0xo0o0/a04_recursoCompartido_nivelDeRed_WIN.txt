@@ -1,0 +1,3 @@
+        port 445   smb   windows
+
+::: impacket-smbserver smbFolder_mango $(pwd) -smb2support

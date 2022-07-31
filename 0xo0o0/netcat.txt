@@ -1,1 +1,7 @@
 ::: nc -nlvp  portHere
+
+
+::: rlwrap nc -nlvp portHere
+
+
+            (apt install rlwrap)
