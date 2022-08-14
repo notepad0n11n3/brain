@@ -1,0 +1,47 @@
+      port 445 smb       
+
+      ternalBlue aprovecha una vulnerabilidad en la implementación del protocolo Server Message Block (SMB) de Microsoft. Esta vulnerabilidad, denotada como CVE-2017-01447 en el catálogo Common Vulnerabilities and Exposures (CVE), se debe a que la versión 1 del servidor SMB (SMBv1) acepta en varias versiones de Microsoft Windows paquetes específicos de atacantes remotos, permitiéndoles ejecutar código en el ordenador en cuestión.
+
+ La actualización de seguridad de Windows del 14 de marzo de 2017 resolvió el problema a través del parche de seguridad MS17-010, para todas las versiones de Windows que en ese momento eran mantenidas por la compañía: Windows Vista, Windows 7, Windows 8.1, Windows 10, Windows Server 2008, Windows Server 2012, y Windows Server 2016.10 Las versiones antiguas, como Windows XP, Windows 8, o Windows Server 2003, no han recibido dicho parche. (La extensión del periodo de mantenimiento para Windows XP había acabado hace tres años, el 8 de abril de 2014, y el de Windows Server el 14 de julio de 2015). Microsoft recientemente liberó el parche para Windows XP y Server 2003.
+
+
+
+::: locate .nse | xargs grep "categories" | grep -oP '".*?"' | sort -u
+
+        "auth"
+        "broadcast"
+        "brute"
+        "default"
+        "discovery"
+        "dos"
+        "exploit"
+        "external"
+        "fuzzer"
+        "intrusive"
+        "malware"
+        "safe"
+        "version"
+        "vuln"
+
+::: nmap --script "vuln and safe" -p445 10.10.10.40 -oN smbVulnScan
+
+        "vuln and safe"  mejor para detectar vuln. sin generar una denegaci[on de servicios, etc.
+
+
+      PORT    STATE SERVICE
+      445/tcp open  microsoft-ds
+
+      Host script results:
+      | smb-vuln-ms17-010:
+      |   VULNERABLE:         /// <<<--- !!! ... .. .
+      |   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)
+      |     State: VULNERABLE
+      |     IDs:  CVE:CVE-2017-0143
+
+
+
+google::  ms17-010  zzz_exploit.py                #/#/#/ github.com/worawit/MS17-010
+
+::: git clone https://github.com/worawit/MS17-010
+ :: cd SM17-010
+ :: python2 checker.py ipTargetHere
