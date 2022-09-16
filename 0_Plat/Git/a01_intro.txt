@@ -1,6 +1,8 @@
 
-# Inicia un repositorio dentro de la carpeta
+::: git log --all --graph --decorate --stat --oneline -p
 
+
+# Inicia un repositorio dentro de la carpeta
   ::: git init
 
 # add

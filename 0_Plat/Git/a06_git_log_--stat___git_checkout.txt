@@ -24,6 +24,6 @@
 
 
 
- ::: git log --graph --decorate --stat --oneline -p
+ ::: git log -all --graph --decorate --stat --oneline -p
           stat   lista archivosModificados
           p      compara los cambios realizados de los archivos
