@@ -27,3 +27,12 @@ pre  google.com/search?q=impacket
  ::: curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
  ::: curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
  ::: python2 get-pip.py
+
+
+### impacket0.9 ERROR python2 -m pip install .
+
+ ::: sudo pip install --upgrade setuptools
+
+google:: impacket 0.9.24 pip install . error invalid command egg_info
+  
+  https://stackoverflow.com/questions/11425106/python-pip-install-fails-invalid-command-egg-info
