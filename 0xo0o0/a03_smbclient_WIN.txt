@@ -1,1 +1,1 @@
-::: smbclient -L  ipTargetHEre  -N          /// null session
+::: smbclient -L  ipTargetHEre  -N          /// null session   listar recursos de red

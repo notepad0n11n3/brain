@@ -3,12 +3,15 @@
 
           SMB         10.10.11.106    445    DRIVER           [*] Windows 10 Enterprise 10240 x64 (name:DRIVER) (domain:DRIVER) (signing:False) (SMBv1:True)
 
+::: crackmapexec smb ipTargedHere --shares         listar recursos compartidos a nivel de red
 
 
 
 // COMPRUEBA SI LAS CREDENCIALES SON VALIDAS EN EL SISTEMA, ifOutput [+]  credencialValida
 ::: crackmapexec smb ipTargedHere -u 'tony' -p 'liltony'
                                   -u 'svc-printer' -p '1edFg43012!!'
+
+::: crackmapexec smb iptargedHere -u 'null' -p ' ' --shares
 
 
 
