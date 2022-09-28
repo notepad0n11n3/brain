@@ -1,0 +1,32 @@
+  la baseDatosMetasploit permite guardar el avance de los scaneos, etc..
+
+
+###  PRIMER METODO...   baseDatosMetasploit
+
+  ::: msfdb         ///  muestra los parametros disponibles del programa msfdb
+
+          msfdb init     # start and initialize the database
+          msfdb reinit   # delete and reinitialize the database
+          msfdb delete   # delete database and stop using it
+          msfdb start    # start the database
+          msfdb stop     # stop the database
+          msfdb status   # check service status
+          msfdb run      # start the database and run msfconsole
+                      
+###  PRIMER METODO...   baseDatosMetasploit
+
+
+###  SEGUNDO METODO...   baseDatosMetasploit
+
+  ::: service postgresql status       /// verificar el estado de postgresql
+
+  ::: service postgresql start
+
+
+
+  ::: service postgresql stop     /// detener servicio postgresql
+
+###  SEGUNDO METODO...   baseDatosMetasploit
+
+
+::: systemctl enable postgresql       /// postgresql se ejecutara al encenderel sistema
