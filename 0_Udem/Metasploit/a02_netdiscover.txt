@@ -1,0 +1,7 @@
+
+::: sudo netdiscover -h
+
+::: sudo netdiscover        // escanea automaticamente la red return(IP--MAC_Address--MAC_Vendor)
+
+
+::: sudo netdiscover -l listaIp.txt
