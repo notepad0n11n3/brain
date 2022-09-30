@@ -29,12 +29,14 @@ pre  google.com/search?q=impacket
  ::: python2 get-pip.py
             
               which is not on PATH :'u
-      ::: echo 'export PATH=$PATH:/home/aeo8/.local/bin' >> $HOME/.bashrc o .zshrc      
+      ::: echo 'export PATH=$PATH:/home/aeo8/.local/bin' >> $HOME/.bashrc o .zshrc    no necesario POR_AHORA
 
 
 ### impacket0.9 ERROR python2 -m pip install .
 
- ::: pip install --upgrade setuptools    <<-- Ready <3
+ ::: export PATH=$PATH:/home/aeo8/.local/bin
+  :: pip2 install --upgrade setuptools    <<-- Ready <3
+
  ::: sudo pip install --upgrade setuptools    <<-- NO SUDO 
 
        WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
