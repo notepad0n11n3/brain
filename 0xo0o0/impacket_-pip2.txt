@@ -27,6 +27,12 @@ pre  google.com/search?q=impacket
  ::: curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
  ::: curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
  ::: python2 get-pip.py
+            
+              which is not on PATH :'u
+      ::: echo 'export PATH=$PATH:/home/aeo8/.local/bin' >> $HOME/.bashrc o .zshrc      
+
+      ::: vim /etc/environment
+       vim::  PATH=...:/home/aeo8/.local/bin       vimEx:: w ! sudo tee %
 
 
 ### impacket0.9 ERROR python2 -m pip install .
