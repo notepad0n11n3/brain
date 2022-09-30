@@ -31,14 +31,14 @@ pre  google.com/search?q=impacket
               which is not on PATH :'u
       ::: echo 'export PATH=$PATH:/home/aeo8/.local/bin' >> $HOME/.bashrc o .zshrc      
 
-      ::: vim /etc/environment
-       vim::  PATH=...:/home/aeo8/.local/bin       vimEx:: w ! sudo tee %
-
 
 ### impacket0.9 ERROR python2 -m pip install .
 
- ::: sudo pip install --upgrade setuptools
+ ::: pip install --upgrade setuptools    <<-- Ready <3
+ ::: sudo pip install --upgrade setuptools    <<-- NO SUDO 
 
-google:: impacket 0.9.24 pip install . error invalid command egg_info
+       WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+     google:: impacket 0.9.24 pip install . error invalid command egg_info
   
-  https://stackoverflow.com/questions/11425106/python-pip-install-fails-invalid-command-egg-info
+     https://stackoverflow.com/questions/11425106/python-pip-install-fails-invalid-command-egg-info
