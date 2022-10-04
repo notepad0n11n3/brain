@@ -9,7 +9,7 @@
 
         -n                 no aplica resolucion DNS
         -Pn   
-       -stats-every ?s     mostrar porcentajeScaneo cada n segundos
+       -stats-every ?s     mostrar porcentajeProgreso cada N segundos ('Ns')
 
      nmap -T1 -T2 -T3 -T4 -T5
 
