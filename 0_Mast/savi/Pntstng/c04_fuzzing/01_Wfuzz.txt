@@ -1,5 +1,6 @@
+::: wfuzz -c -L -t 400 --hc=404 --hl=170 -w /usr/share/dirbuster/wordlists/direcotry-list-2.3-medium.txt http://10.10.10.192/FUZZ      <3 <3 <3 
 
-::: wfuzz -c -L -t 400 --hc=400 --hl=170 -w /usr/share/wordlists/dirbuster/direcotry-list-2.3-medium.txt http://10.10.10.192/FUZZ
+::: wfuzz -c -L -t 400 --hc=404 --hl=170 -w /usr/share/wordlists/dirbuster/direcotry-list-2.3-medium.txt http://10.10.10.192/FUZZ
                        --sc=200
 
   -c       output en formato colorizado
