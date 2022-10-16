@@ -22,4 +22,4 @@
   ::: git show archivo.txt   // cambios en archivoEspecifico
 
   ::: git log       // historia entera del repositorio                      -p      --oneline
-  ::: git log archivo.txt     // historia entera de UN ARCHIVO              -p      --oneline
+  ::: git log archivo.txt     // historia entera de UN ARCHIVO <3 <3 <3     -p      --oneline
