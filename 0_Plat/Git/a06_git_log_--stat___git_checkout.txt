@@ -17,10 +17,7 @@
                                                                                   
   ::: git checkout  decab5feeae759e661c766d9771efc5f46a30327  archivoHere.txt   
 
-
   ::: git checkout master archivoHere.txt  // regresar estadoArchivo alUltimoCommitRamaMaster
-
-
 
 
 
