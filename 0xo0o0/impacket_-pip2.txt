@@ -35,10 +35,14 @@ pre  google.com/search?q=impacket
 
 ### impacket0.9 ERROR python2 -m pip install .
 
-                   ::: export PATH=$PATH:/home/aeo8/.local/bin
-                    :: pip2 install --upgrade setuptools        <<-- Ready <3 <3 <3 
+           ::: export PATH=$PATH:/home/aeo8/.local/bin
+            :: pip2 install --upgrade setuptools        <<-- Ready <3 <3 <3 
 
-                   ::: pip install --upgrade setuptools        <<-- NO SUDO...!!! 
+                 # pip2  $HOME/.zshrc   $HOME/.bashrc
+                   export PATH=$PATH:/home/aeo8/.local/bin
+
+
+           ::: pip install --upgrade setuptools        <<-- NO SUDO...!!! 
 
 
              WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
