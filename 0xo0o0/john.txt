@@ -1,0 +1,11 @@
+
+::: john --help | head -n 8
+
+
+
+### ZIP bruteForce 
+  ::: zip2john  backup.zip > hashesG
+
+  ::: john -wordlist=/usr/share/wordlists/rockyou.txt  hashesG
+
+  ::: john --show hashesG
