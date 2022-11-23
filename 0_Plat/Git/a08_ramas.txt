@@ -1,3 +1,4 @@
+        ::: git branch -a           'Lista los repositorios locales y remotos <3 <3 <3 <3 <3 :3 '
 
 # RENOMBRAR RAMA ACTUAL
   ::: git branch -m newNameCurrentBranch
@@ -17,6 +18,12 @@
 ::: git checkout -b nameBranchCabecera   
 
 
+
+# ELIMINAR RAMA
+  ::: git branch -d nameBranch
+  ::: git branch -D nameBranch                'fuerza el borrado'
+
+      ::: git push origin -d nameBranch      'Eliminar rama en repoRemoto'
 
 
 
