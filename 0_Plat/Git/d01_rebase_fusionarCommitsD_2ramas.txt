@@ -1,11 +1,11 @@
 
 ::: git checkout ramaExtra
 
- :: git rebase master        ('si... primero rebase en la ramaExtra es extra~o')
+ :: git rebase master        ('si... primero rebaseMaster en la ramaExtra... es extra~o')
 
  :: git checkout master 
 
- :: git rebase ramaExtra
+ :: git rebase ramaExtra       ('primero rebase a la ramaExtra, despues rebase al master o ramaFinal  o va a dar un errorExtra~o ')
 
 
 

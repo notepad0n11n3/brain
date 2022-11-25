@@ -1,5 +1,5 @@
 
-        ::: git branch -a           'Lista los repositorios locales y remotos <3 <3 <3 <3 <3 :3 '
+        ::: git branch -a  -r       'Lista los branch locales y remotos  -a --all -r --remote <3 <3 <3 <3 <3 :3 '
 
     #!#! TIENES QUE HACER PULL A CADA RAMA IGUAL QUE EN MASTER <-!!!
   !!!    ::: git pull origin nombre_BranchLIKEaMASTER     !!! 
@@ -13,7 +13,7 @@
   ::: git branch -d nameBranch
   ::: git branch -D nameBranch    fuerza el borrado
 
-  ::: git push origin -d nameBranch   'Eliminar rama del repoRemoto <3 <3 <3 '
+  ::: git push origin -d nameBranch   'Eliminar branch del repoRemoto <3 <3 <3 '
 
 
 ## MUESTRA RAMAS EXISTENTES Y SU HISTORIA
@@ -34,6 +34,10 @@
   'despu[es de ::: git pull origin nameBranch   con  ::: git branch show-branch --all   podemos ver  origin/nameBranch, usa checkout nameBranch y despues git branch.
 
 
-    ::: git fetch origin        'trae todas la ramas del repo remote'
-     :: git branch -r           'muestra las ramas remotas'
-      : git branch -a           'muestra todas las ramas locales y remotas'
+                                   ## TRAER OTRA RAMAS DE REPO_REMOTO...!!!
+    ::: git fetch origin        'puedeTraer todas la ramas del repo remoto, no losUpdates'      <3 <3 <3 <3 <3
+     :: git branch -r           'muestra las ramas remotas'                     <3 <3
+      : git branch -a           'muestra todas las ramas locales y remotas'     <3 <3 <3 <3
+
+
+

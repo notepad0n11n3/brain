@@ -1,4 +1,4 @@
-        ::: git branch -a           'Lista los repositorios locales y remotos <3 <3 <3 <3 <3 :3 '
+        ::: git branch -a  -r       'Lista los branch locales y remotos  -a --all -r --remote <3 <3 <3 <3 <3 :3 '
 
 # RENOMBRAR RAMA ACTUAL
   ::: git branch -m newNameCurrentBranch
@@ -30,6 +30,12 @@
 ## MUESTRA RAMAS EXISTENTES Y SU HISTORIA
   ::: git show-branch
   ::: git show-branch --all
+
+
+    ::: git fetch origin        'puedeTraer todas la ramas del repo remoto, no losUpdates'      <3 <3 <3 <3 <3 
+     :: git branch -r           'muestra las ramas remotas'                     <3 <3
+      : git branch -a           'muestra todas las ramas locales y remotas'     <3 <3 <3 <3
+
 
 ##  PUSH RAMAS A REPO_REMOTO
   ::: git checkout nameBranchHere
