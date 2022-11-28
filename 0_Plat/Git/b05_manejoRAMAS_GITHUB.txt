@@ -1,5 +1,6 @@
 
-        ::: git branch -a  -r       'Lista los branch locales y remotos  -a --all -r --remote <3 <3 <3 <3 <3 :3 '
+          ::: git branch -a     -r        -l        <3 <3 :3 
+            ' -a --all    -r --remote    -l --list  (si... list pa locales :u) '
 
     #!#! TIENES QUE HACER PULL A CADA RAMA IGUAL QUE EN MASTER <-!!!
   !!!    ::: git pull origin nombre_BranchLIKEaMASTER     !!! 

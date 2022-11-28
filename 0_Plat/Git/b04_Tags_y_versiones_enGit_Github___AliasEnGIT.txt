@@ -1,7 +1,6 @@
 
  !!! los cambiosRealizados en los tags no se muestran aparecen con GIT STATUS ojo<<--!!!
 
-
 ##   AGREGAR UN TAG/VERSION AL PROYECTO
 ::: git tag -a  v0.1Mango   -m "Mensaje tag/version likeA_commit"  9a6af59
 ::: git tag -a  nombre_tag  -m "Mensaje del tag likeA_commit"     id-del_commit
@@ -14,9 +13,14 @@
 
 
 
+###  Info sobre el TAB    <3 <3 <3 
+::: git tag
+::: git show tagName   ( git show v0.1_firtsVers )
+
+
+
 #### AGREAGAR TAGS/VERSIONES A REPOSITORIO REMOTO
     ::: git push origin --tags        <3 <3 <3 
-
 
 
 
