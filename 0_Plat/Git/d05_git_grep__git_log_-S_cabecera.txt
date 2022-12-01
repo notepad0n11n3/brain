@@ -1,0 +1,13 @@
+
+  ::: git grep mango        'string mango en archivos del repo'
+
+  ::: git grep -n mango           '# deLinea de la coincidencia'
+
+  ::: git grep -c mango           '# de repeticiones de mango en el repo , xArchivos'
+
+  ::: git grep -c "<p>"           '# de etiquetas p en archivosDelRepo'
+
+
+### grep en la historia de los commits
+
+  ::: git log -S "cabecera"

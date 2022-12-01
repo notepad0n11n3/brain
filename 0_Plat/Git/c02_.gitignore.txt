@@ -2,7 +2,8 @@
 
 
 
-# Comentarios para .gitignore
+# Comentarios para .gitignore  
+# :)
 
 app/bin/                      // ignorar la carpeta bin
 build/*.zip

@@ -6,9 +6,12 @@
         # para archivos nuevos no funciona, es obligado el git add newFile.txt   <<<...!!!
 
 
-##  CORREGIR EL MENSAJE DEL [ULTIMO COMMIT
 
-  ::: git commit --ammend
+##  CORREGIR EL MENSAJE DEL [ULTIMO COMMIT  'agrega m[as cambios al [ultimo commit'
+
+  ::: git add .
+
+  ::: git commit --amend
         nos dejara editar el ultimoMensajeCommit conVim <3 <3 <3 
         
-  ::: git commit --ammend -m "new_textHere"
+  ::: git commit --amend -m "new_textHere"

@@ -1,0 +1,5 @@
+
+  ::: git cherry-pick numberCommitHere     'traer unCommit a la ramaActual'
+
+
+'Es una mala pr[actica y da por culo aveces :u'
