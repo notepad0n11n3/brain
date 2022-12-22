@@ -9,7 +9,8 @@
 ::: crackmapexec smb ip_targetHere                       // 445
 
 
-::: locate .nse | xargs grep "categories" | grep -oP '".*?"' | sort -u
+::: locate .nse | xargs  grep  "categories"  | grep -oP '".*?"' | sort -u
+::: locate .nse | xargs grep -E "categories" | grep -oP '".*?"' | sort -u
 
         "auth"
         "broadcast"
