@@ -6,6 +6,7 @@
 
 ::: nmap -p- --open -sS --min-rate 5000 -vv -n -Pn ipHere -oG archivoSalidaGrepeable -stats-every 1s
                                                                                                   8s
+                                                                                    --stats-every 
 
         -n                 no aplica resolucion DNS
         -Pn   
