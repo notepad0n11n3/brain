@@ -3,6 +3,16 @@
 int main(void){
   
   /*
+   *
+   *        Escapar caracteres
+   *    \\:     Barra inclinada
+   *    \?:     Signo interrogaci[on
+   *    \":     Doble comilla
+   *    \000:   N[umero octal
+   *    \xhh:   N[umero hexadecimal
+   *    \0:     Cero, nulo.
+   *
+   *
    *    \a: Alarma
    *    \b: Retroceso de espacio
    *    \f: Avance de p[agina
@@ -11,11 +21,6 @@ int main(void){
    *    \t: tabulaci[on
    *    \v: tabulaci[on vertical
    *
-   *    \\:     Barra inclinada
-   *    \?:     Signo interrogaci[on
-   *    \000:   N[umero octal
-   *    \xhh:   N[umero hexadecimal
-   *    \0:     Cero, nulo.
    *
    */
 
