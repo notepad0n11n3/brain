@@ -7,8 +7,8 @@
 
           // entre " "
           // libreria propia o descargada en la carpeta del proyecto
-#include "mi_directiva.h"
-#include "./mi_directiva.h"
+#include "a05_mi_directiva.h"
+#include "./a05_mi_directiva.h"
 
 
 // funcion con macro <3 <3 <3 ...
