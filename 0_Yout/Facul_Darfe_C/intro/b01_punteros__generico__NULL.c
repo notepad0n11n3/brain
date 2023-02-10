@@ -9,7 +9,7 @@
 
 int main(int argc, char *argv[]){
 
-
+  int *puntero_BuenasPracticas = NULL;  // es una buena pr[actica iniciar un puntero con NULL, para evitar basura de memoria
 
   // puntero GENERICO
 

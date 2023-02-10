@@ -15,6 +15,8 @@ int main(void){
    *  %s    El dato a mostrar es una cadena de caracteres
    *  %lf   El dato se considera tipo double
    *
+   *  %p    Direcci[on de memoria de una variable/puntero
+   *
    */
 
   return 0;
