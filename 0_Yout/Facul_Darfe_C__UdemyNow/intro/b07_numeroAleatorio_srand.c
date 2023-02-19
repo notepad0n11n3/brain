@@ -2,6 +2,9 @@
 
 #include <stdlib.h>
 
+  //      user_random = user_firts + rand() % (user_last - user_firts + 1);
+
+
 
     //      generar numero rango [A;B]
   //    num = A + rand() % (B - A + 1);
