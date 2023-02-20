@@ -31,6 +31,9 @@ int main(){
 
   for(int i=1; i<=10; i++){
     num = 5 + rand() % (93-5+1);
+
+  // aleatorio = primer_numero + rand() % (segundo_numero - primer_numero + 1);
+
     fprintf(stdout, "\n==> %d\n", num);
   }
 
