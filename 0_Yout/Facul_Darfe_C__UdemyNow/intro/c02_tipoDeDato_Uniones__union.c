@@ -6,7 +6,7 @@ typedef struct{
   char *nombre;
   int edad;
   union{
-    long fijo, cel, fax;
+    long fijo, cel, fax;    // si modificas 1 modificas todos, usan el mismo espacio en memoria... eso creo.
   }telefono;
 }tPersona;
 
