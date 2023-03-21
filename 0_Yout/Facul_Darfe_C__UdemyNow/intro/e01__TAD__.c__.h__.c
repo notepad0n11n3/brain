@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "e02.h"
 
-   //    ::: gcc  -o  e04_test  e0*.c
+   //    ::: gcc  e0*.c  -o  e04_test  
 
 int main(int argc, char *argv[]){
 
