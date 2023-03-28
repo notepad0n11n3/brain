@@ -1,0 +1,9 @@
+
+
+::: nasm  -f  elf   mango.asm                       ==>  mango.o
+::: nasm  -f  elf   mango.asm  -o mochiMango.o      ==>  mochiMango.o           
+
+
+::: ld -m elf_i386 -s -o finale mango.o
+
+::: ld -m elf_i386 -s mango.o  -o mangoFinale
