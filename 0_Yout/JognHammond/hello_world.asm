@@ -1,11 +1,12 @@
 ; hellow world.asm
 
 ; XD,   esto esta mucho mejor.
-  ;     ::: python3
-  ;   python3:: 0xa  
-  ;   python3:: 0xb    
+  ;  ::: python3
+  ;   python3:: 0xa   '10'  !=!=   python3:: chr(0xa)   '\n'
+  ;   python3:: 0xd   '13'  !=!=   python3:: chr(0xd)   '\r'
 
-  ; locate unistd_32.h         ('asm... <- <3 <3 <3') .... <3 <3 <3 ... ! ! !
+  ; ::: locate unistd_32.h         ('asm... <- <3 <3 <3') .... <3 <3 <3 ... ! ! !
+  ; ::: vim unistd_32.h
 
 global _start
 
