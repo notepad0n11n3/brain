@@ -7,7 +7,7 @@ IMUL inm, op1, op2         op2 <- op1 * inm         inm: constante/valorInmediat
 
 
 IMULL op1               %EDX%EAX <- op1 * %EAX       op1: memor. o regis. (Enteros)    IMULL(%EBX)
-
+         "guardamos en la concatenaci[on de registros EDX y EAX"
 
 MULL op1                %EDX%EAX <- op1 * %EAX       op1: memor. o regis. (Naturales)  MULL(%EBX)
 

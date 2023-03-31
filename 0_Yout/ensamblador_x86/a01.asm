@@ -1,7 +1,9 @@
 section .data
 
 msg db "Welcome Back!!!",0xA,0xD
+;mango db "Welcome Back!!!",0xA,0xD
 len equ $ - msg
+;len equ $ - mango
 
 section .text
   global _start
@@ -12,6 +14,8 @@ _start:
 
   mov ebx, 1      ;stdout
   mov ecx, msg    ;msg pantalla
+; mov ecx, mango    
+
   mov edx, len    ;longitud del mensaje
   int 0x80        ;llamada al sistema de interrupciones
 
