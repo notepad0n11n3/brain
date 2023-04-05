@@ -10,7 +10,7 @@
 
 global _start
 
-section .text:
+section .text
 _start:
  mov eax, 0x4             ; use the write syscall 
  mov ebx, 1               ; use stdout as the fd `$(man 2 write)`
@@ -23,7 +23,7 @@ _start:
  mov ebx, 0
  int 0x80 
 
-section .data:
+section .data
   message: db "Hello world!",0xA
   message_length: equ $-message
 
