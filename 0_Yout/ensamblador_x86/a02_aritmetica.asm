@@ -11,8 +11,13 @@ inc eax     ; incrementar
 add eax, ebx
          ;      eax = eax + ebx      eax += ebx  
 
+          add eax, '0'
+
 sub eax, ebx
          ;      eax = eax - ebx      eax -= ebx
+
+
+          sub eax, '0'
 
 
 mul
