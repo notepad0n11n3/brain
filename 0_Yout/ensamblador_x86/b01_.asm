@@ -4,6 +4,8 @@ SYS_PRINT equ 4
 STDIN equ 0
 STDOUT equ 1
 
+SALTO_NEE db 0xA
+
 section .data
   msg1 db "Ingrese numero 1: ",0xA
   len1 equ $-msg1
