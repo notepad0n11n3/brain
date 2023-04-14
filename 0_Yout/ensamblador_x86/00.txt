@@ -5,6 +5,8 @@
 :::  ld  -m elf_i386  -s ./main.o  -o ./main.exe
 
 
+
+
 ::: nasm  -f  elf   mango.asm                       ==>  mango.o
 ::: nasm  -f  elf   mango.asm  -o mochiMango.o      ==>  mochiMango.o           
 
