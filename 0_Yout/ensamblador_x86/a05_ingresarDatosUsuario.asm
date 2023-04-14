@@ -1,11 +1,14 @@
 section .data
+;segment .data
   intro_number db 0xA,0xA,0x9,0x9,"Ingrese un numero: "
   intro_number_length equ $ - intro_number
 
 section .bss
+;segment .bss
   extraNumber resb 5
 
 section .text
+;segment .text
   global _start
   _start:
     mov eax, 4

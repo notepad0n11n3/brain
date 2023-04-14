@@ -1,4 +1,5 @@
 section .data
+;segment .data
   msg1 db 0xA,0xA,0x9,"La suma de 4 + 5: "
   len1 equ $ - msg1
 
