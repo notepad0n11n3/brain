@@ -1,0 +1,12 @@
+
+# mostrar ruta absoluta de un binario <3
+
+      ::: which whoami
+       => /usr/bin/whoami
+
+      ::: command -v whoami
+       => /usr/bin/whoami
+
+# ls solo directorios
+
+      ::: ls -d /*
