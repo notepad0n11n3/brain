@@ -1,0 +1,16 @@
+
+
+# CREAR NUEVO USUARIO
+  ::: useradd newUserName  -s /bin/bash  -d /home/newUserDir
+
+   :: cat /etc/passwd | grep "newUserName"
+
+# ASIGNAR CONTRASE~A y CAMBIAR CONTRASE~A DE USUARIO
+
+   ROOT:: passwd newUserName
+
+# ELIMINAR USUARIO
+
+   ::: sudo userdel newUserName
+
+   ::: sudo userdel newUserName  --remove home    -remove-all-files

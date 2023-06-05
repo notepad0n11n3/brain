@@ -1,0 +1,24 @@
+
+# CREAR NUEVO GRUPO
+
+  ::: groupadd nuevoGrupo
+
+   :: cat /etc/group | grep "nuevoGrupo"
+
+
+# AGREGAR USUARIO A UN GRUPO
+
+    ::: usermod -a -G nuevoGrupo nombreUsuario
+
+     :: cat /etc/group | grep "nuevoGrupo"
+
+
+    ::: sudo  adduser  usuario  grupo   ejem:' ::: sudo adduser usuario sudo '
+
+# ELIMINAR USUARIO DE UN GRUPO
+
+    ::: sudo deluser usuario grupo
+
+# ELIMINAR GRUPO
+
+    ::: sudo groupdel nuevoGrupo
