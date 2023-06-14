@@ -1,0 +1,9 @@
+
+# Mostrar los permisos especiales
+  ::: lsattr
+
+
+# Modificar       ::: man chattr
+
+  ::: sudo chattr +i  ./fileName
+  ::: chattr -i  ./fileName
