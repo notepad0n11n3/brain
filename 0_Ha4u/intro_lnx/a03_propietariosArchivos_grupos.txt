@@ -8,9 +8,11 @@
   ::: chown :root ./file.txt
 
 
-      ::: chown newpropietario:newGrupo ./file.txt
+# CAMBIAR  PROPIETARIO Y USUARIO
 
-      ::: chown root:root ./file.txt
+  ::: chown newpropietario:newGrupo ./file.txt
+
+  ::: chown root:root ./file.txt
 
 
 # CAMBIAR LOS PERMISOS O PROPIETARIOS DE TODOS LOS ARCHIVOS Y SUBDIRECTORIOS DENTRO DE UN DIRECTORIO
