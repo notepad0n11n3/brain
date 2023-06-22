@@ -1,0 +1,29 @@
+
+::: which getcap      'getcap lista las capabilities del sistema <3 '
+
+::: getcap -r / 2>/dev/null              
+
+        -r    'recursivo'
+         /    raiz de sistema
+
+
+
+
+# AGREGAR CAPABILITIE
+
+  :::  which  python3.11
+
+   ::  setcap  cap_setuid+ep  /usr/bin/python3.11
+
+   ::  getcap  /usr/bin/python3.11
+
+
+   :: /usr/bin/python3.11
+   p: import os
+   p: os.setuid(0)
+   p: os.system("bash")
+
+
+# REMOVER CAPABILITIE
+
+  :::  setcar -r /usr/bin/python3.11   '-r  remove'
