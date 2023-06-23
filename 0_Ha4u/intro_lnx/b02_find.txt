@@ -1,0 +1,19 @@
+
+
+
+
+::: find / -name nameFile\*  2>/dev/null            '\* expresion regular * <3...'
+::: find / -name \*nameFile\*  2>/dev/null            '\* expresion regular * <3...'
+::: find / -name \*nam\*ile\*  2>/dev/null            '\* expresion regular * <3...'
+
+
+::: find / -type f -writable -user root 2>/dev/null
+ 
+::: find / -type f -executable -user root 2>/dev/null
+
+::: find / -group root 2>/dev/null
+
+
+::: find / -perm -4000  2>/dev/null
+::: find / -perm 755  2>/dev/null
+::: find / -perm 777  2>/dev/null
