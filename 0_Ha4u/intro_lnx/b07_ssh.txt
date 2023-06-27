@@ -1,0 +1,21 @@
+
+
+
+
+::: cd ~/.ssh/
+ :: ssh-keygen
+
+
+
+::: ssh [username]@[remoteServer IP or hostname]
+
+
+{{
+  ::: sudo service ssh status
+
+  ::: sudo service ssh start
+
+  ::: sudo service ssh stop
+}}
+
+    extra*    sudo netstat -ltnp | grep sshd
