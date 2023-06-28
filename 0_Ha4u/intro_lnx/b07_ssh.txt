@@ -6,8 +6,16 @@
  :: ssh-keygen
 
 
+::: cp  id_rsa.pub authorized_keys
 
-::: ssh [username]@[remoteServer IP or hostname]
+
+
+::: ssh  [username]@[remoteServer IP or hostname]
+
+::: ssh  -p [Puerto]  userName@ip_address
+
+
+::: ssh -p numberPort  -i sshkey.private  userName@ip_address  
 
 
 {{
