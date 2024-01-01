@@ -1,0 +1,5 @@
+
+
+::: curl -s -X GET/POST "http://targedWeb.here"
+
+::: curl -s -X GET/POST -I -k "http://targedWeb.here"
