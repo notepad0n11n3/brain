@@ -1,0 +1,17 @@
+
+::: sudo apt-get install build-essential libssl-dev zlib1g-dev
+
+::: wget https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz
+
+::: tar -xzf Python-2.7.x.tgz
+::: cd Python-2.7.x
+
+::: ./configure --prefix=/usr/local
+
+::: make 
+
+::: sudo make install
+
+::: python2 --version				('pre sudo updatedb "Maybe"') 
+
+
