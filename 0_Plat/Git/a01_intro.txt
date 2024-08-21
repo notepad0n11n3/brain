@@ -1,4 +1,7 @@
 
+::: git add . && git commit -m "." && git push origin master
+																															--force   (x si la cagas)
+
 ::: git log --all --graph --decorate --stat --oneline -p
 
 
