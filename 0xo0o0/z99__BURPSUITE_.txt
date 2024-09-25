@@ -10,7 +10,12 @@
 		Ctrl-space			'SEND... enviar... <3 <3 <3'
 
 
-
 		Ctrl-Shift-t		'salta a la pestana Targed'
 		Ctrl-Shift-i		'salta a la pestana Intruder'
 		Ctrl-Shift-i		'salta a la pestana Intruder'
+
+
+### URL ENCODING
+		
+		Ctrl u		Encoding						( previa seleccion... <3 <3 <3 )
+		Ctrl Shift u		Desencodear  	( previa seleccion... <3 <3 <3 )
