@@ -1,0 +1,24 @@
+https://devbuilds.uber.com/
+
+> GET / HTTP/1.1
+> Host: devbuilds.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 403 Forbidden
+< Date: Fri, 13 Dec 2024 05:04:32 GMT
+< Referrer-Policy: strict-origin-when-cross-origin
+< X-Xss-Protection: 1; mode=block
+< X-Frame-Options: SAMEORIGIN
+< Strict-Transport-Security: max-age=31536000
+< X-Amz-Bucket-Region: us-east-1
+< X-Amz-Cf-Id: rshU5HK0uQ2lH0DudYsh4aaBrLleN9o-UFcxLVRu9Jv4yb2xNJOqLw==
+< Server: AmazonS3
+< X-Cache: Error from cloudfront
+< Via: 1.1 bd6d64b5fc1b0addd47d73ecb14f74d0.cloudfront.net (CloudFront)
+< X-Amz-Cf-Pop: LIM50-P1
+< X-Content-Type-Options: nosniff
+< Vary: Origin
+< Content-Type: application/xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>4AEASA5XAK1GV7PR</RequestId><HostId>4xMc188FSv1dBArkOjdoxoXVezyFZrPqssKG1LHEXPseozs39xpBoiVWmQSXWz81e1UMUNq4Fuw=</HostId></Error>

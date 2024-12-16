@@ -1,0 +1,30 @@
+https://www.youtube.com/watch?v=l8iXMgk2nnY&t=595s
+
+Ready:...
+
+																					sudo apt-get install assetfinder httprobe -y
+
+																					tar zxvf ./meg-linux-amd64-0.3.0.tgz
+
+::: assetfinder --subs-only uber.com > domains
+
+ :: cat ./domains | httprobe | tee hosts
+
+ :: meg --help							('https://github.com/tomnomnom/meg')
+
+ :: ./meg -d 1000 -v /						' el / es raro :u , OJO A LA CARPETA out QUE SE VA A CREAR... <3 '
+
+ :: cd ./out
+							: vim index							"interesante pero no necesario este paso"
+
+ :: grep -Hnri uberinternal * | vim -
+
+ vim:: w results
+ vim:: %! sort -u
+ vim:: %! grep -v Content-Secu
+ vim:: %! grep -vi csp
+
+
+
+
+

@@ -1,0 +1,24 @@
+http://gslink.uber.com/
+
+> GET / HTTP/1.1
+> Host: gslink.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< X-Amz-Cf-Pop: LIM50-P2
+< Content-Length: 167
+< Location: https://gslink.uber.com/
+< Via: 1.1 3ada05fad048eee420193600539b1d16.cloudfront.net (CloudFront)
+< X-Amz-Cf-Id: iorYBxl1YCkcOFue5zAbmr3sIyMgDN5hO6oJfCxo63kX6aSO4Vb9eQ==
+< Server: CloudFront
+< Date: Fri, 13 Dec 2024 05:04:38 GMT
+< Content-Type: text/html
+< X-Cache: Redirect from cloudfront
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>CloudFront</center>
+</body>
+</html>

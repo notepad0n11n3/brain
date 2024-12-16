@@ -1,0 +1,20 @@
+https://settlement-it.uber.com/
+
+> GET / HTTP/1.1
+> Host: settlement-it.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 302 Found
+< Content-Type: text/html; charset=UTF-8
+< X-Content-Type-Options: nosniff
+< Date: Fri, 13 Dec 2024 05:04:34 GMT
+< Location: https://settlement-it.uber.com/client/login?reset=1
+< Expires: Fri, 13 Dec 2024 05:04:33 GMT
+< Referrer-Policy: no-referrer-when-downgrade
+< Server: nginx
+< X-Permitted-Cross-Domain-Policies: none
+< Cache-Control: no-cache
+< Cache-Control: no-cache
+< Strict-Transport-Security: max-age=31536000; includeSubDomains
+< X-Xss-Protection: 1; mode=block
+

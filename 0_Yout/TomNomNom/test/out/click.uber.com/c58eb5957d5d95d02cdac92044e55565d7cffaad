@@ -1,0 +1,28 @@
+https://click.uber.com/
+
+> GET / HTTP/1.1
+> Host: click.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 404 Not Found
+< Content-Type: text/plain
+< Vary: Accept-Encoding
+< X-Uber-Edge: e4-dca18:w:992708303,ufe:production-cloud-gateway:compute-0:dca24,ufe:production-cloud-ecg-l7:default:gru1
+< Cache-Control: max-age=0
+< X-Xss-Protection: 1; mode=block
+< Via: 1.1 google
+< Date: Fri, 13 Dec 2024 05:04:32 GMT
+< X-Envoy-Upstream-Service-Time: 372
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+< X-Frame-Options: SAMEORIGIN
+< Strict-Transport-Security: max-age=31536000
+< X-Content-Type-Options: nosniff
+< Server: ufe
+
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>

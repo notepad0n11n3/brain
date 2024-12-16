@@ -1,0 +1,29 @@
+https://uber.com/
+
+> GET / HTTP/1.1
+> Host: uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< X-Uber-Edge: e4-dca22:w:1332397463,ufe:production-cloud-gateway:compute-0:dca24,ufe:production-cloud-ecg-l7:default:gru1
+< X-Frame-Options: SAMEORIGIN
+< X-Content-Type-Options: nosniff
+< X-Xss-Protection: 1; mode=block
+< Vary: Accept-Encoding
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+< Cache-Control: max-age=0
+< Strict-Transport-Security: max-age=31536000
+< Content-Type: text/html
+< Location: https://www.uber.com/
+< X-Envoy-Upstream-Service-Time: 114
+< Server: ufe
+< Via: 1.1 google
+< Date: Fri, 13 Dec 2024 05:04:31 GMT
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>

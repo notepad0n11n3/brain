@@ -1,0 +1,11 @@
+https://t.uber.com/
+
+> GET / HTTP/1.1
+> Host: t.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 302 Found
+< Location: https://uber.onelogin.com/trust/saml2/http-post/sso/8dfc571e-4f3e-4c34-ba31-02ee8b5c122c
+< Date: Fri, 13 Dec 2024 05:04:32 GMT
+< Content-Length: 0
+

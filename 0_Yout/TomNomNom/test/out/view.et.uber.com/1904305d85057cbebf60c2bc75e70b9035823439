@@ -1,0 +1,24 @@
+https://view.et.uber.com/
+
+> GET / HTTP/1.1
+> Host: view.et.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 302 Found
+< Content-Security-Policy: default-src 'self'; frame-ancestors 'self'
+< Referrer-Policy: origin-when-cross-origin
+< Date: Fri, 13 Dec 2024 05:04:30 GMT
+< Content-Length: 128
+< X-Frame-Options: SAMEORIGIN
+< X-Content-Type-Options: nosniff
+< Permissions-Policy: geolocation=(self), microphone=()
+< Set-Cookie: strict
+< Cache-Control: no-cache, must-revalidate, max-age=0, no-store, private
+< X-Xss-Protection: 1; mode=block
+< Content-Type: text/html; charset=utf-8
+< Location: /Error.aspx
+< Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="/Error.aspx">here</a>.</h2>
+</body></html>

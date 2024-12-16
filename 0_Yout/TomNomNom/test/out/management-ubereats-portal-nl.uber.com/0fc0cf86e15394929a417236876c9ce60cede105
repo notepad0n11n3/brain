@@ -1,0 +1,21 @@
+https://management-ubereats-portal-nl.uber.com/
+
+> GET / HTTP/1.1
+> Host: management-ubereats-portal-nl.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 302 Found
+< Set-Cookie: backend=otm4aocrfemrlh590ab7idl8r9; path=/; secure; SameSite=Lax
+< X-Content-Type-Options: nosniff
+< Content-Type: text/html; charset=UTF-8
+< Date: Fri, 13 Dec 2024 05:04:34 GMT
+< X-Permitted-Cross-Domain-Policies: none
+< Expires: Fri, 13 Dec 2024 05:04:33 GMT
+< Cache-Control: no-cache
+< Cache-Control: no-cache
+< Strict-Transport-Security: max-age=31536000; includeSubDomains
+< Server: nginx
+< Location: https://management-ubereats-portal-nl.uber.com/site/login
+< Referrer-Policy: no-referrer-when-downgrade
+< X-Xss-Protection: 1; mode=block
+

@@ -1,0 +1,15 @@
+https://cn.cfe.uber.com/
+
+> GET / HTTP/1.1
+> Host: cn.cfe.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 403 Forbidden
+< Content-Type: text/html; charset=UTF-8
+< Content-Length: 134
+< Via: 1.1 google
+< Date: Fri, 13 Dec 2024 05:04:30 GMT
+< X-Uber-Edge: gcp:production:default
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden

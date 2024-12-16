@@ -1,0 +1,19 @@
+https://accessibility.uber.com/
+
+> GET / HTTP/1.1
+> Host: accessibility.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< X-Xss-Protection: 1; mode=block
+< X-Uber-Edge: ufe:production-cloud-ecg-l7:default:gru2
+< Server: ufe
+< Content-Length: 0
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+< Location: https://www.uber.com/about/accessibility
+< Strict-Transport-Security: max-age=31536000
+< X-Content-Type-Options: nosniff
+< Vary: Accept-Encoding
+< Date: Fri, 13 Dec 2024 05:04:39 GMT
+< Via: 1.1 google
+

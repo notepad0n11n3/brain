@@ -1,0 +1,12 @@
+http://uber.com/
+
+> GET / HTTP/1.1
+> Host: uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 429 Too Many Requests
+< Content-Length: 142
+< Content-Type: text/html; charset=UTF-8
+< Date: Fri, 13 Dec 2024 05:04:40 GMT
+
+<!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>429</title>429 Too Many Requests

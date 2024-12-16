@@ -1,0 +1,13 @@
+http://cn-geo1.uber.com/
+
+> GET / HTTP/1.1
+> Host: cn-geo1.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Date: Fri, 13 Dec 2024 05:04:41 GMT
+< Content-Type: text/html; charset=UTF-8
+< Cache-Control: private
+< Location: https://cn-geo1.uber.com:443/
+< Content-Length: 0
+

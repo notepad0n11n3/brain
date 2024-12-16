@@ -1,0 +1,26 @@
+https://dc-dca.uber.com/
+
+> GET / HTTP/1.1
+> Host: dc-dca.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 307 Temporary Redirect
+< Location: https://www.uber.com/
+< X-Envoy-Upstream-Service-Time: 0
+< X-Xss-Protection: 1; mode=block
+< Server: ufe
+< Vary: Accept-Encoding
+< Date: Fri, 13 Dec 2024 05:04:30 GMT
+< Content-Type: text/html
+< Cache-Control: no-store, max-age=0
+< Strict-Transport-Security: max-age=31536000
+< X-Content-Type-Options: nosniff
+< X-Uber-Edge: e4-dca18:w:997788248,ufe:production-dclb-l7:compute-0:dca11
+
+<html>
+<head><title>307 Temporary Redirect</title></head>
+<body>
+<center><h1>307 Temporary Redirect</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>

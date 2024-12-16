@@ -1,0 +1,59 @@
+https://lert.uber.com/
+
+> GET / HTTP/1.1
+> Host: lert.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 200 OK
+< Set-Cookie: CookieConsentPolicy=0:1; path=/; expires=Sat, 13-Dec-2025 05:04:38 GMT; Max-Age=31536000; secure
+< Set-Cookie: LSKey-c$CookieConsentPolicy=0:1; path=/; expires=Sat, 13-Dec-2025 05:04:38 GMT; Max-Age=31536000; secure
+< Date: Fri, 13 Dec 2024 05:04:39 GMT
+< Content-Security-Policy: upgrade-insecure-requests
+< Content-Security-Policy: frame-ancestors 'self'
+< Last-Modified: Fri, 13 Dec 2024 05:04:39 GMT
+< Expires: Fri, 13 Dec 2024 05:04:39 GMT
+< Content-Type: text/html;charset=UTF-8
+< X-Frame-Options: ALLOW-FROM 'self'
+< X-Content-Type-Options: nosniff
+< X-Request-Id: 3a7876c41e45c8a3c1a04a48b04c9ba7
+< Server: sfdcedge
+< X-Sfdc-Request-Id: 3a7876c41e45c8a3c1a04a48b04c9ba7
+< P3p: CP="CUR OTR STA"
+< Vary: Accept-Encoding
+< Cache-Control: public,must-revalidate,max-age=0,s-maxage=600
+< Strict-Transport-Security: max-age=63072000; includeSubDomains
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><script src="/static/111213/js/perf/stub.js" type="text/javascript"></script><script src="/faces/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.AjaxScript?rel=1733860421000" type="text/javascript"></script><script src="/jslibrary/1725859385252/ui-sfdc-javascript-impl/SfdcCore.js" type="text/javascript"></script><script src="/static/111213/js/picklist4.js" type="text/javascript"></script><script src="/jslibrary/1698336665252/sfdc/VFState.js" type="text/javascript"></script><script>(function(UITheme) {
+    UITheme.getUITheme = function() { 
+        return UserContext.uiTheme;
+    };
+}(window.UITheme = window.UITheme || {}));</script></head><body>
+	
+    <style type="text/css">
+    	body { background: #f8f8f8 !important;}
+		html { background-color: #f8f8f8; }
+		header { background: #000000;
+				 font: #FFFFFF;}
+    </style>
+    <script type="text/javascript">
+     window.addEventListener('load', function() {
+            let lang = window.navigator.languages ? window.navigator.languages[0] : null;
+            lang = lang || window.navigator.language || window.navigator.browserLanguage || window.navigator.userLanguage;
+        
+            let language = lang;
+            if (language.indexOf('-') !== -1)
+                language = language.replace('-','_');
+            
+            redirect(language);
+        });
+    </script>
+<form id="j_id0:j_id2" name="j_id0:j_id2" method="post" action="/BrowserRedirectPage" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id0:j_id2" value="j_id0:j_id2" />
+<script id="j_id0:j_id2:j_id3" type="text/javascript">redirect=function(language){A4J.AJAX.Submit('j_id0:j_id2',null,{'similarityGroupingId':'j_id0:j_id2:j_id3','parameters':{'j_id0:j_id2:j_id3':'j_id0:j_id2:j_id3','language':(typeof language!='undefined'&&language!=null)?language:''} } )};
+</script><span id="j_id0:j_id2:out"></span><div id="j_id0:j_id2:j_id7"></div>
+</form><span id="ajax-view-state-page-container" style="display: none"><span id="ajax-view-state" style="display: none"><input type="hidden"  id="com.salesforce.visualforce.ViewState" name="com.salesforce.visualforce.ViewState" value="i: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" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateVersion" name="com.salesforce.visualforce.ViewStateVersion" value="202412101953413454" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateMAC" name="com.salesforce.visualforce.ViewStateMAC" value="AGV5SnViMjVqWlNJNklrWk9WSEJrZEZFeWQydDJVV2h4V0VwallWaGFYMnRTWDJOMU4yZGFVakJoUTBGSk1HbHhUbFJQWTJkY2RUQXdNMlFpTENKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUlzSW10cFpDSTZJbnRjSW5SY0lqcGNJakF3UkRNMk1EQXdNREF3YWpkNE0xd2lMRndpZGx3aU9sd2lNREpITUdVd01EQXdNREJVWlVoc1hDSXNYQ0poWENJNlhDSjJabk5wWjI1cGJtZHJaWGxjSWl4Y0luVmNJanBjSWpBd05UTTJNREF3TURBeWIyNXhaVndpZlNJc0ltTnlhWFFpT2xzaWFXRjBJbDBzSW1saGRDSTZNVGN6TkRBMk5qSTNPVEF6TVN3aVpYaHdJam93ZlE9PS4uam9oZkdoX2JEeE9Oa2QzZUJvdlhKU0JlTGxGOTl1RFdVUjZFUjJFS2xRMD0=" /></span></span><script type="text/javascript">Sfdc.onReady(function(){
+	SfdcApp && SfdcApp.Visualforce && SfdcApp.Visualforce.VSManager && SfdcApp.Visualforce.VSManager.vfPrepareForms(["j_id0:j_id2"]);
+
+});</script></body></html>

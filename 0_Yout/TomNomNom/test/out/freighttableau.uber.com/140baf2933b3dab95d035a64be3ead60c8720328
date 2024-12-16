@@ -1,0 +1,28 @@
+https://freighttableau.uber.com/
+
+> GET / HTTP/1.1
+> Host: freighttableau.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 403 Forbidden
+< Vary: Accept-Encoding
+< Cache-Control: max-age=0
+< X-Xss-Protection: 1; mode=block
+< X-Frame-Options: SAMEORIGIN
+< Content-Type: text/html
+< X-Uber-Edge: e4-dca22:w:1339399124,ufe:production-cloud-gateway:compute-0:dca11,ufe:production-cloud-ecg-l7:default:gru2
+< Strict-Transport-Security: max-age=31536000
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+< Server: ufe
+< X-Content-Type-Options: nosniff
+< Date: Fri, 13 Dec 2024 05:04:39 GMT
+< X-Envoy-Upstream-Service-Time: 113
+< Via: 1.1 google
+
+<html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>

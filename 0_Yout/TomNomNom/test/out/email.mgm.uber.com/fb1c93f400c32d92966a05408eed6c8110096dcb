@@ -1,0 +1,13 @@
+https://email.mgm.uber.com/
+
+> GET / HTTP/1.1
+> Host: email.mgm.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 404 Not Found
+< X-Content-Type-Options: nosniff
+< Content-Length: 19
+< Content-Type: text/plain; charset=utf-8
+< Date: Fri, 13 Dec 2024 05:04:32 GMT
+
+404 page not found

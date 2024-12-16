@@ -1,0 +1,24 @@
+https://y.uber.com/
+
+> GET / HTTP/1.1
+> Host: y.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+< Content-Length: 55
+< X-Content-Type-Options: nosniff
+< Via: 1.1 google
+< Strict-Transport-Security: max-age=31536000
+< Date: Fri, 13 Dec 2024 05:04:31 GMT
+< X-Uber-Edge: e4-dca23:w:1067783870,ufe:production-cloud-gateway:compute-0:dca22,ufe:production-cloud-ecg-l7:default:gru2
+< Server: ufe
+< Location: https://www.uber.com
+< X-Frame-Options: SAMEORIGIN
+< X-Xss-Protection: 1; mode=block
+< Content-Type: text/html; charset=utf-8
+< Cache-Control: max-age=0
+< X-Envoy-Upstream-Service-Time: 221
+
+<a href="https://www.uber.com">Moved Permanently</a>.
+

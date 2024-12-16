@@ -1,0 +1,11 @@
+https://p.uber.com/
+
+> GET / HTTP/1.1
+> Host: p.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 302 Found
+< Location: https://www.ubereats.com/ch
+< Date: Fri, 13 Dec 2024 05:04:35 GMT
+< Content-Length: 0
+

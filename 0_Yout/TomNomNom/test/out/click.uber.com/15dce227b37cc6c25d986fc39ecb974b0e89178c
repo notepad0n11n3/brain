@@ -1,0 +1,14 @@
+http://click.uber.com/
+
+> GET / HTTP/1.1
+> Host: click.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Server: ufe
+< Content-Length: 0
+< Via: 1.1 google
+< Location: https://click.uber.com/
+< Vary: Accept-Encoding
+< Date: Fri, 13 Dec 2024 05:04:32 GMT
+

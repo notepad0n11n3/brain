@@ -1,0 +1,20 @@
+https://merchants.uber.com/
+
+> GET / HTTP/1.1
+> Host: merchants.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 302 Found
+< Vary: Accept-Encoding
+< Cf-Ray: 8f136a0ea8f66d65-LIM
+< Cache-Control: s-maxage=60,stale-while-revalidate=5
+< Location: https://merchants.ubereats.com
+< X-Content-Type-Options: nosniff
+< Set-Cookie: BIGipServerab64web-nginx-app_https=!wN68v98/1dxAHk9T1L58sRLd9whwR9l1ACv0js+LPpfrfy8E4Y8AvOwlFpp7MWsnN23DJybzhxKccQY=; Path=/; Version=1; Secure; Httponly
+< Set-Cookie: __cf_bm=MhbmEaGFNe7xN64UHzCyildmGwc6Vr0IHTeNCEn83e0-1734066276-1.0.1.1-TAASQYhAyXcP0oEp8uBKhm7tKFG9_6xdYgRCjYbPt.h8or_8lPHxf8amOz_hNDXGO6jZ.lD8VtvxzeYUxuhLNQ; path=/; expires=Fri, 13-Dec-24 05:34:36 GMT; domain=.merchants.uber.com; HttpOnly; Secure; SameSite=None
+< Server: cloudflare
+< Content-Type: text/html; charset=UTF-8
+< Cf-Cache-Status: DYNAMIC
+< Date: Fri, 13 Dec 2024 05:04:36 GMT
+
+<html><head><meta http-equiv="refresh" content="0;url=https://merchants.ubereats.com"/></head></html>

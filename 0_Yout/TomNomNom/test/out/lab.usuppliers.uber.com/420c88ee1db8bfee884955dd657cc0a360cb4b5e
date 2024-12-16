@@ -1,0 +1,19 @@
+https://lab.usuppliers.uber.com/
+
+> GET / HTTP/1.1
+> Host: lab.usuppliers.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 308 Permanent Redirect
+< Location: https://lab.usuppliers.uber.com:443/OA_HTML/AppsLogin
+< Content-Type: text/html
+< Date: Fri, 13 Dec 2024 05:04:40 GMT
+< Content-Length: 159
+
+<html>
+<head><title>308 Permanent Redirect</title></head>
+<body>
+<center><h1>308 Permanent Redirect</h1></center>
+<hr><center></center>
+</body>
+</html>

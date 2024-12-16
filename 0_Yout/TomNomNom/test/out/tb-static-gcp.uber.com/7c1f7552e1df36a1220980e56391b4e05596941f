@@ -1,0 +1,30 @@
+https://tb-static-gcp.uber.com/
+
+> GET / HTTP/1.1
+> Host: tb-static-gcp.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 401 Unauthorized
+< X-Frame-Options: SAMEORIGIN
+< Strict-Transport-Security: max-age=31536000
+< Vary: Accept-Encoding
+< Cf-Cache-Status: DYNAMIC
+< Server: cloudflare
+< Via: 1.1 google
+< Date: Fri, 13 Dec 2024 05:04:30 GMT
+< Content-Length: 258
+< X-Gcache: miss
+< X-Envoy-Upstream-Service-Time: 3
+< X-Grtm: 62
+< Content-Type: application/xml
+< Cache-Control: max-age=0
+< X-Gregion: PE/PECUS/Cusco
+< X-Gid: SCL
+< X-Content-Type-Options: nosniff
+< X-Uber-Edge: e4-phx5:w:1433817070,ufe:production-cloudflare:compute-0:phx8,cloudflare:production:default
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+< X-Xss-Protection: 1; mode=block
+< Cf-Ray: 8f1369ef19afeaba-SCL
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>AccessDenied</Code><Message>Access denied for the resource at /, make sure you have the correct permissions</Message><Resource>/</Resource><RequestId>2c444273-2161-4b34-81fe-8f3f82bf9b05</RequestId></Error>

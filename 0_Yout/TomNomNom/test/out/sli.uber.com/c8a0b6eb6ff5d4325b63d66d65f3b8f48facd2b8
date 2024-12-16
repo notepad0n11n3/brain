@@ -1,0 +1,29 @@
+http://sli.uber.com/
+
+> GET / HTTP/1.1
+> Host: sli.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< X-Content-Type-Options: nosniff
+< Date: Fri, 13 Dec 2024 05:04:35 GMT
+< Location: https://sli.uber.com/
+< X-Xss-Protection: 1; mode=block
+< X-Frame-Options: DENY
+< Server: CloudFront
+< Content-Length: 167
+< Referrer-Policy: same-origin
+< Content-Security-Policy: default-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'
+< Content-Type: text/html
+< X-Cache: Redirect from cloudfront
+< Via: 1.1 58830509aaa39326281f1a32f0d7f954.cloudfront.net (CloudFront)
+< X-Amz-Cf-Id: DDMvtmKOETmefSKYqp7MJqj4jvhzEAO3yjRYITY0yZqzyhqT2PcErA==
+< X-Amz-Cf-Pop: LIM50-P1
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>CloudFront</center>
+</body>
+</html>

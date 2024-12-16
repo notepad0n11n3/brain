@@ -1,0 +1,19 @@
+https://support.uber.com/
+
+> GET / HTTP/1.1
+> Host: support.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Date: Fri, 13 Dec 2024 05:04:41 GMT
+< Content-Length: 0
+< Via: 1.1 google
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+< X-Uber-Edge: ufe:production-cloud-ecg-l7:default:gru2
+< Strict-Transport-Security: max-age=31536000
+< X-Content-Type-Options: nosniff
+< X-Xss-Protection: 1; mode=block
+< Vary: Accept-Encoding
+< Server: ufe
+< Location: https://help.uber.com/
+

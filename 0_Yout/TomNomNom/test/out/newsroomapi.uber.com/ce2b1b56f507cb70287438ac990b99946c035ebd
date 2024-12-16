@@ -1,0 +1,30 @@
+https://newsroomapi.uber.com/
+
+> GET / HTTP/1.1
+> Host: newsroomapi.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 302 Found
+< X-Cache-Hits: 8, 0
+< X-Timer: S1734066270.999978,VS0,VE109
+< Vary: Cookie, Cookie
+< X-Pantheon-Styx-Hostname: styx-fe3-b-5475c58746-mjx98
+< X-Styx-Req-Id: f155b7e0-b90e-11ef-a9cd-72b7c70dc3ff
+< X-Xss-Protection: 1; mode=block
+< Age: 340
+< Via: 1.1 varnish, 1.1 varnish
+< Server: nginx
+< X-Frame-Options: DENY
+< X-Served-By: cache-chi-klot8100159-CHI, cache-lim12129-LIM
+< Accept-Ranges: bytes
+< Content-Length: 0
+< Strict-Transport-Security: max-age=31622400
+< Cache-Control: public, max-age=360
+< Content-Type: text/html; charset=UTF-8
+< Location: https://newsroomapi.uber.com/wp-login.php?redirect_to=%2F
+< X-Content-Type-Options: nosniff
+< X-Redirect-By: WordPress
+< Date: Fri, 13 Dec 2024 05:04:30 GMT
+< Access-Control-Allow-Origin: *
+< X-Cache: HIT, MISS
+

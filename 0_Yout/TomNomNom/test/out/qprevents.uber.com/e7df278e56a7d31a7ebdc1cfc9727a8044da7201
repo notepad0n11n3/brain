@@ -1,0 +1,19 @@
+http://qprevents.uber.com/
+
+> GET / HTTP/1.1
+> Host: qprevents.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Content-Type: text/html
+< Content-Length: 134
+< Location: https://qprevents.uber.com:443/
+< Server: awselb/2.0
+< Date: Fri, 13 Dec 2024 05:04:38 GMT
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+</body>
+</html>

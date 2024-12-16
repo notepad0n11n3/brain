@@ -1,0 +1,19 @@
+http://lert.uber.com/
+
+> GET / HTTP/1.1
+> Host: lert.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Cache-Control: no-cache,must-revalidate,max-age=0,no-store,private
+< Server: sfdcedge
+< X-Content-Type-Options: nosniff
+< Location: https://lert.uber.com/
+< Content-Security-Policy: upgrade-insecure-requests
+< Expires: Thu, 01 Jan 1970 00:00:00 GMT
+< X-Sfdc-Request-Id: da6338e53de56045519c12544588c4ad
+< X-Request-Id: da6338e53de56045519c12544588c4ad
+< Date: Fri, 13 Dec 2024 05:04:39 GMT
+< Set-Cookie: CookieConsentPolicy=0:1; path=/; expires=Sat, 13-Dec-2025 05:04:39 GMT; Max-Age=31536000; secure
+< Set-Cookie: LSKey-c$CookieConsentPolicy=0:1; path=/; expires=Sat, 13-Dec-2025 05:04:39 GMT; Max-Age=31536000; secure
+

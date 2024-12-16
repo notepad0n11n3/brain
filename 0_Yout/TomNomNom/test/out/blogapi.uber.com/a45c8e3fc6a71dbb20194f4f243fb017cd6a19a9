@@ -1,0 +1,30 @@
+https://blogapi.uber.com/
+
+> GET / HTTP/1.1
+> Host: blogapi.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 302 Found
+< Via: 1.1 varnish, 1.1 varnish
+< Cache-Control: public, max-age=360
+< Content-Type: text/html; charset=UTF-8
+< Location: https://blogapi.uber.com/wp-login.php?redirect_to=%2F
+< X-Frame-Options: DENY
+< Age: 75
+< Accept-Ranges: bytes
+< Server: nginx
+< X-Content-Type-Options: nosniff
+< X-Xss-Protection: 1; mode=block
+< X-Cache: HIT, MISS
+< X-Cache-Hits: 4, 0
+< Vary: Cookie, Cookie
+< X-Timer: S1734066270.843813,VS0,VE113
+< Content-Length: 0
+< X-Redirect-By: WordPress
+< X-Styx-Req-Id: 8f09d4eb-b90f-11ef-92ca-9e59e3fd5e64
+< Date: Fri, 13 Dec 2024 05:04:29 GMT
+< X-Served-By: cache-chi-kigq8000164-CHI, cache-lim12132-LIM
+< Access-Control-Allow-Origin: https://blogapi.uber.com
+< Strict-Transport-Security: max-age=31622400
+< X-Pantheon-Styx-Hostname: styx-fe4-b-6bffd6fd94-l4qz2
+

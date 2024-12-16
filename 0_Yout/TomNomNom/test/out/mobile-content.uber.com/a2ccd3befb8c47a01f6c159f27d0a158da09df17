@@ -1,0 +1,23 @@
+https://mobile-content.uber.com/
+
+> GET / HTTP/1.1
+> Host: mobile-content.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 400 Bad Request
+< X-Content-Type-Options: nosniff
+< X-Frame-Options: SAMEORIGIN
+< X-Uber-Edge: e4-dca24:w:1267204132,ufe:production-cloud-gateway:compute-0:dca22,ufe:production-cloud-ecg-l7:default:gru2
+< Content-Type: application/xml
+< Vary: Accept-Encoding
+< X-Envoy-Upstream-Service-Time: 129
+< Via: 1.1 google
+< Server: ufe
+< Strict-Transport-Security: max-age=31536000
+< X-Xss-Protection: 1; mode=block
+< Cache-Control: max-age=0
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+< Date: Fri, 13 Dec 2024 05:04:39 GMT
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>InvalidRequest</Code><Message>code:failed-precondition message:GetBlobMetadata:: the tpath /prod/mobile-content-public designates a dir</Message><Resource>/prod/mobile-content-public/</Resource><RequestId>8a4bf09d-7ea2-4466-8782-116bd9b1af44</RequestId></Error>
