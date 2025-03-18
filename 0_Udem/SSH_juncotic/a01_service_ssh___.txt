@@ -1,0 +1,7 @@
+
+::: sudo service ssh status
+
+::: sudo service ssh start
+
+::: sudo service ssh stop
+

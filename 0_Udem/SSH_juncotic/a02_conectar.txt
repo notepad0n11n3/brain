@@ -1,0 +1,12 @@
+
+::: sudo ssh -l remoteUser  192.ip.here.69
+
+::: sudo ssh  remoteUser@192.ip.here.69
+
+
+Verificar servicio ssh en el puerto 22
+	::: ss -npltu | grep 22						
+
+	::: sudo ss -npltu | grep 22						(con sudo muestra mas info 'pid')
+
+	::: sudo systemctl status ssh
