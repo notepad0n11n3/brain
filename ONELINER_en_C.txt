@@ -1,14 +1,13 @@
 
-::: echo -e '#include <stdio.h>\n int main(){printf("mochimango");}' | gcc -xc -o OneLiner -
+::: echo -e '#include <stdio.h>\n int main(){printf("mochimango");}' | gcc -static -xc -o OneLiner - && ./OneLiner
 
-	\n si funciona con -e ' ' (comilla simple)
+																																\n si funciona con -e ' ' (comilla simple)
+		-static					(no dinamic linked "ldd ./mi_binario")
 
 			echo -e '.....'   solo funciona con ' '  , con " " da error tamare
 
 
-		-static					(no dinamic linked "ldd ./mi_binario")
-
-::: echo -e '#include <stdio.h>\n #include <stdlib.h>\n int main(){char user_test[]="mochimango Ready"; fprintf(stdout, "\\xA\\x9 -> %s\\xA", user_test);}' | gcc -static -xc -o Mango -
+::: echo -e '#include <stdio.h>\n #include <stdlib.h>\n int main(){char user_test[]="mochimango Ready"; fprintf(stdout, "\\xA\\x9 -> %s\\xA", user_test);}' | gcc -static -xc -o Mango - && ./Mango
 
 ###		Este no tiene nada de espacios despues de \n... <3 <3 <3
 ::: echo -e '#include <stdio.h>\n#include <stdlib.h>\nint main(int argc, char **argv){fprintf(stdout, "\\xA\\x9 Ready\\xA", NULL);system("whoami");return 0;}' | gcc -static -xc -o MangO - && clear && ./MangO
