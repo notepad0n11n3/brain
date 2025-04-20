@@ -1,0 +1,13 @@
+
+::: echo -e '#include <stdio.h>\n int main(){printf("mochimango");}' | gcc -xc -o OneLiner -
+
+	\n si funciona con -e ' ' (comilla simple)
+
+			echo -e '.....'   solo funciona con ' '  , con " " da error tamare
+
+
+		-static					(no dinamic linked "ldd ./mi_binario")
+
+::: echo -e '#include <stdio.h>\n #include <stdlib.h>\n int main(){char user_test[]="mochimango Ready"; fprintf(stdout, "\\xA\\x9 -> %s\\xA", user_test);}' | gcc -static -xc -o Mango -
+
+		"\\xA\\x9 -> %s\\xA"  no olvides escapar el \xA  ->  \\xA    \x9 -> \\x9
