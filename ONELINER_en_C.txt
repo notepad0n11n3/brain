@@ -10,4 +10,7 @@
 
 ::: echo -e '#include <stdio.h>\n #include <stdlib.h>\n int main(){char user_test[]="mochimango Ready"; fprintf(stdout, "\\xA\\x9 -> %s\\xA", user_test);}' | gcc -static -xc -o Mango -
 
+###		Este no tiene nada de espacios despues de \n... <3 <3 <3
+::: echo -e '#include <stdio.h>\n#include <stdlib.h>\nint main(int argc, char **argv){fprintf(stdout, "\\xA\\x9 Ready\\xA", NULL);system("whoami");return 0;}' | gcc -static -xc -o MangO - && clear && ./MangO
+
 		"\\xA\\x9 -> %s\\xA"  no olvides escapar el \xA  ->  \\xA    \x9 -> \\x9
