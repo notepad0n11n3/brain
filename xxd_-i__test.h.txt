@@ -1,0 +1,22 @@
+
+																*** *** Archivos enbebidos en C <3 <3 <3  *** *** 
+
+
+::: gcc -static payload.c -o payload.pre
+
+::: xxd -i payload.pre > payload.me
+
+				Esto te genera un array de unsigned char payload_me[] = {...}; junto con unsigned int payload_me_len = ...;
+
+
+				unsigned char payload_me[] = {
+					0x48, 0x65, 0x6c, 0x6c, 0x6f, 0x2c, 0x20, 0x77, 0x6f, 0x72, 0x6c, 0x64,
+					0x21, 0x0a
+				};
+				unsigned int payload_me_len = 14;
+
+
+:::		
+
+			#include <stdio.h>
+			#include "payload.me"

@@ -1,13 +1,14 @@
 #include <stdio.h>
+#include <string.h>		// Obligado para strtok(user_input, "\n");
 
 int main(int argc, char **argv){
 
 	char nombre[65];
-	fprintf(stdout, "\xA\x9 Ingrese el string: \xA", NULL);
+	fprintf(stdout, "\xA\x9 \033[0;33mIngrese el string:\033[0m \xA", NULL);
 
-	fgets(nombre, sizeof(nombre), stdin);
+	fgets(nombre, sizeof(nombre), stdin); strtok(nombre, "\n");
 
-	fprintf(stdout, "\xA\xA\x9\x9\033[0;31m::>>> Ready\\033[0m: %s\xA", nombre);
+	fprintf(stdout, "\xA\xA\x9\x9\033[0;31m::>>> Ready \033[0m: %s == \033[0;32mTestComplete\033[0m\xA", nombre);
 	return 0;
 }
 
