@@ -4,6 +4,7 @@
 
 
 		Ctrl-Shift-p		'salta a la pestana Proxy'
+		Ctrl-t					'on/off INTERCEPT... <3 <3 <3 <3 <3'
 		Ctrl-r					'envia lo obtenido al Repeater... <3 <3 <3'
 
 		Ctrl-Shift-r		'salta a la pestana Repeater'
