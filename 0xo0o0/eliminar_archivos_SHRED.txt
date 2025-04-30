@@ -1,0 +1,4 @@
+
+shred          - overwrite a file to hide its contents, and optionally delete it
+
+	::: shred -zun 10 -v archivo_Here.c
