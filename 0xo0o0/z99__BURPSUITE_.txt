@@ -5,14 +5,14 @@
 
 		Ctrl-Shift-p		'salta a la pestana Proxy'
 		Ctrl-t					' ON/OFF INTERCEPT... <3 <3 <3 <3 <3.....!!! <3 <3 <3 <3'
-		Ctrl-r					'envia lo obtenido al Repeater... <3 <3 <3'
 
+		Ctrl-r					'envia lo obtenido al Repeater... <3 <3 <3'
 		Ctrl-Shift-r		'salta a la pestana Repeater'
+
 		Ctrl-space			'SEND... enviar... <3 <3 <3'
 
 
 		Ctrl-Shift-t		'salta a la pestana Targed'
-		Ctrl-Shift-i		'salta a la pestana Intruder'
 		Ctrl-Shift-i		'salta a la pestana Intruder'
 
 
