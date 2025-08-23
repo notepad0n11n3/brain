@@ -19,7 +19,9 @@ int main(int argc, char *argv[]){
 	(a < b)? (fprintf(stdout, "\xA\x9 A es MENOR que B\xA", NULL), VALUE_MY_EXIT=33):(fprintf(stdout, "LOS DOS SON IGUALES", NULL), VALUE_MY_EXIT=69);
 	*/
 
-	(a < b)? (fprintf(stdout, "*** A es menor que B, if READY...<3")):( fprintf(stdout, "### ELSE WORKING\xA"), (a == 69)? printf("69 69 69 detected"));
+	(a < b)? (fprintf(stdout, "*** A es menor que B, if READY...<3")):( fprintf(stdout, "### ELSE WORKING\xA"), (a == 69)? printf("69 69 69 detected"):(void)0);
+
+	(1 != 2)? fprintf(stdout, "\xA\xA\x9 1 diferente de 2"):(void)0;
 
 //	return VALUE_MY_EXIT;
 	return 0;

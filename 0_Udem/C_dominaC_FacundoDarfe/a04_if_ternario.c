@@ -28,5 +28,10 @@ int main(){
 
 	fprintf(stdout, "\xA\x9 %d es %s \xA", n, tipo);
 
+	int edad=17;
+	int permiso = (edad >= 18)? 1 : (edad >= 16) ? 2 : 0;
+	//	1=adulto, 2=parcial, 0=sin permiso
+	fprintf(stdout, "\xA\xA\x9 Permiso: %d\n", permiso);
+
 	return 0;
 }
