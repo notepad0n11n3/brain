@@ -1,0 +1,26 @@
+https://m.uber.com/
+
+> GET / HTTP/1.1
+> Host: m.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 404 Not Found
+< X-Frame-Options: SAMEORIGIN
+< Cache-Control: max-age=0
+< Date: Fri, 13 Dec 2024 05:04:32 GMT
+< Content-Type: text/plain; charset=utf-8
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+< Set-Cookie: _ua={"session_id":"a29b827f-a857-4ccb-ba4a-ef868b58f524","session_time_ms":1734066272779}; path=/; expires=Fri, 13 Dec 2024 05:34:32 GMT; secure
+< Set-Cookie: marketing_vistor_id=960f91c2-10e0-43ac-b289-cbb589e4ee6a; path=/; expires=Sat, 13 Dec 2025 05:04:32 GMT; domain=.uber.com; secure
+< Set-Cookie: udi-id=Zu9a12u71XDR3EW0IevYVFaryoA65TzpT4NkO/Nm0ILeJgoBGBS4uzwjtnUyHdpI69NXm4EcYRvlgmAI7x/iErpdjsOY9AvFE9Ye3Fb/CCyHpjPvS7vdTPPYXDWFXAb+7WgjOtUNDxWsknK5BN3oL5QF2EHXfe5Re1wIuRaDVb7AS2ytUQrQDRNWIdrIv9flp9fKnTwv6/kr+8npUAr/XA==kAFIhDrBjEXysYK7ct6nzA==+nY5kYVxmiGy50m+PZEFbrrITQkRXTt3y/csbE+qTR0=; path=/; expires=Mon, 11 Dec 2034 05:04:32 GMT; domain=.uber.com; httponly
+< Set-Cookie: jwt-session=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MzQwNjYyNzIsImV4cCI6MTczNDE1MjY3Mn0.VG41rGQZ5AXlQXN3fUjCuDG72Jb1DugL9wgkMYSvPMs; path=/; expires=Sat, 14 Dec 2024 05:04:32 GMT; secure; httponly
+< Via: 1.1 google
+< X-Content-Type-Options: nosniff
+< X-Xss-Protection: 1; mode=block
+< Content-Length: 9
+< X-Envoy-Upstream-Service-Time: 118
+< Strict-Transport-Security: max-age=31536000
+< X-Uber-Edge: e4-dca24:w:1268695611,ufe:production-cloud-gateway:compute-0:dca24,ufe:production-cloud-ecg-l7:default:gru2
+< Server: ufe
+
+Not Found

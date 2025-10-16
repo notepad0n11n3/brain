@@ -1,0 +1,22 @@
+
+
+          C1   C2  C3  C4  C5  C6  merge
+master  ---#---#---#---#---#---#
+               |           |
+               |           |
+ newBranch     #-----#-----#
+              C1    C2     C3
+
+
+::: git checkout master
+
+ :: git merge newBranch       
+
+
+#SOLUCIONAR CONFLICTOS EN MERGE
+
+  ::: git status
+
+      // retoca el\los archivos 
+
+            lee los output del los comandos (merge && commit), es todo esta detallado <3

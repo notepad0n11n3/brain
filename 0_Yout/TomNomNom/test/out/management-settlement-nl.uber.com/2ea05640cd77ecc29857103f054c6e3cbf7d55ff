@@ -1,0 +1,24 @@
+https://management-settlement-nl.uber.com/
+
+> GET / HTTP/1.1
+> Host: management-settlement-nl.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 403 Forbidden
+< X-Content-Type-Options: nosniff
+< Date: Fri, 13 Dec 2024 05:04:30 GMT
+< X-Xss-Protection: 1; mode=block
+< Server: nginx
+< Content-Type: text/html
+< Vary: Accept-Encoding
+< Referrer-Policy: no-referrer-when-downgrade
+< X-Permitted-Cross-Domain-Policies: none
+< Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+<html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

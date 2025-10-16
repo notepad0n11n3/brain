@@ -1,0 +1,9 @@
+  ## FUZZING    rutas o archivos ocultos de un servidor web
+
+#  cat /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt     |     wc -l    # diccionario
+
+:::   whatweb 192.168.0.16
+
+:::   locate http-enum     # pre   ::: sudo updatedb    actualizar baseDatos para busquedas por nombre     locate .vimrc
+
+:::   nmap -p88  192.168.0.16   --script http-enum

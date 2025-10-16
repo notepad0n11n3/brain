@@ -1,0 +1,5 @@
+
+    bandit19 -> bandit20
+
+::: ./binarioSUIDaceptaParametros   bash -p
+::: ./binarioSUIDaceptaParametros   sh

@@ -1,0 +1,21 @@
+
+
+
+
+# Comentarios para .gitignore  
+# :)
+
+app/bin/                      // ignorar la carpeta bin
+build/*.zip
+
+test-bin
+.directory
+.vimrc
+
+/folder/logs/*                    // ignorar todos los archivos de la carpeta logs
+/folder/wall/*.png
+
+/warn/ojo/*.keys
+
+
+!/folder/**/README.md             // no ignorar README.md

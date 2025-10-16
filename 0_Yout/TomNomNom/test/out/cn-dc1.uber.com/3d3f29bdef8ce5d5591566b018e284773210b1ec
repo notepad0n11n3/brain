@@ -1,0 +1,26 @@
+http://cn-dc1.uber.com/
+
+> GET / HTTP/1.1
+> Host: cn-dc1.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Date: Fri, 13 Dec 2024 05:04:30 GMT
+< Cache-Control: max-age=3600
+< Expires: Fri, 13 Dec 2024 06:04:30 GMT
+< Set-Cookie: __cf_bm=ZxfVdlW8bnl1EbgamlWEqY4TWkLoaSsfgE5zqNWh0Ac-1734066270-1.0.1.1-XI4rDJUJ7XYLXSbklskXmNU93YsNz6AOK.tVv6iNkfsV_8yReaCWXNHDycGH0iveOVzMnNOkMrpOmBzi1Wyxvg; path=/; expires=Fri, 13-Dec-24 05:34:30 GMT; domain=.uber.com; HttpOnly
+< Content-Length: 167
+< Content-Type: text/html
+< Vary: Accept-Encoding
+< Cf-Ray: 8f1369ef98b4144d-LIM
+< Location: https://cn-dc1.uber.com/
+< X-Uber-Edge: ,cloudflare:production:default
+< Server: cloudflare
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>cloudflare</center>
+</body>
+</html>

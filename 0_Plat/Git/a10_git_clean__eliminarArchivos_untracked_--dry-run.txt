@@ -1,0 +1,5 @@
+
+
+  ::: git clean --dry-run    'muestra un preview de lo que va a eliminar' 
+
+  ::: git clean -f      'elimina archivos untracked del repo'

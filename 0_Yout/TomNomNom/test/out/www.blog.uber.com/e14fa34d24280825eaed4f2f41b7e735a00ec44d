@@ -1,0 +1,20 @@
+https://www.blog.uber.com/
+
+> GET / HTTP/1.1
+> Host: www.blog.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 401 Unauthorized
+< Server: nginx
+< Content-Type: text/html
+< Www-Authenticate: Basic realm="ubernewblog"
+< Date: Fri, 13 Dec 2024 05:04:36 GMT
+< Content-Length: 172
+
+<html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

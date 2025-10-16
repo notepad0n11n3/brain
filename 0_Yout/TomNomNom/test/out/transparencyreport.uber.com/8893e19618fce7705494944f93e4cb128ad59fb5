@@ -1,0 +1,19 @@
+https://transparencyreport.uber.com/
+
+> GET / HTTP/1.1
+> Host: transparencyreport.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 302 Found
+< Content-Length: 0
+< X-Powered-By: WP Engine
+< X-Redirect-By: WordPress
+< Location: https://www.uber.com/about/reports/law-enforcement/
+< X-Cache: HIT: 3
+< X-Cache-Group: normal
+< Server: nginx
+< Content-Type: text/html; charset=UTF-8
+< X-Cacheable: non200
+< Cache-Control: max-age=600, must-revalidate
+< Date: Fri, 13 Dec 2024 05:04:35 GMT
+

@@ -1,0 +1,30 @@
+https://cloudflare.uber.com/
+
+> GET / HTTP/1.1
+> Host: cloudflare.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 307 Temporary Redirect
+< X-Xss-Protection: 1; mode=block
+< Cf-Ray: 8f1369efcd736dfb-LIM
+< Cache-Control: no-store, max-age=0
+< Strict-Transport-Security: max-age=31536000
+< X-Content-Type-Options: nosniff
+< Set-Cookie: __cf_bm=WVoeHt3SGykJziiCp6Qa5MnLzMx66dYXcseJxe957D4-1734066270-1.0.1.1-hcdoWAj3.p1y.A6vCEE5hcdInofKECWdXol1S17RMsQRGISURnDwg1Rj3Je5z_xUJG4c5w3pBjumXXD4ca5YGg; path=/; expires=Fri, 13-Dec-24 05:34:30 GMT; domain=.uber.com; HttpOnly; Secure; SameSite=None
+< Content-Type: text/html
+< Location: https://www.uber.com/
+< X-Envoy-Upstream-Service-Time: 0
+< Cf-Cache-Status: DYNAMIC
+< X-Uber-Edge: e4-dca11:w:1315440501,ufe:production-cloudflare:compute-0:dca23,cloudflare:production:default
+< Server: cloudflare
+< Date: Fri, 13 Dec 2024 05:04:30 GMT
+< Content-Length: 168
+< Vary: Accept-Encoding
+
+<html>
+<head><title>307 Temporary Redirect</title></head>
+<body>
+<center><h1>307 Temporary Redirect</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>

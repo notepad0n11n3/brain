@@ -1,0 +1,44 @@
+
+          ::: git branch -a     -r        -l        <3 <3 :3 
+            ' -a --all    -r --remote    -l --list  (si... list pa locales :u) '
+
+    #!#! TIENES QUE HACER PULL A CADA RAMA IGUAL QUE EN MASTER <-!!!
+  !!!    ::: git pull origin nombre_BranchLIKEaMASTER     !!! 
+  
+## CREAR RAMAS
+  ::: git branch name_newBranch
+  ::: git checkout -b name_newBranch                ('  -b crea y nos lleva a la nueva rama <3 <3 <3  ')
+
+
+# ELIMINAR RAMA
+  ::: git branch -d nameBranch
+  ::: git branch -D nameBranch    fuerza el borrado
+
+  ::: git push origin -d nameBranch   'Eliminar branch del repoRemoto <3 <3 <3 '
+
+
+## MUESTRA RAMAS EXISTENTES Y SU HISTORIA
+  ::: git show-branch
+  ::: git show-branch --all
+
+
+##  PUSH RAMAS A REPO_REMOTO
+  ::: git checkout nameBranchHere
+  ::: git push origin nameBranchHere
+
+
+## TRAER OTRA RAMAS DE REPO_REMOTO
+  ::: git pull origin master
+   :: git checkout nameBranch
+   :: git pull origin nameBranch
+
+  'despu[es de ::: git pull origin nameBranch   con  ::: git branch show-branch --all   podemos ver  origin/nameBranch, usa checkout nameBranch y despues git branch.
+
+
+                                   ## TRAER OTRA RAMAS DE REPO_REMOTO...!!!
+    ::: git fetch origin        'puedeTraer todas la ramas del repo remoto, no losUpdates'      <3 <3 <3 <3 <3
+     :: git branch -r           'muestra las ramas remotas'                     <3 <3
+      : git branch -a           'muestra todas las ramas locales y remotas'     <3 <3 <3 <3
+
+
+

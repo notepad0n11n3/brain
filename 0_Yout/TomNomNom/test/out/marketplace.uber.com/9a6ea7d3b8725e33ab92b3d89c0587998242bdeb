@@ -1,0 +1,19 @@
+https://marketplace.uber.com/
+
+> GET / HTTP/1.1
+> Host: marketplace.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< X-Content-Type-Options: nosniff
+< X-Xss-Protection: 1; mode=block
+< Vary: Accept-Encoding
+< Date: Fri, 13 Dec 2024 05:04:38 GMT
+< Server: ufe
+< Via: 1.1 google
+< Location: https://www.uber.com/marketplace/
+< X-Uber-Edge: ufe:production-cloud-ecg-l7:default:gru2
+< Content-Length: 0
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+< Strict-Transport-Security: max-age=31536000
+

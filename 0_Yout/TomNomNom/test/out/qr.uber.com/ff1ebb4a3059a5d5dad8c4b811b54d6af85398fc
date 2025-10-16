@@ -1,0 +1,11 @@
+http://qr.uber.com/
+
+> GET / HTTP/1.1
+> Host: qr.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Location: https://qr.uber.com/
+< Date: Fri, 13 Dec 2024 05:04:36 GMT
+< Content-Length: 0
+

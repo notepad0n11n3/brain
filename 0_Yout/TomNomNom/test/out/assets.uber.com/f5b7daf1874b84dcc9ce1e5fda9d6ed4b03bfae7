@@ -1,0 +1,20 @@
+https://assets.uber.com/
+
+> GET / HTTP/1.1
+> Host: assets.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 302 Found
+< Server: frontify
+< X-Frontify-Version: app-server-2024-12-12T15-16-30Z-eeef9b36
+< Strict-Transport-Security: max-age=31536000;
+< Date: Fri, 13 Dec 2024 05:04:37 GMT
+< Content-Type: text/html; charset=UTF-8
+< Cache-Control: no-store, no-cache, must-revalidate
+< Pragma: no-cache
+< Location: /auth/?referer=%2F
+< Set-Cookie: AWSALB=J9r+C1H/TDAsSNq7AjFVThrE02vVvyCSXSc9WYYqKuvyIncAA1YgNZvIp/IyOZJmrUWetlgmL6Z1pAEwkJyCXpZFF3qqglh0ltAjQByWhi4W9KMOdouZNPa6BfgM; Expires=Fri, 20 Dec 2024 05:04:37 GMT; Path=/
+< Set-Cookie: AWSALBCORS=J9r+C1H/TDAsSNq7AjFVThrE02vVvyCSXSc9WYYqKuvyIncAA1YgNZvIp/IyOZJmrUWetlgmL6Z1pAEwkJyCXpZFF3qqglh0ltAjQByWhi4W9KMOdouZNPa6BfgM; Expires=Fri, 20 Dec 2024 05:04:37 GMT; Path=/; SameSite=None; Secure
+< Set-Cookie: PHPSESSID=je9gfmvmpq7297mtnfict7foos5453ug; expires=Fri, 20 Dec 2024 05:04:37 GMT; Max-Age=604800; path=/; secure; HttpOnly; SameSite=Lax
+< Expires: Thu, 19 Nov 1981 08:52:00 GMT
+

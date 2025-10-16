@@ -1,0 +1,11 @@
+
+			::: pip2 list			'mostrara los paquetes instalados con pip2'
+
+
+### Python 2.7
+
+	::: python2 ./get-pip.py		($brain/z99_pip2/get-pip.py)
+	::: pip2 install paramiko
+
+### Python 3
+	::: sudo apt install python3-paramiko -y

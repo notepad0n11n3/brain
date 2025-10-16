@@ -1,0 +1,19 @@
+http://restauranthelp.uber.com/
+
+> GET / HTTP/1.1
+> Host: restauranthelp.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Set-Cookie: CookieConsentPolicy=0:1; path=/; expires=Sat, 13-Dec-2025 05:04:39 GMT; Max-Age=31536000; secure
+< Set-Cookie: LSKey-c$CookieConsentPolicy=0:1; path=/; expires=Sat, 13-Dec-2025 05:04:39 GMT; Max-Age=31536000; secure
+< Cache-Control: no-cache,must-revalidate,max-age=0,no-store,private
+< Content-Security-Policy: upgrade-insecure-requests
+< X-Sfdc-Request-Id: ab19f8b51a4721a72fb433e0dd2feca8
+< Date: Fri, 13 Dec 2024 05:04:39 GMT
+< X-Content-Type-Options: nosniff
+< Location: https://restauranthelp.uber.com/
+< Expires: Thu, 01 Jan 1970 00:00:00 GMT
+< Server: sfdcedge
+< X-Request-Id: ab19f8b51a4721a72fb433e0dd2feca8
+

@@ -1,0 +1,32 @@
+
+
+
+
+::: cd ~/.ssh/
+ :: ssh-keygen
+
+
+::: cp  id_rsa.pub authorized_keys
+
+
+
+::: ssh  [username]@[remoteServer IP or hostname]
+
+::: ssh  -p [Puerto]  userName@ip_address
+
+
+::: ssh -p numberPort  -i sshkey.private  userName@ip_address  
+
+
+{{
+  ::: sudo service ssh status
+
+  ::: sudo service ssh start
+
+  ::: sudo service ssh stop
+}}
+
+    extra*    sudo netstat -ltnp | grep sshd
+
+sshpass -p 'hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg' ssh bandit18@bandit.labs.overthewire.org -p 2220 whoami
+sshpass -p 'hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg' ssh bandit18@bandit.labs.overthewire.org -p 2220 bash

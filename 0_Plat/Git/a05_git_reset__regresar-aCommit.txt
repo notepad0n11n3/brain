@@ -1,0 +1,10 @@
+
+# TODO VUELVE A LA VERSION DEL COMMIT ELEGIDO      --hard
+  ::: git reset 6ba12b26974f347f98aac40e8475d11be2de5842 --hard
+
+
+# vuelve a la version del commit PERO LOS QUE ESTE EN STAGIN(git add/status) SE MANTINE  --soft
+  ::: git reset 6ba12b26974f347f98aac40e8475d11be2de5842 --soft
+
+  // vale pa regresar y eliminar los ultimos commits(limpiarLogs) conservando los cambios/Avances
+

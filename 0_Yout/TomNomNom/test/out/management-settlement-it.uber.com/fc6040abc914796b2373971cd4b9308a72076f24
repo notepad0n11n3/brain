@@ -1,0 +1,21 @@
+https://management-settlement-it.uber.com/
+
+> GET / HTTP/1.1
+> Host: management-settlement-it.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 302 Found
+< Set-Cookie: backend=fsumareov0ae5qj50mkoo6o6bn; path=/; secure; SameSite=Lax
+< X-Content-Type-Options: nosniff
+< Referrer-Policy: no-referrer-when-downgrade
+< Content-Type: text/html; charset=UTF-8
+< Location: https://management-settlement-it.uber.com/site/login
+< X-Permitted-Cross-Domain-Policies: none
+< Strict-Transport-Security: max-age=31536000; includeSubDomains
+< Server: nginx
+< Date: Fri, 13 Dec 2024 05:04:34 GMT
+< Expires: Fri, 13 Dec 2024 05:04:33 GMT
+< Cache-Control: no-cache
+< Cache-Control: no-cache
+< X-Xss-Protection: 1; mode=block
+

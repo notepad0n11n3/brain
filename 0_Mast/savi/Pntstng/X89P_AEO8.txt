@@ -1,0 +1,32 @@
+
+1.  mkdir  maquinaObjetivo
+       cd  maquinaObjetivo  
+
+2.  mkt
+
+3.  cd nmap
+
+4.  ping -c 1 ipHereTarged
+
+5.  nmap -p- --open -T5 -v -n ipHereTarged -oG allPorts
+
+  5.1   whatweb http://ipHereTarged   #if port80 is Open
+
+6.  extractPorts allPorts
+
+7.  nmap -sC -sV -p80,445,69 ipHereTarged -oN targeted
+
+8.  locate http-enum
+
+9.extra    tcpdump -i eth0 -w Captura.cap -v
+
+9.  nmap -p88 192.168.0.20 --script http-enum -oN webScan
+
+  
+      diccionario opcional
+      cat /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt    ##diccionario
+
+
+10. tshark -r Captura.cap
+
+

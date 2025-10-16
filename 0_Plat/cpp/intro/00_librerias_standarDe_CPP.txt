@@ -1,0 +1,8 @@
+
+
+
+#include <iostream>         Entrada y salida de datos
+#include <string>           Manejo de cadenas de texto
+#include <cmath>            Funciones matem[aticas comunes
+#include <exception>        Utilidades para el manejo de errores
+#include <vector>           Manejo de vectores de datos

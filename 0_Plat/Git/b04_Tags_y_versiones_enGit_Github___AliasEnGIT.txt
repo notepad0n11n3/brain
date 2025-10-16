@@ -1,0 +1,46 @@
+
+ !!! los cambiosRealizados en los tags no se muestran aparecen con GIT STATUS ojo<<--!!!
+
+##   AGREGAR UN TAG/VERSION AL PROYECTO
+::: git tag -a  v0.1Mango   -m "Mensaje tag/version likeA_commit"  9a6af59
+::: git tag -a  nombre_tag  -m "Mensaje del tag likeA_commit"     id-del_commit
+
+
+##  LISTAR LOS TAGS/VERSIONES Y SU REFERENCIA/COMMIT
+  ::: git show-ref --tags
+
+  ::: git tag         // solo lista los nombresTags
+
+
+
+###  Info sobre el TAB    <3 <3 <3 
+::: git tag
+::: git show tagName   ( git show v0.1_firtsVers )
+
+
+
+#### AGREAGAR TAGS/VERSIONES A REPOSITORIO REMOTO
+    ::: git push origin --tags        <3 <3 <3 
+
+
+
+### ELIMINAR TAG/VERSION (el repositorioLocal)
+  ::: git tag
+  ::: git tag -d nameHere_tabVersion
+
+      ::: git push origin --tags
+
+  ::: git push origin :refs/tags/nameTagHere    <<-- ELIMINAR EL TAG EN GITHUB...!!! !!! !!!
+
+
+
+
+
+### ALIAS GIT
+  ::: git config alias.arbolito "log --all -graph --decorate --oneline"       <<--Para unProyecto
+
+  ::: git config --global alias.arbolito "log -all --graph --decorate --online"  <<-- Global
+
+
+
+            ::: git arbolito    <<-- para usarAliasGit

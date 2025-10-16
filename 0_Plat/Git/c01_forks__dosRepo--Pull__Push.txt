@@ -1,0 +1,7 @@
+
+::: git remote -v         // lista las repoRemotas
+
+
+::: git remote add upstream_Mango https://github.com/remoteRep/nee.git
+
+ :: git pull upstream_Mango master            // pull de la repoPrincipal a nuestro fork en local <3

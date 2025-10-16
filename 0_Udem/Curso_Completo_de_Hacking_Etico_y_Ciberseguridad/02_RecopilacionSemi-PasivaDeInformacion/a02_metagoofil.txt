@@ -1,0 +1,10 @@
+        #  busca y descarga archivos disponibles de un dominio
+        #   solo busca en google :(, laFoca tiene mucha m[as potencia
+
+::: metagoofil -h         # help
+
+::: metagoofil -d microsoft.com -l 10 -t pdf,doc,ppt -o Desktop
+
+
+      -l numberHere           limite de busquedas
+      -o nameFolder           nombre de la carpeta para descargar los ficheros 

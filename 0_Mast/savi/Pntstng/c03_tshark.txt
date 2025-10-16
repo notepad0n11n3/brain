@@ -1,0 +1,13 @@
+
+
+::: tshark -r Captura.cap -Y "http"  -Tjson 2>/dev/null
+
+
+
+      -Y "http"       filtramos por peticiones http
+      -Tjson          muestra la info en formato json
+      -Tfields -e tcp.payload       filtrar por un campo "Tfields"  donde el nombre del campo "-e" es "tcp.payload"
+
+      xxd -ps -r      revierte el hexagecimal para poder leer los datos  en un formato m[as legible
+
+::: tshark -r Capture.cap -Y "http" -Tfields -e tcp.payload   2>/dev/null | xxd -ps -r | grep "GET" | awk '{print $2}' | sort -u    ###muestra los directoris delfuzzing con tcpdump

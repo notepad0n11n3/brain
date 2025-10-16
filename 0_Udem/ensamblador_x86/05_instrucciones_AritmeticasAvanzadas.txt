@@ -1,0 +1,23 @@
+
+
+
+IMUL op1, op2              op2 <- op2 * op1                op2: registro                IMUL(%EBX),%EAX
+
+IMUL inm, op1, op2         op2 <- op1 * inm         inm: constante/valorInmediato       IMUL $3, %EAX, %ECX
+
+
+IMULL op1               %EDX%EAX <- op1 * %EAX       op1: memor. o regis. (Enteros)    IMULL(%EBX)
+         "guardamos en la concatenaci[on de registros EDX y EAX"
+
+MULL op1                %EDX%EAX <- op1 * %EAX       op1: memor. o regis. (Naturales)  MULL(%EBX)
+
+
+CLTD                    %EDX%EAX <- ExtSign(%EAX)                                      CLTD
+
+
+IDIVL op1               %EAX <- %EDX %EAX / op1       op1: memor. o regis. (Enteros)    IDIVL(%EBX)
+                        %EAX <- %EDX %EAX % op1
+
+
+DIVL op1                %EAX <- %EDX %EAX / op1       op1: memor. o regis. (Naturales)  DIVL %ESI
+                        %EDX <- %EDX %EAX / op1

@@ -1,0 +1,31 @@
+http://newsroomapi.uber.com/
+
+> GET / HTTP/1.1
+> Host: newsroomapi.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Age: 45519
+< X-Served-By: cache-chi-klot8100115-CHI, cache-lim12131-LIM
+< Server: nginx
+< Date: Fri, 13 Dec 2024 05:04:30 GMT
+< X-Cache-Hits: 19, 0
+< Via: 1.1 varnish, 1.1 varnish
+< Content-Length: 162
+< X-Pantheon-Styx-Hostname: styx-fe3-b-5475c58746-mkgzd
+< X-Styx-Req-Id: c0fc7fd1-b8a5-11ef-8d10-f299ab78bfdf
+< Cache-Control: public, max-age=86400
+< Vary: Cookie, Cookie
+< Location: https://newsroomapi.uber.com/
+< X-Cache: HIT, HIT
+< X-Timer: S1734066271.820657,VS0,VE8
+< Accept-Ranges: bytes
+< Content-Type: text/html
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

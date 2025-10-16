@@ -1,0 +1,19 @@
+https://photo.uber.com/
+
+> GET / HTTP/1.1
+> Host: photo.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Strict-Transport-Security: max-age=31536000
+< X-Content-Type-Options: nosniff
+< X-Xss-Protection: 1; mode=block
+< X-Uber-Edge: ufe:production-cloud-ecg-l7:default:gru3
+< Vary: Accept-Encoding
+< Location: https://assets.uber.com/
+< Date: Fri, 13 Dec 2024 05:04:41 GMT
+< Server: ufe
+< Content-Length: 0
+< Via: 1.1 google
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+

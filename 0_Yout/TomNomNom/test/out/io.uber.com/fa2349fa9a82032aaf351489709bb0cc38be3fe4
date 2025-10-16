@@ -1,0 +1,28 @@
+https://io.uber.com/
+
+> GET / HTTP/1.1
+> Host: io.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 404 Not Found
+< X-Envoy-Upstream-Service-Time: 114
+< Strict-Transport-Security: max-age=31536000
+< X-Content-Type-Options: nosniff
+< Date: Fri, 13 Dec 2024 05:04:39 GMT
+< X-Frame-Options: SAMEORIGIN
+< Server: ufe
+< Via: 1.1 google
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+< Vary: Accept-Encoding
+< Content-Type: text/html
+< Cache-Control: max-age=0
+< X-Xss-Protection: 1; mode=block
+< X-Uber-Edge: e4-dca23:w:1066113266,ufe:production-cloud-gateway:compute-0:dca22,ufe:production-cloud-ecg-l7:default:gru1
+
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>

@@ -1,0 +1,26 @@
+https://cn-ecg.cfe.uber.com/
+
+> GET / HTTP/1.1
+> Host: cn-ecg.cfe.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 404 Not Found
+< Date: Fri, 13 Dec 2024 05:04:29 GMT
+< X-Uber-Edge: e4-dca18:w:1000218732,ufe:production-cloud-gateway:compute-0:dca22,ufe:production-cloud-ecg-l7:default:gru3
+< Server: ufe
+< X-Xss-Protection: 1; mode=block
+< Strict-Transport-Security: max-age=31536000
+< Via: 1.1 google
+< Vary: Accept-Encoding
+< Content-Type: text/html
+< X-Envoy-Upstream-Service-Time: 114
+< X-Content-Type-Options: nosniff
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>

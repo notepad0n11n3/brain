@@ -1,0 +1,21 @@
+https://webinars.uber.com/
+
+> GET / HTTP/1.1
+> Host: webinars.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 404 Not Found
+< Server: nginx
+< X-Powered-By: Express
+< X-Frame-Options: SAMEORIGIN
+< Allow: GET, POST
+< Strict-Transport-Security: max-age=2592000; includeSubDomains; preload
+< Referrer-Policy: no-referrer-when-downgrade
+< X-Content-Type-Options: nosniff
+< Date: Fri, 13 Dec 2024 05:04:37 GMT
+< Content-Length: 58
+< X-Xss-Protection: 1; mode=block
+< Content-Security-Policy: default-src * 'unsafe-inline' 'unsafe-eval' data: blob: about:; script-src * data: blob: 'unsafe-inline' 'unsafe-eval'; connect-src * data: blob: 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src * data: blob: ; style-src * data: blob: 'unsafe-inline'; font-src * data: blob: 'unsafe-inline'; frame-ancestors * data: blob:;
+< Permissions-Policy: microphone=(), geolocation=(), camera=(), display-capture=()
+
+[Status Code: 404] Could not retrieve the requested event!

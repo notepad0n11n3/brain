@@ -1,0 +1,20 @@
+https://newsroom.uber.com/
+
+> GET / HTTP/1.1
+> Host: newsroom.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 401 Unauthorized
+< Www-Authenticate: Basic realm="ubernewblog"
+< Server: nginx
+< Content-Type: text/html
+< Date: Fri, 13 Dec 2024 05:04:35 GMT
+< Content-Length: 172
+
+<html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

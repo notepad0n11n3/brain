@@ -1,0 +1,23 @@
+http://merchants.uber.com/
+
+> GET / HTTP/1.1
+> Host: merchants.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Content-Type: text/html; charset=iso-8859-1
+< Vary: Accept-Encoding
+< Set-Cookie: __cf_bm=cxWgsjX2e8hxtg5BO.P6ntvSJleHbJ7ay6OxUT6c60o-1734066276-1.0.1.1-TqvdC.CAkaeYD7oV2QE_ZHh5lXrTFoqXl_C2P9I4ibcZI67nSYJteEjE4OHIi7XfiFBbX5i1A2MREVTTHBHy5g; path=/; expires=Fri, 13-Dec-24 05:34:36 GMT; domain=.merchants.uber.com; HttpOnly
+< Location: https://merchants.uber.com/
+< Server: cloudflare
+< Cf-Ray: 8f136a12bbe16d65-LIM
+< Cf-Cache-Status: DYNAMIC
+< Date: Fri, 13 Dec 2024 05:04:36 GMT
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://merchants.uber.com/">here</a>.</p>
+</body></html>

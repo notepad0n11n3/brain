@@ -1,0 +1,38 @@
+
+
+awk Delimitador    cut Delimitador *****************
+
+::: cat /etc/passwd | grep -E "sh$" | awk '{print $2}' FS=":"
+::: cat /etc/passwd | grep -E "sh$" | cut -d ':' -f1
+********************88888
+
+Crear nuevo usuario****************
+::: useradd -d /home/pepito -s /bin/bash -c "Este es comentario o fullName"  pepito
+          dicrectorioPersonal shellPepito    comentario or fullName            user
+
+::: usermod -l nameUserNew nameUserOld    # cambio de nombre de usuario
+::: usermod -s /bin/bash nameUser      # cambio de shell para usuarioEspecifico
+::: usermod -d /home/newUser newUser   # asignacion o cambio de directorio, aveces tienes que usar:::mkdir /home/newUser
+
+::: userdel usuarioHere   # elimina usuario pero dejar carpetaUsuario intacta
+::: userdel -r usuarioHere  # elimina usuario y el directorio de trabajo de la cuenta
+::: userdel -f usuarioHere  # fuerza a la incluso si el usuario esta en el sistema
+
+::: passwd     # Usuarios normales pueden cambiar su contrase;a en cualquier momento con solo invocar passwd sin argumentos cuantas veces lo requiera
+r:: passwd userHere #root es el [unico que pudede indicar el cambio [o asignaci[on de contrase;as de cualquier usuario
+
+::: groupadd nombreGrupo
+
+::: chown newUse directorio  # como root dentro de /home/, el propietario del directorio sera newUser
+::: chgrp grupo directorioHere    # como root dentro de /home/, asignamos el grupo a la carpeta
+ :: chgrp root:grupoHere newUser  # dentroD /home/, para la carpeta newUser  propietario root y grupo grupoHere
+
+:::chown userHere archivoDirectorio   # cambio de propietario
+:::chgrp grupo archivoDirectorio         # cambio de grupo
+::: usermod -a -G grupoHere userHere    # agregar al usuarioHere al grupoHere
+******************8
+
+contrasena password ************
+::: paswd usuarioHere    # ejecutar como root, para reasignarPassword a root usa passwd sin nada mas
+****************8
+

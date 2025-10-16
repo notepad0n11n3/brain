@@ -1,0 +1,8 @@
+::: gobuster  dir  -t 100  --url http:://{ipTarget_here}  --wordlist /usr/share/dirbuster/wordlists/directory-list-2.3-small.txt -x php,html,js
+
+::: gobuster  dir  -t 100  -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt  --url http://10.10.10.69
+
+::: gobuster  dir  -t 100  --wordlist /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt  -x php,html  --url http://<target-ip>/
+
+    dir      Uses directory/file brutceforcing mode
+    -t 100        trabajar con 100 hilos (de formaParalela)

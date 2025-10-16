@@ -1,0 +1,32 @@
+
+          CASI NUNCA CONFIGURAN BIEN EL SNMP/UDP, un brecha de seguridad potente :) 
+
+      #!!  161/tcp
+      SNMP  protocolo de red que sirve para gestionar obtener datos/cambiar algunos aspectos de configuraci[on del comportamiento de dispositivos de red como un ROUTER o un SWITCH o tambi[en de SERVIDORES  
+
+
+::: sudo nmap -v -sS -p 161 192.168.111.186
+  PORT    STATE  SERVICE
+  161/tcp closed snmp           ##!!! closed por que el servicio snmp funciona por UDP y no por TCP     -sU
+  MAC Address: 00:0C:29:FD:68:37 (VMware)
+
+
+::: sudo nmap -v -sU -p 161 192.168.111.186
+
+ :: cd /usr/share/nmap/scripts
+ :: ls snmp*
+ :: sudo nmap -v -sU -p 161 --script=snmp-win32-software 192.168.111.186
+        #! lista el software/programas y las versiones de los mismos  :)
+          #! si algun programa tiene un fallo de seguridad paDentro UmU
+
+::: sudo nmap -v -sU -p 161 --script=snmp-win32-users 192.168.111.186
+        #! lista los usuarios del systema :) 
+
+
+::: sudo nmap -v -sU -p 161 --script=snmp-processes 192.168.111.186 
+        #! procesos en curso
+
+::: sudo nmap -v -sU -p 161 --script=snmp-netstat 192.168.111.186
+        #!  conexiones entrantes como salientes, podria suplantar algunSystema/servidor con el que se este conectando
+          
+

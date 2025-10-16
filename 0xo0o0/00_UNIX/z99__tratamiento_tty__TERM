@@ -1,0 +1,21 @@
+
+::: script /dev/null -c bash
+
+::: Ctrl-z
+
+::: stty raw -echo ;fg
+
+::: reset xterm								"se va a poner negro men, no output, pero sigue funcionando, dale Ctrl-l o Ctrl-c, va a refrescar pantalla <3"
+
+			::: echo $SHELL && export SHELL=/bin/bash			"opcional"
+
+::: echo $TERM && export TERM=xterm						"obligatorio"
+
+
+
+*** Ajustar el filas (rows) y columnas (columns)		VIM - EMCAS - NANO
+
+::: stty size					"en una shell del sistema principal"
+		64 237
+
+::: stty rows 64 columns 237				"shell ip targed"

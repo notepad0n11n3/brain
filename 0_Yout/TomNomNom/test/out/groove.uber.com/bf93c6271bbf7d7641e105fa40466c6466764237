@@ -1,0 +1,29 @@
+https://groove.uber.com/
+
+> GET / HTTP/1.1
+> Host: groove.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 302 Found
+< X-Content-Type-Options: nosniff
+< X-Xss-Protection: 1; mode=block
+< Cache-Control: no-cache
+< Content-Type: text/html; charset=utf-8
+< Referrer-Policy: strict-origin-when-cross-origin
+< X-Permitted-Cross-Domain-Policies: none
+< Access-Control-Expose-Headers: Server-Timing
+< Server-Timing: traceparent;desc="00-d33f7c641f10273ef213748f5248f1f7-ea63ed5d2f5845f3-01"
+< X-Download-Options: noopen
+< Vary: Origin
+< X-Runtime: 0.004967
+< Content-Security-Policy-Report-Only: default-src 'self' https: https://assets.grooveapp.com/; font-src 'self' https: data:; img-src 'self' https: data:; object-src 'none'; script-src 'self' https: 'sha256-rnCv9YsRc1bPlcjF00cdflQoGKAh1VBbXcY4IFrDaFY=' 'sha256-ikUayDGcXFig9AxzcG35foXLtbwEsFwiT0gFrJ1erL8=' 'sha256-s0761h4ra0f3WSBdCyYY/WCsxbzcluVUNo382Ih+MbM=' 'sha256-u1yGwJFi9M3J1F4zp3irCfQ3Rz3GwOtJvLi977huBS4=' 'sha256-UOznA/BJ/9/07F8TgEcynmZLlMi4DiGQpsBtru7D7Jk=' 'sha256-mpFoYteLwvADVs0q0OdXnHxLl3XqmJILMtDU1HTWRhI=' 'sha256-c0t3PPc4LDcn2l4hF+I543XwLOrCV55CQSPcsIdtEiQ=' 'sha256-lDH8McbfOHqmJMPPHCM62xAGypzlKdKpzTLAI5Nq+pM='; style-src 'self' https: 'unsafe-hashes' https://maxcdn.bootstrapcdn.com 'sha256-Go04rLD+KX2EmFTIQELVhuU9gVIzmh+CF1xznFMryB4=' 'sha256-PH3fp8v60qAAUApooitjlghBCXWIn85KYiIQUdAjprc=' 'sha256-jeqF/KOZQUN09P6WureBhg6KaSU3byjxxUBt0mQk5DA=' 'sha256-vQ0Nt5YJ+gCaOMe793su/EY9kpw+MgaAyDDmAJt1UlA=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-oA2TsMXCOcliP9C8+49BsWemU0VGhW/ZfZAubA96S98=' 'sha256-LQJVtx4E+7QLc/27JAyT2VdFebLxE4jtchXdGNHy8js=' 'sha256-/FaXk81zz9YAIcWbnkOXLTr42pk0EB8Ny17MP08gnRE=' 'sha256-aN7pZlOLpMw5LW8Qi3fxXCcxWI76QiXUreAdRogjrL0=' 'sha256-7jANdddfwNT7B2o9/7oV7zbSWwOqiOMMWHQfUuqgsIg='; connect-src 'self' https://api-js.mixpanel.com https://api.segment.io https://cdn.segment.com wss://notifications.grooveapp.com; report-uri https://o84998.ingest.sentry.io/api/1190271/security/?sentry_key=c13ce42a7e244ce3b1e1493e1a678cd5&sentry_environment=production
+< Location: https://engine.groove.clari.com/
+< Strict-Transport-Security: max-age=0; includeSubDomains
+< X-Request-Id: d56b263f-d244-0eb8-06ba-9d1bcc1d4ae9
+< Date: Fri, 13 Dec 2024 05:04:35 GMT
+< Content-Length: 98
+< Permissions-Policy: accelerometer=(), gyroscope=(), magnetometer=(), payment=(), usb=()"
+< Via: 1.1 spaces-router (3ec5bdba973c)
+< X-Frame-Options: SAMEORIGIN
+
+<html><body>You are being <a href="https://engine.groove.clari.com/">redirected</a>.</body></html>

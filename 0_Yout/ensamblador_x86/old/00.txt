@@ -1,0 +1,16 @@
+                        https://www.youtube.com/@NEOMATRIXcode/playlists
+
+:::  nasm  -f elf  ./main.asm  -o ./main.o 
+
+:::  ld  -m elf_i386  -s ./main.o  -o ./main.exe
+
+
+
+
+::: nasm  -f  elf   mango.asm                       ==>  mango.o
+::: nasm  -f  elf   mango.asm  -o mochiMango.o      ==>  mochiMango.o           
+
+
+::: ld -m elf_i386 -s -o finale mango.o
+
+::: ld -m elf_i386 -s mango.o  -o mangoFinale

@@ -1,0 +1,43 @@
+          ::: git branch -a     -r        -l        <3 <3 :3 
+            ' -a --all    -r --remote    -l --list  (si... list pa locales :u) '
+
+# RENOMBRAR RAMA ACTUAL
+  ::: git branch -m newNameCurrentBranch
+
+
+## CREAR RAMAS
+  ::: git branch name_newBranch
+  ::: git checkout -b name_newBranch
+       // no deja crear una rama si no tienes un archivoConCommit antes en el repositorio
+
+
+
+  ::: git checkout nameBranchCabecera      // saltar entre ramas/cabeceras
+
+
+# CREA UNA RAMA Y NOS MUEVE A ELLA AUTO.  git branch mango + git checkout mango === git checkout -b mango
+::: git checkout -b nameBranchCabecera   
+
+
+
+# ELIMINAR RAMA
+  ::: git branch -d nameBranch
+  ::: git branch -D nameBranch                'fuerza el borrado'
+
+      ::: git push origin -d nameBranch      'Eliminar rama en repoRemoto'
+
+
+
+## MUESTRA RAMAS EXISTENTES Y SU HISTORIA
+  ::: git show-branch
+  ::: git show-branch --all
+
+
+    ::: git fetch origin        'puedeTraer todas la ramas del repo remoto, no losUpdates'      <3 <3 <3 <3 <3 
+     :: git branch -r           'muestra las ramas remotas'                     <3 <3
+      : git branch -a           'muestra todas las ramas locales y remotas'     <3 <3 <3 <3
+
+
+##  PUSH RAMAS A REPO_REMOTO
+  ::: git checkout nameBranchHere
+  ::: git push origin nameBranchHere

@@ -1,0 +1,4 @@
+
+::: which pkexec | xargs ls -lah            'sacale el permiso suid, PwnKit '
+
+    :: sudo chmod -s $(which pkexec)       

@@ -1,0 +1,20 @@
+https://cn-dc1.uber.com/
+
+> GET / HTTP/1.1
+> Host: cn-dc1.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 403 Forbidden
+< Content-Type: text/plain
+< Set-Cookie: __cf_bm=JfZYnQByxYYJkNd.cZMvZrUWDIPzB0ywoLH6fwDIwfM-1734066269-1.0.1.1-zmA5vv4nlH8CLgGlSxMmSoCz0p7tKHy5_H3171ru5gnQdoNwgsrwWvYj64biuDGFWD2YJp1BybalTv3mME_EKw; path=/; expires=Fri, 13-Dec-24 05:34:29 GMT; domain=.uber.com; HttpOnly; Secure; SameSite=None
+< X-Uber-Edge: ufe:production-cloudflare:compute-0:dca24,cloudflare:production:default
+< Server: cloudflare
+< Cf-Ray: 8f1369ea0d996dfe-LIM
+< Date: Fri, 13 Dec 2024 05:04:29 GMT
+< Strict-Transport-Security: max-age=31536000
+< X-Content-Type-Options: nosniff
+< X-Xss-Protection: 1; mode=block
+< Cf-Cache-Status: DYNAMIC
+< Content-Length: 13
+
+access denied

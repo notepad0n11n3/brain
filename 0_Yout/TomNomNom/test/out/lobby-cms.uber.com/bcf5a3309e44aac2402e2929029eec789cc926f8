@@ -1,0 +1,26 @@
+http://lobby-cms.uber.com/
+
+> GET / HTTP/1.1
+> Host: lobby-cms.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Date: Fri, 13 Dec 2024 05:04:34 GMT
+< Content-Type: text/html
+< X-Uber-Edge: ,cloudflare:production:default
+< Cf-Ray: 8f136a06db996dfe-LIM
+< Cache-Control: max-age=3600
+< Set-Cookie: __cf_bm=5TjHa6OHIT._SJqPthGv1fHlIse3fFqNKDJtVXzMe10-1734066274-1.0.1.1-R3utx0f6Wt1JLCPRgIYPzkccTIh6pO8s4Rmf_MUkjOjHO3HtIIgqBWh4xnqJWQT9c.M0ATxSIBeczmsCd0Kqgg; path=/; expires=Fri, 13-Dec-24 05:34:34 GMT; domain=.uber.com; HttpOnly
+< Server: cloudflare
+< Content-Length: 167
+< Expires: Fri, 13 Dec 2024 06:04:34 GMT
+< Location: https://lobby-cms.uber.com/
+< Vary: Accept-Encoding
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>cloudflare</center>
+</body>
+</html>

@@ -1,0 +1,13 @@
+
+    MUCHAS VECES SE REFIEREN A ESTO COMO    OSINT(OpenSourceIntelligence)...!!! !!! !!! 
+
+* Recolecci[on de inforamci[on sobre un objetivo determinado sin que las actividades realizadas por el analista sean m[inimamente detectadas por dicho objtivo.
+
+
+* Dif[icil de realizar y a menudo proporciona resultados poco concluyentes 
+
+* La manera habitual de recolecci[on pasiva de informaci[on es mediante el acceso a la informaci[on en lugares p[ublicos 
+
+
+
+* Raramente se utiliza de manera individual

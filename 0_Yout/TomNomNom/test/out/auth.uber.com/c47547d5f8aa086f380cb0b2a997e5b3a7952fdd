@@ -1,0 +1,29 @@
+https://auth.uber.com/
+
+> GET / HTTP/1.1
+> Host: auth.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Cache-Control: max-age=0
+< X-Envoy-Upstream-Service-Time: 114
+< Via: 1.1 google
+< Date: Fri, 13 Dec 2024 05:04:32 GMT
+< Content-Type: text/html
+< Location: https://auth.uber.com/v2/
+< Strict-Transport-Security: max-age=31536000
+< X-Uber-Edge: e4-dca11:w:1317059953,ufe:production-cloud-gateway:compute-0:dca23,ufe:production-cloud-ecg-l7:default:gru3
+< Server: ufe
+< X-Frame-Options: SAMEORIGIN
+< X-Content-Type-Options: nosniff
+< X-Xss-Protection: 1; mode=block
+< Vary: Accept-Encoding
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>

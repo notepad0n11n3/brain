@@ -1,0 +1,29 @@
+http://devbuilds.uber.com/
+
+> GET / HTTP/1.1
+> Host: devbuilds.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Via: 1.1 ba321a618e817037ce8e0d09e9005b46.cloudfront.net (CloudFront)
+< Location: https://devbuilds.uber.com/
+< X-Xss-Protection: 1; mode=block
+< Referrer-Policy: strict-origin-when-cross-origin
+< X-Content-Type-Options: nosniff
+< Vary: Origin
+< X-Cache: Redirect from cloudfront
+< Content-Length: 167
+< X-Amz-Cf-Pop: LIM50-P1
+< X-Amz-Cf-Id: bYO4h-9cZLn1PnguzgbkrkGJy-Px2aTrNp93WkGfN5I8c7CEHvShyQ==
+< Content-Type: text/html
+< Date: Fri, 13 Dec 2024 05:04:33 GMT
+< X-Frame-Options: SAMEORIGIN
+< Server: CloudFront
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>CloudFront</center>
+</body>
+</html>

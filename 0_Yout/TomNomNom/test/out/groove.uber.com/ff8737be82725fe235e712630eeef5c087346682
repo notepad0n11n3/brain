@@ -1,0 +1,13 @@
+http://groove.uber.com/
+
+> GET / HTTP/1.1
+> Host: groove.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 404 Not Found
+< Content-Length: 9
+< Content-Type: text/html
+< Via: 1.1 spaces-router (3ec5bdba973c)
+< Date: Fri, 13 Dec 2024 05:04:35 GMT
+
+Not Found

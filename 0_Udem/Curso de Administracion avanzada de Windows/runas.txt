@@ -1,0 +1,22 @@
+::: help | more                 // yep more like a linux <3
+
+
+// ejecutar algo como otro usuario
+
+
+        ::: su  -   <usuario> -c "<comandos>"            like runas en linux <3
+
+        ::: runas  /user:userNameHere  "programHere  argumento1  argumento2"
+
+                  : runas /user:administrator regedit
+                                                cmd
+
+                  : runas /user:nameUser "notepad.exe C:\boot.init" 
+
+              
+              para =>  ::: runas /user:administrator cmd
+
+                      :: net user administrator                ( Account Active: No)
+                      :: net user administrator /active:yes    (necesitas el cmd como admin...!!! :\ )
+                      :: net user administrator /active:no      <3 
+

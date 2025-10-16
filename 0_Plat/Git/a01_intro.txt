@@ -1,0 +1,28 @@
+
+::: git add . && git commit -m "." && git push origin master
+																															--force   (x si la cagas)
+
+::: git log --all --graph --decorate --stat --oneline -p
+
+
+# Inicia un repositorio dentro de la carpeta
+  ::: git init
+
+# add
+  
+  ::: git add my_file.txt
+  ::: git add .               // <- agrega todos los archivos que cambiaron dentro de la carpeta
+
+
+  ::: git comimt -m "version 1 MANGO"
+
+# estado de la base de datos
+
+  ::: git status
+
+# MUESTRA LOS CAMBIOS HISTORICOS REALIZADOS
+  ::: git show               // cambios realizados de el ultimoCOMMIT
+  ::: git show archivo.txt   // cambios en archivoEspecifico
+
+  ::: git log       // historia entera del repositorio                      -p      --oneline
+  ::: git log archivo.txt     // historia entera de UN ARCHIVO <3 <3 <3     -p      --oneline

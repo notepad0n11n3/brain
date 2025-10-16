@@ -1,0 +1,113 @@
+
+::: <pressTab>      #miniHelp comands
+
+::: help
+
+::: workspaces create|list|load|remove
+
+::: modules       # mostrar modulos instalados
+
+
+::: marketplace search|info|install|refresh|remove
+
+
+::: marketplace  search  whois
+
+[recon-ng][default] > marketplace search whois
+[*] Searching module index for 'whois'...
+
+    +----------------------------------------------------------------------------------------------+
+    |                      Path                     | Version |     Status    |  Updated   | D | K |
+    +----------------------------------------------------------------------------------------------+
+    | recon/companies-domains/viewdns_reverse_whois | 1.1     | not installed | 2021-08-24 |   |   |
+    | recon/companies-multi/whois_miner             | 1.1     | not installed | 2019-10-15 |   |   |
+    | recon/domains-companies/whoxy_whois           | 1.1     | not installed | 2020-06-24 |   | * |
+    | recon/domains-contacts/whois_pocs             | 1.0     | not installed | 2019-06-24 |   |   |
+    | recon/netblocks-companies/whois_orgs          | 1.0     | not installed | 2019-06-24 |   |   |
+    +----------------------------------------------------------------------------------------------+
+
+     D = Has dependencies. See info for details.
+     K = Requires keys. See info for details.
+
+
+
+::: marketplace info recon/domains-contacts/whois_pocs
+
+::: marketplace install recon/domains-contacts/whois_pocs
+
+
+::: modules load|reload|search
+
+::: modules search
+
+[recon-ng][default] > modules search
+  Recon
+  -----
+    recon/domains-contacts/whois_pocs
+
+::: modules load recon/domains-contacts/whois_pocs
+
+::: <pressTab>  #miniHelp
+
+::: options                             
+ :: options  list|set|unset
+
+::: info
+
+
+
+::: options set SOURCE goro.des
+
+
+::: run
+
+::: show contacts
+
+
+::: back
+
+-  - -  - -  - -  - -  - -  - -  - -  - -  - 
+
+::: marketplace search shodan
+
+::: marketplace install recon/companies-multi/shodan_org
+    [*] Module installed: recon/companies-multi/shodan_org
+    [*] Reloading modules...
+    [!] 'shodan_api' key not set. shodan_org module will likely fail at runtime. See 'keys add'.
+
+::: keys add shodan_api  apiKeyHere
+
+::: modules load recon/companies-multi/shodan_org
+
+::: options list
+
+::: options set SOURCE google.com
+
+::: options list
+
+::: run
+
+::: show 
+ :: show companies|contacts|credentials|domains|hosts|leaks|locations|netblocks|prots|profiles|pushpings|repositories|vulnerabilities
+
+::: show hosts
+
+
+
+-  - -  - -  - -  - -  - -  - -  - -  - -  - 
+
+::: marketplace search
+
+::: marketplace install reporting/html
+
+::: modules load reporting/html
+
+::: options list
+
+::: options set CREATOR panda8hat
+
+::: options set CUSTOMER clienteX
+
+::: run 
+
+

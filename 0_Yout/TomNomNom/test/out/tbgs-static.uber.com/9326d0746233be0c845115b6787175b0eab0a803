@@ -1,0 +1,20 @@
+https://tbgs-static.uber.com/
+
+> GET / HTTP/1.1
+> Host: tbgs-static.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 403 Forbidden
+< X-Grtm: 
+< X-Request-Id: b75f78cc-b869-43f8-a860-539483760b1c
+< Date: Fri, 13 Dec 2024 05:04:32 GMT
+< Server: Google-Edge-Cache
+< Content-Length: 55
+< Content-Type: text/plain
+< X-Gcache: cuz;bypassed
+< X-Gregion: PE/PECUS/Cusco
+< X-Gid: 
+< Alt-Svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000
+
+Google-Edge-Cache: Unsigned request rejected
+Error: 115

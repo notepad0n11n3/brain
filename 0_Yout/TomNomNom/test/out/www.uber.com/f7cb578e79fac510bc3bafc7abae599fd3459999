@@ -1,0 +1,28 @@
+https://www.uber.com/
+
+> GET / HTTP/1.1
+> Host: www.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 406 Not Acceptable
+< Set-Cookie: _ua={"session_id":"e1924484-8b79-4aa6-814c-9ad6ec9375fb","session_time_ms":1734066272311}; path=/; secure
+< Set-Cookie: marketing_vistor_id=0b0fed68-0bfa-4041-a6e2-d3c4d8cbe1a3; path=/; expires=Sat, 13 Dec 2025 05:04:32 GMT; domain=.uber.com; secure
+< Set-Cookie: user_city_ids=1509; path=/; secure; httponly
+< Set-Cookie: jwt-session=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InNsYXRlLWV4cGlyZXMtYXQiOjE3MzQwNjgwNzIzMTJ9LCJpYXQiOjE3MzQwNjYyNzIsImV4cCI6MTczNDE1MjY3Mn0.WD7JAhNYiwKezMNEL6stslhhljcmrk6-NGVCnJQ_1X8; path=/; expires=Sat, 14 Dec 2024 05:04:32 GMT; secure; httponly
+< Set-Cookie: __cf_bm=lyvR1N24f_ILxcGhphzOKPdR0zgTbhypLfyOYPlG4k8-1734066272-1.0.1.1-58ezNy0G4J13161OlqL4t9Zi274Ljg.PoxPQmP5slT235xhgS15SAzCIhXvfb9j7Segn9crh.xtEkt4HpnA.SQ; path=/; expires=Fri, 13-Dec-24 05:34:32 GMT; domain=.uber.com; HttpOnly; Secure; SameSite=None
+< Strict-Transport-Security: max-age=31536000
+< X-Content-Type-Options: nosniff
+< X-Xss-Protection: 1; mode=block
+< Cf-Cache-Status: BYPASS
+< Vary: Accept-Encoding
+< Date: Fri, 13 Dec 2024 05:04:32 GMT
+< Content-Type: text/plain; charset=utf-8
+< X-Frame-Options: SAMEORIGIN
+< Content-Length: 14
+< X-Envoy-Upstream-Service-Time: 15
+< Server: cloudflare
+< Cache-Control: max-age=0
+< X-Uber-Edge: e4-dca23:w:1065240927,ufe:production-cloudflare:compute-0:dca18,cloudflare:production:default
+< Cf-Ray: 8f1369f958756def-LIM
+
+Not Acceptable

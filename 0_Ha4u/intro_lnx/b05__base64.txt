@@ -1,0 +1,12 @@
+
+
+::: echo "test" | base64
+    dGVzdAo=
+
+::: echo 'dGVzdAo=' | base64 -d
+    test
+
+
+::: cat /etc/hosts | base64       'output en mutiples lineas'
+
+::: cat /etc/hosts | base64 -w 0     'output en una sola linea <3...'       

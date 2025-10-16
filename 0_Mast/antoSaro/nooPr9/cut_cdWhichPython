@@ -1,0 +1,8 @@
+
+::: cd $(which python | cut -d "/" -f -3)
+
+
+
+        cut -d "/" -f -3          de inicio hasta el tercero
+        cut -d "/" -f 3-          desde el tercero hasta el final
+ 

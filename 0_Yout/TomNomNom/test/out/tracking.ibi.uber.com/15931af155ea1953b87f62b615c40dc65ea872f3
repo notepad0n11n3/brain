@@ -1,0 +1,16 @@
+https://tracking.ibi.uber.com/
+
+> GET / HTTP/1.1
+> Host: tracking.ibi.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 404 Not Found
+< Server: SMS API
+< Content-Length: 99
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload;
+< Vary: Origin
+< Vary: Access-Control-Request-Method
+< Vary: Access-Control-Request-Headers
+< Content-Type: application/json
+
+{"requestError":{"serviceException":{"messageId":"NOT_FOUND","text":"Requested URL not found: /"}}}

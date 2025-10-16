@@ -1,0 +1,61 @@
+Las ssh(privada/publicas) no son por repositorio o proyecto, si no por PERSONA
+
+cada usuario/computadora/persona tiene que tener su propia clavePu/Pri
+      3pc  3 claves  // una vez por computadora
+
+## GENERAR CLAVE SSH
+
+  ::: ssh-keygen -t rsa -b 4096 -C "local@host.exe"
+
+        -t rsa      // tipo de cifrado
+        -b 4096     // complejidadMatematica paraElCifrado
+
+## REVISAR que el SERVIDOR DE LLAVESssh ESTE PRENDIDO (windows/unix)
+  ::: eval $(ssh-agent -s)
+            Agent pid 
+
+## AGREGAR LLAVE_PUBLICAssh A SERVIDOR DE LLAVESssh
+  ::: ssh-add ~/.ssh/id_rsa
+      Identity added: /home/aeo8/.ssh/id_rsa (local@host.exe)
+
+
+
+## SSH al REPOSITORIO  (clone && ssh(copiLinkSsh_option)) <3 <3 <3
+  ::: cd  ~/Desktop/repoFolder_Here
+  ::: git remote -v
+
+  ::: git remote set-url git@github.com:notepad0n11n3/hyperblog.git
+  ::: git remote set-url origin url_SSH_del_repositorio_en_Github
+
+  ::: git remote -v
+
+  ::: git pull
+   :: git pull origin master
+
+
+
+
+
+
+
+### MAC MAC MAC
+
+  ::: cd ~
+  ::: ssh-keygen -t rsa -b 4096 -C "local@host.exe"
+
+  ::: cd ~/.ssh && ls -lah
+        id_rsa   id_rsa.pub  known_hosts
+
+  ::: eval "$(ssh-agent -s)"
+
+  if(# MAC MODERNO  SIERRA 10.12  O +++){
+    ::: vim ~/.ssh/config
+          
+          Host *
+            AddKeysToAgent yes
+            UseKeychain yes
+            IdentityFile ~/.ssh/id_rsa
+  }
+
+  ::: ssh-add -K ~/.ssh/id_rsa   <-- si da problemas daleSin la -K
+  ::: ssh-add ~/.ssh/id_rsa

@@ -1,0 +1,11 @@
+http://tracking.ibm.uber.com/
+
+> GET / HTTP/1.1
+> Host: tracking.ibm.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 302 Found
+< Content-Length: 0
+< Location: https://tracking.ibm.uber.com/
+< Cache-Control: no-cache
+

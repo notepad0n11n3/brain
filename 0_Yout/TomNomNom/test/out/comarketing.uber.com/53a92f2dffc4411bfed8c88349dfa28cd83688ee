@@ -1,0 +1,20 @@
+https://comarketing.uber.com/
+
+> GET / HTTP/1.1
+> Host: comarketing.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 302 Found
+< Date: Fri, 13 Dec 2024 05:04:36 GMT
+< Content-Type: text/html; charset=UTF-8
+< Server: frontify
+< Pragma: no-cache
+< Strict-Transport-Security: max-age=31536000;
+< Cache-Control: no-store, no-cache, must-revalidate
+< Set-Cookie: AWSALB=PLt5IaplOMQftG+En5R9HfNEMFNCwjoPN8XSK5Lhi7jr1MIvvXhpscSnpihK5Qp6dPzp97VXnEMyUkv1IFtZz0PnFIeo0WvBroyZ8Tc60QtepIHZqis1V1wfJce5; Expires=Fri, 20 Dec 2024 05:04:36 GMT; Path=/
+< Set-Cookie: AWSALBCORS=PLt5IaplOMQftG+En5R9HfNEMFNCwjoPN8XSK5Lhi7jr1MIvvXhpscSnpihK5Qp6dPzp97VXnEMyUkv1IFtZz0PnFIeo0WvBroyZ8Tc60QtepIHZqis1V1wfJce5; Expires=Fri, 20 Dec 2024 05:04:36 GMT; Path=/; SameSite=None; Secure
+< Set-Cookie: PHPSESSID=ef8a4ohkv6i06qm347udvn9oejbtc4n8; expires=Fri, 20 Dec 2024 05:04:36 GMT; Max-Age=604800; path=/; secure; HttpOnly; SameSite=Lax
+< Expires: Thu, 19 Nov 1981 08:52:00 GMT
+< Location: /auth/?referer=%2F
+< X-Frontify-Version: app-server-2024-12-12T15-16-30Z-eeef9b36
+

@@ -1,0 +1,8 @@
+
+::: git log           -p       --oneline
+
+
+# COMPARAR 2 COMMITS
+  ::: git diff 6ba12b26974f347f98aac40e8475d11be2de5842 decab5feeae759e661c766d9771efc5f46a30327
+
+  ::: git diff decab5feeae759e661c766d9771efc5f46a30327 6ba12b26974f347f98aac40e8475d11be2de5842

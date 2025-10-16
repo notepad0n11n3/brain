@@ -1,0 +1,26 @@
+### VER PUERTOS ABIERTOS
+
+::: netstat -nat        
+
+
+
+::: ss -lntp            'Muestra puertos abiertos'
+
+
+
+::: cat /proc/net/tcp
+
+    0: 0100007F:AD57 00000000:0000 0A 
+
+          AD57  'puerto abierto en hexadecimal'
+
+
+
+::: echo; echo "AD57
+                E0C2
+                883C
+                B634" | sort -u | while read line; do echo "\xA\x9 Puerto ${line} -> $(echo "obase=10; ibase=16; ${line}" | bc ) - OPEN" ; done
+
+
+
+  :: lsof -i:numberPort           'info sobre el puerto abierto'

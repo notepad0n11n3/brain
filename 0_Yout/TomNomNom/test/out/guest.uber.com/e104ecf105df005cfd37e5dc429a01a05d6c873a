@@ -1,0 +1,32 @@
+https://guest.uber.com/
+
+> GET / HTTP/1.1
+> Host: guest.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 302 Found
+< X-Envoy-Upstream-Service-Time: 115
+< Strict-Transport-Security: max-age=31536000
+< Content-Type: text/html
+< X-Frame-Options: SAMEORIGIN
+< Server: ufe
+< Date: Fri, 13 Dec 2024 05:04:41 GMT
+< X-Uber-Edge: e4-dca18:w:1000218732,ufe:production-cloud-gateway:compute-0:dca18,ufe:production-cloud-ecg-l7:default:gru2
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+< Set-Cookie: csid=deleted; Path=/; Domain=guest.uber.com; Expires=Thu, 01 Jan 1970 00:00:01 GMT; Max-Age=0
+< Set-Cookie: fsid=deleted; Path=/; Domain=guest.uber.com; Expires=Thu, 01 Jan 1970 00:00:01 GMT; Max-Age=0
+< Set-Cookie: state=JF0333C63bI0EH.1734067181997.B3htg0eMXFlHFX0JWPmb71ppjDo2vcP98iYO08Bks+M=; Path=/; Domain=guest.uber.com; Expires=Fri, 13 Dec 2024 05:19:41 GMT; HttpOnly; Secure
+< Vary: Accept-Encoding
+< Via: 1.1 google
+< X-Content-Type-Options: nosniff
+< Location: https://auth.uber.com/v2/?breeze_init_req_id=08446f7f-b8a3-4cd0-8c93-8d6449836e71&breeze_local_zone=dca18&next_url=https%3A%2F%2Fguest.uber.com%2F&state=tcVmGOhjcZZdOmW9f7Ftslz_aGrPVD8CWHkmpURNtMU%3D
+< X-Xss-Protection: 1; mode=block
+< Cache-Control: max-age=0
+
+<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>302 Found</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>

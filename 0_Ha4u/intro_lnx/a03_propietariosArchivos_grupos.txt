@@ -1,0 +1,24 @@
+
+
+
+# CAMBIA EL PROPIETARIO DEL ARCHIVO
+  ::: chown root ./file.txt
+
+# CAMBIA EL GRUPO DEL ARCHIVO
+  ::: chown :root ./file.txt
+
+
+# CAMBIAR  PROPIETARIO Y USUARIO
+
+  ::: chown newpropietario:newGrupo ./file.txt
+
+  ::: chown root:root ./file.txt
+
+
+# CAMBIAR LOS PERMISOS O PROPIETARIOS DE TODOS LOS ARCHIVOS Y SUBDIRECTORIOS DENTRO DE UN DIRECTORIO
+
+    ::: chown -R 755 /etc/misarchivos
+
+            -R    recursivo
+            -f    force
+            -v    verbose

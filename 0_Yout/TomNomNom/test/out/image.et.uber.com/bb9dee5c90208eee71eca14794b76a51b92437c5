@@ -1,0 +1,24 @@
+https://image.et.uber.com/
+
+> GET / HTTP/1.1
+> Host: image.et.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 403 Forbidden
+< Content-Length: 373
+< Server: AkamaiGHost
+< Mime-Version: 1.0
+< Date: Fri, 13 Dec 2024 05:04:36 GMT
+< Content-Type: text/html
+< Expires: Fri, 13 Dec 2024 05:04:36 GMT
+
+<HTML><HEAD>
+<TITLE>Access Denied</TITLE>
+</HEAD><BODY>
+<H1>Access Denied</H1>
+ 
+You don't have permission to access "http&#58;&#47;&#47;image&#46;et&#46;uber&#46;com&#47;" on this server.<P>
+Reference&#32;&#35;18&#46;da062be&#46;1734066275&#46;226ec21e
+<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;da062be&#46;1734066275&#46;226ec21e</P>
+</BODY>
+</HTML>

@@ -1,0 +1,19 @@
+http://investor.uber.com/
+
+> GET / HTTP/1.1
+> Host: investor.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Cf-Cache-Status: HIT
+< Date: Fri, 13 Dec 2024 05:04:36 GMT
+< Vary: Accept-Encoding
+< Server: cloudflare
+< Content-Type: text/html; charset=utf-8
+< Location: https://investor.uber.com/
+< Cf-Ray: 8f136a0fcbce6dfe-LIM
+< X-Content-Type-Options: nosniff
+
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="https://investor.uber.com/">here</a>.</h2>
+</body></html>

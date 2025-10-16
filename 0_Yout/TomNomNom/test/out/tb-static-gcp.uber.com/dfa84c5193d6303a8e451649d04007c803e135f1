@@ -1,0 +1,13 @@
+http://tb-static-gcp.uber.com/
+
+> GET / HTTP/1.1
+> Host: tb-static-gcp.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Cache-Control: private
+< Location: https://tb-static-gcp.uber.com:443/
+< Content-Length: 0
+< Date: Fri, 13 Dec 2024 05:04:31 GMT
+< Content-Type: text/html; charset=UTF-8
+

@@ -1,0 +1,24 @@
+    32 bits    16 bits          8bits 
+
+     %eax        %ax           %ah, %al                                ------------------------
+     %ebx        %bx           %bh, %bl                                | 15 AH  8 | 7  AL   0 |    '8 bits'
+     %ecx        %cx           %ch, %cl                                ------------------------
+     %edx        %dx           %dh, %dl                                | 15      AX         0 |    '16 bits'
+                                                  ---------------------------------------------
+                                                  | 31               EAX                    0 |    '32 bits'
+                                                  --------------------------------------------- 
+
+
+                                                                       ------------------------
+     %esi        %si                                                   | 15      SI         0 |   '16 bits'
+     %edi        %di                              ---------------------------------------------
+                                                  | 31               ESI                    0 |   '32 bits'
+                                                  ---------------------------------------------
+
+
+     %esp        %sp                          Reservados para uso espec[ifico de subrutinas
+     %ebp        %bp                          Reservaods para use espec[ifico de subrutinas
+
+     %eip                                     CONTADOR PROGRAMA
+
+     %eflags                                  Palabra de estado

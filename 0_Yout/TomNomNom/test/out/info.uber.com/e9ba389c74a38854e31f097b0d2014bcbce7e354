@@ -1,0 +1,19 @@
+http://info.uber.com/
+
+> GET / HTTP/1.1
+> Host: info.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 200 OK
+< X-Request-Id: d1911f54a20e7001
+< Content-Security-Policy: default-src 'self'; img-src 'self';script-src 'self' 'sha256-J+Y4l+yfxXd4cYzH9LhXUSHSb7zZu2bgddfCumVZJMo=';object-src 'none';form-action 'none';frame-src 'none';style-src 'self' 'sha256-OU0LTytxyR8kjQ+DRjRCDKhUAKEeH7rb0D5nBWOzRlQ='
+< Content-Type: text/html;charset=UTF-8
+< Server: adobe
+< Cache-Control: private, no-cache, no-store, max-age=0
+< Referrer-Policy: strict-origin
+< X-Frame-Options: SAMEORIGIN
+< X-Content-Type-Options: nosniff
+< Content-Length: 539
+< Date: Fri, 13 Dec 2024 05:04:32 GMT
+
+<!DOCTYPE HTML><head><title>404 - Page not found</title> <style>body{font-family: 'sans-serif'; font-size:20px;}div.message{text-align: center; position: relative; top: 150px; margin: auto; width: 600px;}div.details{position: absolute; bottom: 10px; right: 10px; font-size: 18px;}</style></head><body><div class="message"><h1>Page not found</h1> The content you are looking for does not exist. </div><div class="details"> Error 404  | <script language="JavaScript">document.write( new Date().toLocaleString());</script></div></body></html>

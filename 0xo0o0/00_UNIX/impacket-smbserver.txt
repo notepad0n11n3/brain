@@ -1,0 +1,2 @@
+
+ ::: impacket-smbserver nameSmbFolder $(pwd) -smb2support

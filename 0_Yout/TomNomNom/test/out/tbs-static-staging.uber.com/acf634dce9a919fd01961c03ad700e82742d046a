@@ -1,0 +1,25 @@
+https://tbs-static-staging.uber.com/
+
+> GET / HTTP/1.1
+> Host: tbs-static-staging.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 401 Unauthorized
+< X-Content-Type-Options: nosniff
+< X-Gcache: dfw;uncacheable, atl;uncacheable, cuz;uncacheable
+< Content-Type: application/xml
+< X-Uber-Edge: e4-dca22:w:1338730069,ufe:production-cloud-gateway:compute-0:dca22,ufe:production-cloud-ecg-l7:default:cbf2
+< Server: Google-Edge-Cache
+< Via: 1.1 google
+< Cache-Control: max-age=0
+< X-Xss-Protection: 1; mode=block
+< Vary: Accept-Encoding
+< Date: Fri, 13 Dec 2024 05:04:32 GMT
+< X-Frame-Options: SAMEORIGIN
+< Strict-Transport-Security: max-age=31536000
+< X-Envoy-Upstream-Service-Time: 68
+< X-Request-Id: 76cafffb-7ee1-4a12-a693-594c2e54352f
+< Alt-Svc: h3=":443"; ma=2592000, h3-29=":443"; ma=2592000
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>AccessDenied</Code><Message>Access denied for the resource at /, make sure you have the correct permissions</Message><Resource>/</Resource><RequestId>9afa3eca-8e58-41d3-9e8b-49f33ac12378</RequestId></Error>

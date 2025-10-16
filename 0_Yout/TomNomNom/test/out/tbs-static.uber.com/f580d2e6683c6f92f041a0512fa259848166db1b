@@ -1,0 +1,17 @@
+https://tbs-static.uber.com/
+
+> GET / HTTP/1.1
+> Host: tbs-static.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 403 Forbidden
+< X-Cache: Error from cloudfront
+< Via: 1.1 427ef5bd77984e80d3ea11e91a2411d0.cloudfront.net (CloudFront)
+< Date: Fri, 13 Dec 2024 05:04:33 GMT
+< Content-Type: text/xml
+< Content-Length: 146
+< Server: CloudFront
+< X-Amz-Cf-Pop: LIM50-P1
+< X-Amz-Cf-Id: UkpkApgL1EBp8BHwSW-zOuGzuhSEdU5wdGiibdKyT2bhH9U4DWNGnQ==
+
+<?xml version="1.0" encoding="UTF-8"?><Error><Code>MissingKey</Code><Message>Missing Key-Pair-Id query parameter or cookie value</Message></Error>

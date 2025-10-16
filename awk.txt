@@ -1,0 +1,4 @@
+
+::: awk '/ewe/./<\/nee>/'               \ 'escapa el caractere / con \'     "filtrar lineas desde la conincidencia ewe hasta la etiqueta </nee>"
+
+      

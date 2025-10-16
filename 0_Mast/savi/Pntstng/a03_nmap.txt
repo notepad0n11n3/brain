@@ -1,0 +1,16 @@
+:::  nmap  -sS --min-rate 5000  --open  -vvv  -n  -Pn  -p-  192.168.0.7   -oG  allPortsGoro
+
+        -Pn     no hace host discovery, ley por ah[i que con -Pn no hace ping 
+
+
+:::  nmap  -sC  -sV  -p30,80,69   192.168.0.69    -oN  targetedGoro   
+
+
+
+        -oG  nameHere               exportar en formato grepeable
+        -oN  nameHere               exportar en formato nmap
+
+
+:::  nmap   -sS --min-rate 5000   --open   -vvv   -n   -Pn   -p-   192.168.0.69   -oG  allPortsGoro
+
+        -sS --min-rate 5000             emitir paquetes no mas lentos que 5000 paquetes por segundo

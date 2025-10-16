@@ -1,0 +1,19 @@
+https://experience.uber.com/
+
+> GET / HTTP/1.1
+> Host: experience.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Location: https://team.uberinternal.com/display/UBER/Brand+Guidelines
+< X-Content-Type-Options: nosniff
+< X-Xss-Protection: 1; mode=block
+< X-Uber-Edge: ufe:production-cloud-ecg-l7:default:gru2
+< Server: ufe
+< Content-Length: 0
+< Via: 1.1 google
+< Strict-Transport-Security: max-age=31536000
+< Vary: Accept-Encoding
+< Date: Fri, 13 Dec 2024 05:04:40 GMT
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+

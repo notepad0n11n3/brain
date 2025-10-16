@@ -1,0 +1,32 @@
+https://drivers.uber.com/
+
+> GET / HTTP/1.1
+> Host: drivers.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 302 Found
+< Location: https://auth.uber.com/v2/?breeze_init_req_id=d12e9bdc-376f-48f7-99f3-6a3fb7d919f9&breeze_local_zone=dca18&next_url=https%3A%2F%2Fdrivers.uber.com%2F&state=j3rttYjEpRNE21gLOcB4ixcvJT8RHfUDloU3K2OmWtc%3D
+< Set-Cookie: csid=deleted; Path=/; Domain=drivers.uber.com; Expires=Thu, 01 Jan 1970 00:00:01 GMT; Max-Age=0
+< Set-Cookie: fsid=deleted; Path=/; Domain=drivers.uber.com; Expires=Thu, 01 Jan 1970 00:00:01 GMT; Max-Age=0
+< Set-Cookie: state=JF0333C63bI0EH.1734067171847.mDHnuUInHZEt424vLC6BjoBNrsPQSwMNpk9CZKo8QyE=; Path=/; Domain=drivers.uber.com; Expires=Fri, 13 Dec 2024 05:19:31 GMT; HttpOnly; Secure
+< Content-Type: text/html
+< Strict-Transport-Security: max-age=31536000
+< X-Content-Type-Options: nosniff
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+< Cache-Control: max-age=0
+< X-Xss-Protection: 1; mode=block
+< X-Uber-Edge: e4-dca18:w:997788248,ufe:production-cloud-gateway:compute-0:dca24,ufe:production-cloud-ecg-l7:default:gru2
+< Vary: Accept-Encoding
+< Via: 1.1 google
+< Date: Fri, 13 Dec 2024 05:04:31 GMT
+< X-Frame-Options: SAMEORIGIN
+< X-Envoy-Upstream-Service-Time: 115
+< Server: ufe
+
+<html>
+<head><title>302 Found</title></head>
+<body>
+<center><h1>302 Found</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>

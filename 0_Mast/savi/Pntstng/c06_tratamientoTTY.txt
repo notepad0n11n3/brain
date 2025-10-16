@@ -1,0 +1,30 @@
+            tramamiento de TTY despu]es de una intrusion
+
+
+::: script /dev/null -c bash        #(estando dentro) lanza una seudo consola
+
+            usuario@hostname:/$               #example
+
+Ctrl z            # se queda en segundo plano
+
+::: stty raw -echo
+
+::: fg<pressEnter>      # no se ve el input 
+
+::: reset <Enter>
+
+::: xterm         
+          reset: unknown terminal type unknown
+          Terminal type?_  xterm
+                                  # reinicia la configuraci[on de la consola
+
+::: echo $TERM
+::: export TERM=xterm
+::: export SHELL=bash
+
+## en otra consola
+  ::: stty -a         #obtenemos rows numberHere columns numberHere
+
+#consola principal
+
+::: stty rows 52 columns 187

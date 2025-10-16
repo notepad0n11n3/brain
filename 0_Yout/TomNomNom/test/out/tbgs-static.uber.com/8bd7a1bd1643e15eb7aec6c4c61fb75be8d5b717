@@ -1,0 +1,13 @@
+http://tbgs-static.uber.com/
+
+> GET / HTTP/1.1
+> Host: tbgs-static.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Server: Google-Edge-Cache
+< X-Request-Id: 97af7d28-adfa-47cb-a161-d88aaea4766a
+< Content-Length: 0
+< Location: https://tbgs-static.uber.com/
+< Date: Fri, 13 Dec 2024 05:04:31 GMT
+

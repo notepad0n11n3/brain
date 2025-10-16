@@ -1,0 +1,17 @@
+
+
+#FUNSION DE GIT ADD Y GIT COMMIT, solo funciona en archivos elLos que se uso git add previamente
+  ::: git commit -am "mensaje para el commit" 
+
+        # para archivos nuevos no funciona, es obligado el git add newFile.txt   <<<...!!!
+
+
+
+##  CORREGIR EL MENSAJE DEL [ULTIMO COMMIT  'agrega m[as cambios al [ultimo commit'
+
+  ::: git add .
+
+  ::: git commit --amend
+        nos dejara editar el ultimoMensajeCommit conVim <3 <3 <3 
+        
+  ::: git commit --amend -m "new_textHere"

@@ -1,0 +1,26 @@
+## MUESTRA COMMITS REALIZADO'S POR UN USUARIO'S   usuario--titulo del commit 
+  ::: git shortlog
+
+# Historia de commit con su cambios detallados y en bits por archivo
+  ::: git log -p       // muestra todos los commit y sus CAMBIOS REALIZAODS()
+  ::: git log -p fileHere       // commits y cambios del archivo 
+
+  ::: git log --stat   // resumentTodos losCommits ( fileChanged, insertion, deletion)
+                       // cambios especificos en los archivos likeA resumen
+
+  ::: git log --stat -p --oneline archivoHere.xxx    // si... se pueden juntar <3 <3 <3
+
+  ::: git log --oneline --stat     // cuando el repositorio es muyGrande esto es una bendici[on <3
+
+
+# Regresa el archivo seleccionado al estado de el commit seleccionado, para dar una mirada rapida
+                                                                                  
+  ::: git checkout  decab5feeae759e661c766d9771efc5f46a30327  archivoHere.txt   
+
+  ::: git checkout master archivoHere.txt  // regresar estadoArchivo alUltimoCommitRamaMaster
+
+
+
+ ::: git log -all --graph --decorate --stat --oneline -p
+          stat   lista archivosModificados
+          p      compara los cambios realizados de los archivos

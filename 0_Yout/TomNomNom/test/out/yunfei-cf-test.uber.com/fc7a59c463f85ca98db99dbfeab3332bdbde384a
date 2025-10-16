@@ -1,0 +1,22 @@
+https://yunfei-cf-test.uber.com/
+
+> GET / HTTP/1.1
+> Host: yunfei-cf-test.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 404 Not Found
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+< Date: Fri, 13 Dec 2024 05:04:40 GMT
+< Content-Length: 19
+< Cache-Control: max-age=0
+< Server: ufe
+< Via: 1.1 google
+< X-Frame-Options: SAMEORIGIN
+< Strict-Transport-Security: max-age=31536000
+< X-Content-Type-Options: nosniff
+< Content-Type: text/plain; charset=utf-8
+< X-Uber-Edge: e4-dca24:w:1261876115,ufe:production-cloud-gateway:compute-0:dca11,ufe:production-cloud-ecg-l7:default:gru1
+< X-Envoy-Upstream-Service-Time: 115
+< X-Xss-Protection: 1; mode=block
+
+404 page not found

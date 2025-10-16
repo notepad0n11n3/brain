@@ -1,0 +1,15 @@
+::: nc -nlvp  portHere
+
+        rlwrap     para maquinas WINDOWS, no testeado en LINUX
+
+::: rlwrap nc -nlvp portHere
+
+
+            (apt install rlwrap)
+
+
+google:: netcat windows download
+         https://www.eternallybored.org    (Small update: netcat_?.??  <<--!! <3)
+
+::: cd $HOME/Download && 7z l netcat.zip
+::: unzip netcat.zip -d folderContenedor_archivosNetcat

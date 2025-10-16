@@ -1,0 +1,4 @@
+
+::: git reflog            'muestra el historial detallado del repo'
+
+::: git reset HEAD@{numberHere}           'saltar a la posici[on del head numero(post git reflog)'

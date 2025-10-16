@@ -1,0 +1,45 @@
+                -<--<WORKING DIRECTORY
+                |
+                git add
+                |
+                ->-->STAGING AREA>-->-
+                                     |
+                                     git commit
+                                     |
+                      REPOSITORY<-<-<-
+
+
+::: git init      # inicia git en el directorio actual
+::: git add fileHere.*    # pasar archivos del workingDirectory al stagingArea
+::: git status    # ver el estado de tus archivo
+::: git commit    # pasar archivos del stagingArea al repositorio  :) :) :)
+::: git push    # Subir archivos a un repositorio remoto
+::: git pull   # Trae los cambios del repositorio remoto
+::: git clone   # Hace una copia desde el servidor centro donde esta el codigo
+
+::: git log  # muestra los commit realizados
+
+
+          ## config noob data
+  ::: git config --global user.email "example@example.example"
+  ::: git config --global user.name "exampleHere"
+
+
+    ::: git checkout -- example.example  # revierte los cambios del archivo que mostro $(git status) #
+
+    ::: git diff archivoHere.example  # muestra los cambios realizados pre-$(git add . & git commit etc.. )
+
+    ::: touch .gitignore # archivo de configuraci[on para ignorar carpetas/archivos
+     :: echo "carpeta/archivoHere" >> .gitignore
+
+    ::: git branch   # muestra los branch 
+    ::: git branch nameHere  # Crea un branch del proyecto
+
+    ::: git branch -m newNameHere       #renombrar el nombre de la rama
+
+    ::: git checkout nameBrancHere   # pasamos a trabajar en otro brach del proyecto
+
+
+    =================  GITHUB ======= GITHUB ======== GITHUB================
+
+    

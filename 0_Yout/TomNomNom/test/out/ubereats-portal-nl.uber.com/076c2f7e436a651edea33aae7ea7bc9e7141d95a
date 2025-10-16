@@ -1,0 +1,12 @@
+http://ubereats-portal-nl.uber.com/
+
+> GET / HTTP/1.1
+> Host: ubereats-portal-nl.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 302 Moved Temporarily
+< Connection: close
+< Content-Length: 0
+< Location: https://ubereats-portal-nl.uber.com/
+< Server: BigIP
+

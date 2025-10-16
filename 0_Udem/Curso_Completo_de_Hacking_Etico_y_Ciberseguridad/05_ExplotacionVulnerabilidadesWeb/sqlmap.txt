@@ -1,0 +1,12 @@
+
+buscara puntos de inyeccion vulnerables
+
+
+::: sqlmap  --flush-session -r Desktop/request.burp.txt
+
+
+    --flush-session     elimina residuos de cosas realizadas anteriormente
+
+    -r archivoBurp.txt       paquete interceptado en un panel login con burpsuite(seleccionar con bursuite toda la peticion, click derecho y 'copy to file' , save y ok go )
+
+

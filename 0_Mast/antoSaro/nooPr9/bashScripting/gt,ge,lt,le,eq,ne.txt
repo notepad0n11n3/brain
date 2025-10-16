@@ -1,0 +1,11 @@
+
+-gt greater than   >
+-ge greater or equal >=
+
+-lt lower than  <
+-le lower or equal <=
+
+-eq equal =
+-ne not equal !=        !     =
+
+

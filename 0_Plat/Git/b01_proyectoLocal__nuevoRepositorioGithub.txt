@@ -1,0 +1,38 @@
+// asegurate de estar en la rama master y tener todo listo
+
+
+
+::: git remote add origin https://github.com/notepad0n11n3/hyperblog.git     <<-- Descontinuado, necesitas el personalAccessToken para cada repo-->-->-->-->-\
+                                                                                                                                                              \
+                                                                                                                                                              |
+       // settings\\developer settings\\personal access tokens\\Generate New Token... ... ...                            ghp_7q8nulV5x981PGW5hSg5nvnZtZuPy23vw4B8   +  @
+                                                                                                                                                              |
+                                                                                                                                                              |
+                                                                                                                                                             /
+::: git remote add origin https://ghp_7q8nulV5x981PGW5hSg5nvnZtZuPy23vw4B8@github.com/notepad0n11n3/hyperblog.git   <<-<--https://        github.com/* -<-<-/
+
+
+
+
+
+### MOSTRAR INFO DEL ORIGEN REMOTO
+
+::: git remote 
+  
+  origin
+
+
+### PUEDO VER EL PERSONAL ACCESS TOKEN, <3 <3 <3 <3 <3 <3
+::: git remote -v
+
+  origin  https://<personalAccessToken>@github.com/notepad0n11n3/hyperblog.git (fetch)
+  origin  https://<personalAccessToken>@github.com/notepad0n11n3/hyperblog.git (push)
+
+
+
+::: git push origin master
+
+  "git enviele al origen la rama master <3"
+
+
+::: git pull origin master

@@ -1,0 +1,23 @@
+https://gslink.uber.com/
+
+> GET / HTTP/1.1
+> Host: gslink.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 404 Not Found
+< Content-Length: 162
+< X-Amz-Cf-Pop: LIM50-P2
+< Server: nginx
+< Date: Fri, 13 Dec 2024 05:04:38 GMT
+< X-Cache: Error from cloudfront
+< X-Amz-Cf-Id: IyaV1Z945vTqmPC_nSlJ5Fe3jzd9WFA_VjOZ1E7-xaHklqRTAx-XaQ==
+< Content-Type: text/html
+< Via: 1.1 ee14f20559dee16b220b89538215c938.cloudfront.net (CloudFront)
+
+<html>
+<head><title>404 Not Found</title></head>
+<body bgcolor="white">
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

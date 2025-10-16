@@ -1,0 +1,22 @@
+
+El  --decorate   no es TAN necesario hasta el momento
+
+  ::: git show 
+
+  ::: git show --stat
+
+--stat   muestra los cambios archivos (por bite '+ o -')
+-p      muestra los cambios en los archivos (a nivel de contenido 'codigo' )
+
+
+## DESAPARECI[O EL BOTON DE COMMITS EN GITHUB :u     
+  https://github.com/notepad0n11n3/hyperblog/commits/master                  */commits/nameBranchHere
+
+
+
+
+### help  <3 <3 <3
+
+  ::: git reflog --help
+  ::: git status --help
+  ::: git commit --help

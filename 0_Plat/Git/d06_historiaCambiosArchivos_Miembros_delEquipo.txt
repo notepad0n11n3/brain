@@ -1,0 +1,24 @@
+### commits relizados por los miembros del equipo
+
+  ::: git shortlog 
+
+  ::: git shortlog -sn       'muestra los commits de cada miembro del equipo'
+
+  ::: git shortlog -sn --all
+
+  ::: git shortlog -sn --all --no-merges
+
+
+
+
+::: git config --global alias.mango "shortlog -sn --all --no-merges"
+
+
+### autor de cada linea de un archivo
+
+  ::: git blame README.md
+
+  ::: git blame -c README.md          ' -c identa el output para mejor lectura <3'
+
+
+  ::: git blame archivo.html  -L10,25        'de la linea 10 a 25' 

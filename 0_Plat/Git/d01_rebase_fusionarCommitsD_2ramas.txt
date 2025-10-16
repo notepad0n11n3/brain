@@ -1,0 +1,16 @@
+
+::: git checkout ramaExtra
+
+ :: git rebase master        ('si... primero rebaseMaster en la ramaExtra... es extra~o')
+
+ :: git checkout master 
+
+ :: git rebase ramaExtra       ('primero rebase a la ramaExtra, despues rebase al master o ramaFinal  o va a dar un errorExtra~o ')
+
+
+
+
+
+  '''Junta los commits de ambas ramas en un sola, todos los commit de master van primero, despues los de la ramaExtra, despues puedes eliminar la ramaExtra, todos los commits ya estan en el branch Master <3 :3
+
+            es una mala pr[actica pero nos salva de apuros aveces :u :U

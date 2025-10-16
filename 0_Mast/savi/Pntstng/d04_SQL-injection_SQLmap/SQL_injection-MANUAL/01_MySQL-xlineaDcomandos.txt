@@ -1,0 +1,53 @@
+
+::: service mysql start
+
+::: sudo mysql -uroot
+
+sql:::  show databases:
+
+   :::  create database colegioDes;
+
+   :::  use colegioDes;
+
+   :::  show tables;
+
+   :::  create table alumnosDes( id int(2), username varchar(32), password varchar(32), contacto varchar(32) );
+
+   :::  show tables;
+
+   :::  describe nombreTablaHere;
+
+   :::  insert into Alumnos( id, username, password, contacto)  values( 1, "administrator", "admin123$!", "616123456");
+
+
+   :::  describe nombreTablaHere;
+          MariaDB [colegio]> describe Alumnos;
+          +----------+-------------+------+-----+---------+-------+
+          | Field    | Type        | Null | Key | Default | Extra |
+          +----------+-------------+------+-----+---------+-------+
+          | id       | int(2)      | YES  |     | NULL    |       |
+          | username | varchar(32) | YES  |     | NULL    |       |
+          | password | varchar(32) | YES  |     | NULL    |       |
+          | contacto | varchar(32) | YES  |     | NULL    |       |
+          +----------+-------------+------+-----+---------+-------+
+
+
+   :::  select * from Alumnos;    ##!! mostrar todo de Alumnos
+          MariaDB [colegio]> select * from Alumnos;
+          +------+---------------+------------------+-------------+
+          | id   | username      | password         | contacto    |
+          +------+---------------+------------------+-------------+
+          |    1 | administrator | admin123$!       | 616123456   |
+          |    2 | s4vitar       | s4vitarSecure111 | 61611111111 |
+          |    3 | marcos        | marc0sseguro?    | 6163333333  |
+          +------+---------------+------------------+-------------+
+          
+    ::: select * from Alumnos where id = 1;
+          
+          MariaDB [colegio]> select * from Alumnos where id = 1;
+          +------+---------------+------------+-----------+
+          | id   | username      | password   | contacto  |
+          +------+---------------+------------+-----------+
+          |    1 | administrator | admin123$! | 616123456 |
+          +------+---------------+------------+-----------+
+

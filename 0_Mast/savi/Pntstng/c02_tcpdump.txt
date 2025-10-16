@@ -1,0 +1,9 @@
+    tcpDump       -- analizador de trafico en consola
+
+::: tcpdump  -i  eth0  -w Captura.cap  -v
+ 
+    
+      -i tun0           -- interfaz de red
+
+
+ :: tcpdump -D     --listado de las interfaces disponibles para capturar trafico con tcpdump, tambi[en vale ifconfig para ver el nombre de la interfaz de red :)

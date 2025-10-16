@@ -1,0 +1,24 @@
+  printf("Ingrese su edad:\n");
+  scanf("%d",&edad);
+  getchar();              << == getchar();  se encargar[a de el '\n'
+
+  printf("Ingrese su sexo:\n"); char mango[10];
+  fgets(mango, 10, stdin);                         // fgets(variable,tama~oArray,stdin);
+  strtok(mango,"\n");     << == strtock();  se engargar[a de el '\n'  esta dentroDe 'string.h'
+
+
+  float user_data;
+
+  printf("Ingrese la lectura del mes:\n");
+  scanf("%f",&user_data); getchar();
+  
+  char goro[30], des[30];
+  printf("Ingrese un string:\n");
+  fgets(goro,30,stdin); strtok(goro,"\n");
+
+  int x89p;
+  printf("Ingresa un n[umero de prueba:\n");
+  scanf("%d",&x89p); getchar();
+
+  printf("ingresa otro string por si las dudas:\n");
+  fgets(des,30,stdin); strtok(des,"\n");

@@ -1,0 +1,4 @@
+:!gcc -S main.c -o main.s
+
+:split main.s
+

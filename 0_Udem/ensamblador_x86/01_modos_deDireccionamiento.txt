@@ -1,0 +1,62 @@
+        0x2A453F15  
+         1byte'2A' 1byte'45' 1byte'3F' 1byte'15'   'cada 2 digitos en hexadecimal es un byte'
+
+
+Valor inmediato '$':   $19, $-3,  $0x2A, $0x2A45                        $3 = 3        $22 = 22
+                                                                        $-8 = -8i   $33823 = 33823
+                                                                        $x = x
+Registro '%':   %eax,  %ah,  %esi
+
+
+
+Memoria:        D(Rb, Ri, s)       ->       M[Rb + Ri * s + D]
+               simbologia                  procedimiento del procesador
+
+        D  :  desplazamiento codificado con 1, 2 [o 4 bytes
+        Rb :  registro base. Cualquiera de los 8 registros.
+        Ri :  registro [indice. Cualquiera excepto  %esp 'RESERVADO PARA LA PILA O SUBRUTINAS Y FUNCIONES'
+        s  :  escala
+
+
+
+              ----------------
+         V[0] |      0X2A    |              
+              ----------------
+         V[1] |      0x3F    |
+              ----------------
+         V[2] |      0xE1    |
+              ----------------
+         ...  |      ...     |
+              ----------------
+         ...  |      ...     |
+              ----------------
+         V[6] |     0x23     |
+              ----------------
+
+
+        D(Rb, Ri, s)              ->                M[Rb + Ri * s + D]       
+ejem:    
+    %eax = -8       %ebx = 3
+
+
+        (%eax, %ebx)     'Rb= %eax    Ri= %ebx'      ->           M[%eax + %ebx]
+
+      -3(%eax, %ebx)    'D=-3   Rb= %eax  Ri=%ebx'   ->           M[%eax + %ebx -3]
+
+      (%eax, %ebx, 4)   'Rb=%eax  Ri=%ebx  s=4'      ->           M[%eax + %ebx * 4]
+
+         (, %ebx, 4)    'Rb=0  Ri=%ebx s=4'          ->           M[%ebx * 4]
+
+          12(%eax)      'Rb=%eax  D=12'              ->           M[%eax + 12]
+
+          (%eax)                                     ->           M[%eax]    'accedemos directo al registro base'
+
+  3(%eax, %esi, 2)    'Rb=%eax  Ri=%esi  s=2  D=3'   ->           M[%eax + %esi * 2 + 3]
+
+
+           4                                         ->         M[4]    'posicion de memoria 4'
+          $4                                         ->          4      'valor inmediato 4'   ' $ '
+
+          %eax                                       ->         Registro eax
+
+          %al                                   ->   8 bits de menos peso de eax

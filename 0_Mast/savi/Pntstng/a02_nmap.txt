@@ -1,0 +1,15 @@
+
+::: nmap -sC -sV -p22,80,88 -oN targetedGoro
+
+
+    -sV         detecci[on de la versi[on de servicios
+    -sC         scripts b]asicos de numeraci[on
+
+
+
+
+::: whatweb   http://192.168.0.11:80    2>/dev/null     info relevante sobre el servidor web
+
+
+
+:=:-    wappalyzer -- extension para navegador web(chrome/firefox/etc)

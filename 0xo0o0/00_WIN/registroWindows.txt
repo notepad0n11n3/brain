@@ -1,0 +1,2 @@
+
+::: reg query "hklm\software\microsoft\windows nt\currentversion" /v ProductName

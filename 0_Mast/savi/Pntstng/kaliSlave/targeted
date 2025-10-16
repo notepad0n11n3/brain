@@ -1,0 +1,11 @@
+# Nmap 7.91 scan initiated Fri Aug 13 09:44:34 2021 as: nmap -sC -sV -p88 -oN targeted 192.168.0.16
+Nmap scan report for 192.168.0.16
+Host is up (0.00062s latency).
+
+PORT   STATE SERVICE VERSION
+88/tcp open  http    SimpleHTTPServer 0.6 (Python 3.9.2)
+|_http-server-header: SimpleHTTP/0.6 Python/3.9.2
+|_http-title: Directory listing for /
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug 13 09:44:42 2021 -- 1 IP address (1 host up) scanned in 7.79 seconds

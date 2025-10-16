@@ -1,0 +1,55 @@
+### PIP2 
+
+ ::: curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
+ ::: curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
+ ::: curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py        <<- <3 <3 <3
+ ::: python2 get-pip.py                                                     <<-- <3 <3 <3
+            
+		{
+			::: python2 ./get-pip.py					... <3 <3 <3
+
+              which is not on PATH :'u
+      ::: echo 'export PATH=$PATH:/home/aeo8/.local/bin' >> $HOME/.bashrc o .zshrc  
+
+		  ::: pip2 install --upgrade setuptools        <<-- NO SUDO...!!!   ... <3 <3 <3
+		}
+
+### pre  google.com/search?q=impacket
+		::: git clone https://github.com/SecureAuthCorp/impacket.git 
+
+							!!!  Desde la version v0.10  se quit[o el soporte para python2
+		 https://github.com/SecureAuthCorp/impacket/releases/tag/impacket_0_9_24    <<--==obten la repo ah[i...!!!
+
+																	::: less README.md
+																				Installing
+																				----------
+																				In order to install the source execute the following command from the
+																				directory where the Impacket's distribution has been unpacked: `python3 -m pip install .` (`python2 -m pip install . `for Python 2.x).
+																				This will install the classes into the default
+																				Python modules path; note that you might need special permissions to
+																				write there.
+
+      :: cd impacket_0_9*
+      :: python2 -m pip install .					... <3 <3 <3
+      
+
+ :: cd impacket
+ :: sudo python3 ./setup.py install
+
+
+### impacket0.9 ERROR python2 -m pip install .
+
+           ::: export PATH=$PATH:/home/aeo8/.local/bin
+            :: pip2 install --upgrade setuptools        <<-- Ready <3 <3 <3 
+
+                 # pip2  $HOME/.zshrc   $HOME/.bashrc
+                   export PATH=$PATH:/home/aeo8/.local/bin
+
+           ::: pip install --upgrade setuptools        <<-- NO SUDO...!!! 
+
+             WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+     google:: impacket 0.9.24 pip install . error invalid command egg_info
+  
+     https://stackoverflow.com/questions/11425106/python-pip-install-fails-invalid-command-egg-info

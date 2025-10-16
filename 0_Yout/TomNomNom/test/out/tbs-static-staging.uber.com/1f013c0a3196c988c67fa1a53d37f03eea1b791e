@@ -1,0 +1,13 @@
+http://tbs-static-staging.uber.com/
+
+> GET / HTTP/1.1
+> Host: tbs-static-staging.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Content-Length: 0
+< Location: https://tbs-static-staging.uber.com/
+< Date: Fri, 13 Dec 2024 05:04:31 GMT
+< Server: Google-Edge-Cache
+< X-Request-Id: dcfe3dca-05f9-4a5a-a3de-5f0f2710acd7
+

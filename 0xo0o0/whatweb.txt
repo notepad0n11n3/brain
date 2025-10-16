@@ -1,0 +1,4 @@
+::: whatweb http://ipTargetHere
+::: whatweb http://ipTargetHere -v
+::: whatweb http://ipTargetHere:80
+::: whatweb http://ipTargetHere:8080

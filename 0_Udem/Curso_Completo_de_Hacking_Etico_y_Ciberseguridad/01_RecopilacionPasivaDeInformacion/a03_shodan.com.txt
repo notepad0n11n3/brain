@@ -1,0 +1,7 @@
+
+  https://github.com/jakejarvis/awesome-shodan-queries    # leer no clonar repositorio
+
+
+s:: ftp anonymous login ok    country:"US"
+
+s:: ftp  org:"Google"

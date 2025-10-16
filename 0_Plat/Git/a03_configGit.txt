@@ -1,0 +1,25 @@
+
+# LISTA DE PARAMETROS PARA git config
+
+  ::: git config
+
+  ::: git config --list             // configuraci[on por defecto de mi GIT
+
+
+  ::: git config --list --show-origin    // mostrar las configuraci[on y sus rutas 
+
+
+  ::: git config --global user.name "User Name Here"
+
+  ::: git config --global user.email "local@host.com"
+
+
+## REMPLAZAR NOMBRE
+
+  ::: git config --glogal --replace-all user.name "new_Name_Here"
+
+
+## ELIMINAR NOMBRE
+  ::: git config --global --unset-all user.name 
+
+  ::: git config --global --add user.name "new_nameHere"

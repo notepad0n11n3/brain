@@ -1,0 +1,6 @@
+
+::: cd /var/www/html
+
+::: service apache2 start             ## nos montamos nuestro propio servidor web
+
+::: lsof -i:80

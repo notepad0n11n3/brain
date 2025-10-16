@@ -1,0 +1,26 @@
+::: wfuzz -c -L -t 400 --hc=404 --hl=170 -w /usr/share/dirbuster/wordlists/direcotry-list-2.3-medium.txt http://10.10.10.192/FUZZ      <3 <3 <3 
+
+::: wfuzz -c -L -t 400 --hc=404 --hl=170 -w /usr/share/wordlists/dirbuster/direcotry-list-2.3-medium.txt http://10.10.10.192/FUZZ
+                       --sc=200
+
+  -c       output en formato colorizado
+  --sc=200     "show code" 200 404 etc...  codigo de estado del servidor
+  --hc=404     "hide code" 200 404 etc...  codigo de estado del servidor
+  
+  --sh=2385    "show caracters" (si h... sh)filtra por caracteres, aquellas peticiones donde la respuesta del servidor haya 2385 caracteres 
+
+  -hl=170       filtro por lineas
+
+  FUZZ        palabra clave del programa, se usara para introducir las palabras clave del diccionario
+  FUZ2Z       para el segundo diccionario  FUZ3Z pal tercero etc...
+
+  -t 400      400 preguntas/peticiones web simultaneas/paralelo
+  -w /rutaHere/       ruta del dicccionario
+
+  -L           Permite que cuando la solicitud es redireccionada, c[odigog 301, vaya a esta y se genere el c[odigo de la p[agina redireccionada.
+
+
+::: wfuzz -c -L -H " User-Agent: Google Chrome" -t 400 --hc=404 --hh=7561 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -w extensions.txt http://10.10.10.191/FUZZ.FUZ2Z
+
+
+  -H " User-Agent: Google Chrome"     indicamos las cabeceras que queramos, en este caso el user-agent es google chrome

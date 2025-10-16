@@ -1,0 +1,12 @@
+
+
+::: curl -s -X requestMethod "http://targedWeb.here"
+							  GET  POST
+
+::: curl -s -X requestMethod -I -k "http://targedWeb.here"
+
+
+			-s		'silent'
+			-X    'GET   POST  ("requestMethod")'
+			-I    'Fetch the headers only'
+			-k    'This option makes curl skip the verification step and proceed without checking'

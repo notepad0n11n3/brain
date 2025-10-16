@@ -1,0 +1,7 @@
+
+::: dirsearch -h          helpMenu
+
+::: dirsearch -u http://10.10.10.69 -E -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+
+
+    ( -E -w ... )

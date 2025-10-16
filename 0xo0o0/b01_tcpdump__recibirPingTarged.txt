@@ -1,0 +1,8 @@
+
+
+
+::: tcpdump  -i tun0  icmp  -n            monitorizar la interfaz de red
+								eth0
+      
+        -n      no resoluci[on DNS
+        icmp    paquetes icmp

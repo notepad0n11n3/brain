@@ -1,0 +1,40 @@
+
+::: nmap -iL archivoIps.txt               <3 <3 <3 <3
+
+::: nmap  192.168.0.*  --exclude  192.168.0.22      <3 <3 <3 
+
+::: nmap  ipHere -stats-every 2s          // mostrar progreso cada 2 segundos
+
+::: nmap  -sA ipHere                                //comprobar si hay un firewall que filtra los puertos
+
+::: nmap -sP  192.168.0.*                           // Escaneo excluyendo hosts inactivos
+
+::: nmap -p 22-445  ipHere          /// Escaneo rangoDePuertos <3 <3 <3
+
+
+### ESCANEO DE UN RED O RANGO
+
+  ::: nmap 192.168.0.0/24       ///  0/24  todo, del 0 al 255
+
+  ::: nmap 192.168.0.*          ///   0 al 255
+
+  ::: namp 192.168.0.30-150     ///  del 30 al 150  <3 <3
+
+
+### ESCANEO MULTIPLES HOSTS
+
+  ::: nmap 192.168.0.10, 95, 40             <3 <3 <3
+
+        (::: nmap 192.168.0.10  192.168.0.95  192.168.0.40   )
+
+
+### ESCANEO DE UN HOST
+
+  ::: nmap  ad.genericTest.com
+  ::: nmap  192.168.0.111
+
+### TCP   UDP
+
+  ::: nmap -sT ipHere       /// TCP
+
+  ::: nmap -sU ipHere       /// UDP

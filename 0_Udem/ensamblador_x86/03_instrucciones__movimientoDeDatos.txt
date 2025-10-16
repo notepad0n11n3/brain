@@ -1,0 +1,55 @@
+
+        B=byte 'registro de 1byte'       W=Word '2 bytes'       L=Long  (LongWord) '4 bytes'
+
+                              ------------------------
+                              | 15 AH  8 | 7  AL   0 |    '8 bits'      'B'   '1 byte'
+                              ------------------------
+                              | 15      AX         0 |    '16 bits'     'W'   '2 bytes'
+         ---------------------------------------------
+         | 31               EAX                    0 |    '32 bits'     'L'   '4 bytes'
+         --------------------------------------------- 
+
+
+ 
+ Instrucciones                Descripci[on                                  Ejem:
+
+MOVx  operando1, operando2    op1 <- op2              x={L, W, B}         MOVB $-1, %AL     MOVW $11, %AX   MOVL $190, %EAX
+      
+
+
+MOVSxy op1, op2                op2 <- ExtSign(op1)    xy={BW, BL, WL}      MOVSBW %CH, %AX
+
+ MOVS     "extension de signo"   'si termina en 0 se completa con ceros'  'si termina en 1 se completa con 1'
+  
+                BW  'extender byte.8bits a word.16bits'     '01101101'  '00000000 01101101'
+                BW  'extender byte.8bits a word.16bits'     '10010110'  '11111111 10010110'
+
+                BL  'extender byte.8bits a long.32bits'     '00101011'  '000000000000000000000000 00101011'
+                BL  'extender byte.8bits a long.32bits'     '10101011'  '111111111111111111111111 10101011'
+
+                WL  'extender word.16bits a long.32bits'   '7654321a1234567a'  '111111...765...a1234567a'
+
+
+MOVZxy op1, op2                op2 <- ExtZero(op1)    xy={BW, BL, WL}      MOVZWL %BX, %EDX
+
+ MOVZ       "extension de ceros"
+
+                BW  'extender byte.8bits a word.16bits'     '01101101'  '00000000 01101101'
+                BW  'extender byte.8bits a word.16bits'     '10010110'  '00000000 10010110'
+
+                BL  'extender byte.8bits a long.32bits'     '00101011'  '000000000000000000000000 00101011'
+                BL  'extender byte.8bits a long.32bits'     '10101011'  '000000000000000000000000 10101011'
+
+                WL  'extender word.16bits a long.32bits'   '7654321a1234567a'  '000000...765...a1234567a'
+
+
+
+PUSHL op1                    %ESP <- %ESP - 4;                             PUSHL 12(%EBP)
+                             M[%ESP] <- op1
+
+
+POPL op1                op1 <- M[%ESP];                               POPL %EAX
+                        %ESP <- %ESP + 1;
+
+
+LEAL op1, op2           op2 <- &op1 'direccionDeMemoria_likeC'              op1: memoria        LEAL (%EBX, %ECX), %EAX

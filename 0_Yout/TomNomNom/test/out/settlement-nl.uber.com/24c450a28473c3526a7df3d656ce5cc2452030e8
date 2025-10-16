@@ -1,0 +1,24 @@
+https://settlement-nl.uber.com/
+
+> GET / HTTP/1.1
+> Host: settlement-nl.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 403 Forbidden
+< Content-Type: text/html
+< Vary: Accept-Encoding
+< Date: Fri, 13 Dec 2024 05:04:35 GMT
+< X-Content-Type-Options: nosniff
+< Strict-Transport-Security: max-age=31536000; includeSubDomains
+< X-Xss-Protection: 1; mode=block
+< Referrer-Policy: no-referrer-when-downgrade
+< Server: nginx
+< X-Permitted-Cross-Domain-Policies: none
+
+<html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

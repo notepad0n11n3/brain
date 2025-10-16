@@ -1,0 +1,38 @@
+
+                        ####!!!     .zshrc        .bashrc    etc....
+
+# X89P X89P X89P X89P
+#
+function mkt(){
+  mkdir {nmap,content,scripts,tmp,exploits}
+}
+function x89p(){
+  clear
+  echo -e "\n\n\n\t\t\tgoro goro Des..."
+}
+
+function extractPorts(){
+  parametro1=$1
+  desune="./${parametro1}"
+  #comprueba si el archivo allPorts existe y es un fichero 
+  if [ $1 ];then
+
+    echo -e "[*] Extracting information..." 
+
+    ip_address=$(cat ${desune} | grep -oP '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}' | sort -u )
+    open_ports=$(cat ${desune} | grep -oP '\d{1,5}/open' | awk '{print $1}' FS="/" | xargs | tr ' ' ',') 
+
+    echo -e "[*] IP Address: ${ip_address}"
+    echo -e "[*] Open Ports: ${open_ports}"
+
+    echo ${open_ports} | tr -d '\n' | xclip -sel clip  #copia el contenido de la variable a la clipboard 
+              #tr -d '\n'  borra un salto de linea molesto en el output
+    echo -e "\n\t [*] Ports has been copied to clipboard!"
+
+  else
+
+    echo -e " [*] error...."
+    echo -e "\n\t\t [*] extractPorts <archivoHere>"
+
+  fi
+}

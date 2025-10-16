@@ -1,0 +1,23 @@
+https://sli.uber.com/
+
+> GET / HTTP/1.1
+> Host: sli.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< X-Content-Type-Options: nosniff
+< X-Xss-Protection: 1; mode=block
+< X-Amz-Cf-Pop: LIM50-P1
+< Server: CloudFront
+< Date: Fri, 13 Dec 2024 05:04:34 GMT
+< Content-Length: 0
+< Referrer-Policy: same-origin
+< X-Cache: FunctionGeneratedResponse from cloudfront
+< Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+< X-Frame-Options: DENY
+< Set-Cookie: _lc2_fpi=3c70927969fb--01jez6f0bkef04ev01ehd75nax; Max-Age=63072000; Domain=.uber.com; SameSite=Lax
+< X-Amz-Cf-Id: DDFTNmnnDUUzbDH68MRMa_muxUAUfvc55QuAHPm4l5nRjAyC6ln5mQ==
+< Content-Security-Policy: default-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'
+< Location: https://p.liadm.com/?_lc2_fpi=3c70927969fb--01jez6f0bkef04ev01ehd75nax&i6=MjgwMDoyMDA6ZjU0MDozYTM6ZDk4NzphNWNiOmExY2M6OTA3Zg%3D%3D
+< Via: 1.1 397871ae913f1796ba76aca08571de36.cloudfront.net (CloudFront)
+

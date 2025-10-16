@@ -1,0 +1,7 @@
+::: smbclient -L  ipTargetHEre  -N          /// null session   listar recursos de red
+
+::: smbcilent -N -L \\\\{target_ip}\\
+
+
+          -N     No password
+          -L     This option allows you to look at what services are abailable on a server 

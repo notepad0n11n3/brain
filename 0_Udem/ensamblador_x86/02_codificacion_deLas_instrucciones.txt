@@ -1,0 +1,27 @@
+
+           camposOpcionales: presente o no dependiendo de la instrucci[on
+          <-------------------------------------------------------------->
+
+      1-2 bytes     1 byte      1byte        1,2 o 4 bytes         1,2 o 4bytes
+    ----------------------------------------------------------------------------
+    |  OpCode    |   Modo    |   SIB    |    Desplazamiento     |   Inmediato  |
+    ----------------------------------------------------------------------------
+
+      
+      Formato General de las instrucciones                            MOVL $37, -4(%ebp, %esi, 4)
+
+          * OpCode  codifica:
+            - la operaci[on a realizar
+            - el tama~o de los operandos
+            - cu[al es el operando fuente y cu[al el destino
+            - si el operando fuente es un inmediato o registro/memoria
+
+          * Modo  codifica:
+            - el modo de direccionamiento del operando memoria si lo hay
+            - el registro para los operandos registro
+            - indica si hay desplazamiento para el caso de que un operando est[e en memoria
+
+          * SIB,  en ele caso que uno de los operandos est[e en memoria, codifica:
+            - el escalado      (Scale  'S')
+            - registro [indice (Index 'I')
+            - registro base    (Base 'B')

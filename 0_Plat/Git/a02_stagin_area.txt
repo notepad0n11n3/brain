@@ -1,0 +1,16 @@
+
+# AGREGAR ARCHIVOS A STAGIN AREA
+  ::: git add archivo.txt               git add .
+                                              . para todos los archivos
+                                              * para todos los archivos  *.txt  *.c *.py *.js *.sh 
+
+# QUITAR ARCHIVOS DE   STAGIN AREA (ram)
+  ::: git rm --cached archivo.txt         git rm --cached *
+                                                    * para todos los archivos  *.c *.py *.txt *.pdf *.*
+
+  ::: git restore --staged fileHere.x   //  to unstage
+  ::: git reset HEAD                // esto es extra~o... limpia el staging area == 
+
+
+# ELIMINAR LOS [ULTIMOS CAMBIOS REALIZADOS AL ARCHIVO
+  ::: git restore fileHere.x    // to discard changes in working directory(pre git add)

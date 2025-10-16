@@ -1,0 +1,24 @@
+https://help.uber.com/
+
+> GET / HTTP/1.1
+> Host: help.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 404 Not Found
+< Content-Type: text/plain; charset=utf-8
+< Strict-Transport-Security: max-age=31536000
+< Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+< Date: Fri, 13 Dec 2024 05:04:32 GMT
+< Set-Cookie: _ua={"session_id":"d0182117-e5fc-4bb8-a56a-4349626a574b","session_time_ms":1734066272358}; path=/; secure
+< Set-Cookie: jwt-session=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InNsYXRlLWV4cGlyZXMtYXQiOjE3MzQwNjgwNzIzNjZ9LCJpYXQiOjE3MzQwNjYyNzIsImV4cCI6MTczNDE1MjY3Mn0.5ATaM6TT9J4YGPTXUZaIaCwLDTag_5S7gaZJxSoteCY; path=/; expires=Sat, 14 Dec 2024 05:04:32 GMT; secure; httponly
+< X-Content-Type-Options: nosniff
+< Content-Length: 9
+< X-Envoy-Upstream-Service-Time: 125
+< Server: ufe
+< X-Xss-Protection: 1; mode=block
+< X-Uber-Edge: e4-dca23:w:1061399121,ufe:production-cloud-gateway:compute-0:dca11,ufe:production-cloud-ecg-l7:default:gru3
+< X-Frame-Options: SAMEORIGIN
+< Cache-Control: max-age=0
+< Via: 1.1 google
+
+Not Found

@@ -1,0 +1,18 @@
+
+      Java jdk            java development kit
+      Java jre            java runtime environment
+
+
+
+::: sudo apt install default-jre
+ :: java --version
+
+::: sudo apt install default-jdk
+ :: javac --vercion               /// si javac  'c'
+
+
+
+
+::: javac  nombreArchivo.java   /// compila el archivo
+
+::: java nombreArchivo      /// ejecuta el archivo 

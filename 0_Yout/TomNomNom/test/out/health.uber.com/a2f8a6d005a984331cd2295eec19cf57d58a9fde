@@ -1,0 +1,31 @@
+https://health.uber.com/
+
+> GET / HTTP/1.1
+> Host: health.uber.com
+> User-Agent: Mozilla/5.0 (compatible; meg/0.2; +https://github.com/tomnomnom/meg)
+
+< HTTP/1.1 301 Moved Permanently
+< Date: Fri, 13 Dec 2024 05:04:29 GMT
+< Content-Type: text/html
+< Cache-Control: max-age=0
+< Strict-Transport-Security: max-age=31536000
+< Set-Cookie: __cf_bm=Q86uQE0tmomqZdXOqlHFYQafS4aa9dYyR0XM9whYoug-1734066269-1.0.1.1-7YO6qPFL6PBLx7HIAspNlDdcqe7sZHJzJgsaRJm1atp_.XCMq8D84jrynv77E46FL4CzWnd.QyIvsLmYd_QnUg; path=/; expires=Fri, 13-Dec-24 05:34:29 GMT; domain=.health.uber.com; HttpOnly; Secure; SameSite=None
+< Server: cloudflare
+< Cf-Ray: 8f1369eaa9116df7-LIM
+< Content-Length: 166
+< Location: https://health.uber.com/v2
+< X-Xss-Protection: 1; mode=block
+< Vary: Accept-Encoding
+< X-Uber-Edge: e4-dca22:w:1330632292,ufe:production-cloudflare:compute-0:dca18,cloudflare:production:default
+< X-Frame-Options: SAMEORIGIN
+< X-Envoy-Upstream-Service-Time: 0
+< X-Content-Type-Options: nosniff
+< Cf-Cache-Status: DYNAMIC
+
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>

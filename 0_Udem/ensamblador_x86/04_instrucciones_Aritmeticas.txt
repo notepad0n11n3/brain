@@ -1,0 +1,24 @@
+
+
+ADDx op1, op2           op2 <- op2+op1          x={L, W, B}       ADDL $13, %EAX
+
+
+SUBx op1, op2           op2 <- op2 - op1        x = {L, W, B}     SUBW %CX, %AX
+
+
+                CF 'flag carry o bite de carry'
+
+ADCx op1, op2          op2 <- op2 + op1 + CF                      ADCL %EDX, %EAX
+
+
+SBBx op1, op2          op2 <- op2 - op1 - CF                      SBBL %ECX, %EAX
+
+
+
+INCx op1                op1 <- op1 + 1                            INCL %EAX
+
+
+DECx op1                op1 <- op1 - 1                            DECW %BX
+
+
+NEGx op1        op1 <- -op1 'invierte el valor de op1 (+ -)'       NEGL %EAX

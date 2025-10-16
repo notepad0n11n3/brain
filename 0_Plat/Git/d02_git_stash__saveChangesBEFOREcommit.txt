@@ -1,0 +1,40 @@
+
+                      ::: git stash show stash@{0}  ===  ::: git stash show 0  
+
+        'al usar stash el archivo regresa al estado anterior y se guardan lo cambios en la lista de stash'
+
+
+  ::: git  stash                 //guarda los cambios de manera temporal(noCommit) para poder saltar a otra rama
+  ::: git  stash   save "mensaje like aCommit para el stash"
+                -u      // agregar untrackedFiles     --include-untracked
+                -a      // incluir cambios en los archivos ignorados    --all  (incluye -u <3)
+
+
+  ::: git stash list                ' WIP work in progress    List'
+
+
+  ::: git stash pop                 'aplica los cambios y se ELIMINA el stash'   'ULTIMO STASH CREADO'
+  ::: git stash pop stash@{numberHere}
+
+
+  ::: git stash apply                 'aplica los cambios CONSERVANDO EL STASH <3 <3' 'ULTIMO STASH CREADO'
+  :;: git stash apply stash@{numberHere}
+
+
+### Crear un nuevo Branch con los cambios de git stash    <3 
+
+ ::: git stash branch nameNewBranch       <3 <3 <3
+
+
+### Revisar contenido del STASH     ' sin stash@{number} muestra el ultimo stash guardado '
+
+ ::: git stash show stash@{mango}
+ ::: git stash show -p stash@{numberHere}
+
+
+### Limpiar Stash
+
+ ::: git stash drop                     ('elimina ultimo stash agregado')
+ ::: git stash drop stash@{numberHere}
+
+ ::: git stash clear          ('Elimina toda la lista de Stash')

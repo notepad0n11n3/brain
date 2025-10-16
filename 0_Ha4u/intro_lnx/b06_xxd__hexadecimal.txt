@@ -1,0 +1,14 @@
+
+
+::: cat /etc/hosts | xxd            'mostrar el contenido de hosts en hexadecimal'
+
+
+::: cat /etc/hosts | xxd -ps        'mostrar solo en contenido hexadecimal'
+
+::: !! | xargs            'xargs agrupa todo en una sola linea'
+
+::: !! | tr -d ' '         'con tr elimina(-d  delete) los espacios ' '    '
+
+
+
+::: echo 3132372e302e302e31096c6f63616c686f73740a3132372e302e312e310970616e6461386861740a0a0a232054686520666f6c6c6f77696e67206c696e65732061726520646573697261626c6520666f7220495076362063617061626c6520686f7374730a3a3a3120202020206c6f63616c686f7374206970362d6c6f63616c686f7374206970362d6c6f6f706261636b0a666630323a3a31206970362d616c6c6e6f6465730a666630323a3a32206970362d616c6c726f75746572730a | xxd -ps -r       'muestra el contenido del hexadecimal <3'
