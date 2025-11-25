@@ -1,0 +1,19 @@
+
+*** Este si funciona... ya esta testeado... 100% OK
+	::: pip3 install --break-system-packages pwntools
+
+
+*** Instalacion solo para usuario, agrega al path  ~/.local/bin, en zshrc_slf esta listo <3
+	:::pip3 install --user pwntools
+
+
+*** venv pyton3			"me falta jugar un poco mas con entornos virtuales en python..."
+	::: python3 -m venv pwn-env
+	::: source pwn-env/bin/activate
+	::: pip install pwntools							&& pip install termcolor
+
+	::: deactivate
+
+
+
+
