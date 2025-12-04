@@ -1,0 +1,47 @@
+
+	*** Descriptores de archivos reservados por el sistema ***
+
+										0		stdin
+										1		stdout
+										2		stderr
+
+					""  Libres del 3 - 9  ""
+
+::: exec 3<> test_file
+
+				<						'lectura'
+				>   				'escritura'
+				test_file   'archivo que va a contener todo el output redirigido'
+
+		exec 3< test_file					"solo lectura File Descriptor 3"
+		exec 3> test_file					"solo escritura File Descriptor 3"
+
+		exec 3>> test_file				"solo escritura APPEND mode File Descriptor 3"
+		exec 3<> test_file				"escritura/lectura y APPEND File Descriptor 3"
+
+		exec 3>&-				"cerrar el descriptorDeArchivo/FileDescriptor fd"
+
+
+		exec 4>&3-									"Crea una copia del fd 3 en el fd 4 y cierra el fd 3"
+		exec 4>&3									"Crea una copia del fd 3 en el fd 4, los 2 apuntan al mismoArchivo"
+
+
+### Guardamos el output en el fileDescriptor fd
+	::: whoami >&3					
+									
+							>& envia el stdout al descriptor de archivo
+							3  Numero de descriptor de archivo
+
+
+### Cat al fileDescriptor
+	::: cat <&3				
+
+
+
+
+::: exec 5<> test_file
+::: ls
+::: whoami >&5 && cat test_file
+::: exec 6>&5-									"Crea una copia del fd 5 en el fd 6"
+::: pwd >&6
+::: who -q >&5					"El fd 5 ya no existe, al comento de crear la copia cerramos con - , elimina el - para conservar los 2  ( exec 6>&5 ) "
