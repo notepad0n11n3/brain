@@ -26,6 +26,13 @@
 		exec 4>&3									"Crea una copia del fd 3 en el fd 4, los 2 apuntan al mismoArchivo"
 
 
+### Listar los fd creador ...<3 <3 <3
+
+	::: ls -l /proc/$$/fd							
+
+					$$  "PID del shell actual...<3 <3 <3"
+
+
 ### Guardamos el output en el fileDescriptor fd
 	::: whoami >&3					
 									
