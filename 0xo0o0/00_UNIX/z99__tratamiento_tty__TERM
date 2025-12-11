@@ -1,4 +1,6 @@
 
+				::: ssh user_test@(mvnb) bash			"ejecuta el comando antes de ingresar en una restrictedBash"
+
 ::: script /dev/null -c bash
 
 ::: Ctrl-z
