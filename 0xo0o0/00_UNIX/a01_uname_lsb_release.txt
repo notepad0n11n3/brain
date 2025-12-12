@@ -1,0 +1,11 @@
+
+
+	*** Tenemos acceso a un usuario pero no tenemos su password.
+
+::: lsb_release -a				"Info sobre la distribucion del sistema"
+
+::: uname -a							"Info sobre el kernel y detalles del sistemaOperativo"
+
+
+::: cat /etc/crontab
+::: systemctl list-timers
