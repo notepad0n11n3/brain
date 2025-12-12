@@ -1,0 +1,4 @@
+
+
+::: bash -p			"ejecutar bash con el suid de root, sin el -p solo lanzara bash con el usuario actual"
+

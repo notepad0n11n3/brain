@@ -7,5 +7,10 @@
 ::: uname -a							"Info sobre el kernel y detalles del sistemaOperativo"
 
 
+*** buscar ejecuciones programadas en el sistema
 ::: cat /etc/crontab
 ::: systemctl list-timers
+::: "usa el procmon.sh que tienes en tus repos...<3 <3 <3"
+
+		"si aparece un archivo que se esta ejecutnado periodicamente con archivos elevados, agregamos la modificacion de /bin/bash con 'chmod 4755 /bin/bash' , depues ejecuta ::: bash -p   '-p para ejecutar con suid'  "
+																																																																	 'chmod u+s /bin/bash'
