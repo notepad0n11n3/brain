@@ -1,0 +1,3 @@
+
+*** Busca capabilities en el sistema... <3 
+	::: getcap -r / 2>/dev/null

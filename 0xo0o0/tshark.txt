@@ -1,0 +1,10 @@
+
+
+*** Analizar archivo de carptura trafico de red
+	::: tshark -r  file.cap
+
+
+	::: tshark -r  -Tfields -e tcp.payload  file.cap		"output en hexadecimal, usa xxd"
+
+
+	::: tshark -r  -Tfields -e tcp.payload  file.cap | xxd -ps -r
