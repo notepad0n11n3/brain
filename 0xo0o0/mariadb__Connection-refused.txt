@@ -1,0 +1,16 @@
+
+	*** *** MariaDB no permite conexiones remotas por defecto
+
+::: sudo systemctl start mariadb
+
+
+::: vim /etc/mysql/mariadb.conf.d/50-server.cnf
+
+	bind-address = 127.0.0.1			"por default"
+	bind-address = 0.0.0.0				"permite conexiones desde cualquier IP... <3"
+	bind-address = ip_custom			"permite conexion desde IP especifica... <3"
+
+
+::: sudo systemctl restart mariadb
+
+

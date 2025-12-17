@@ -1,1 +1,3 @@
 .
+
+::: chmod u+s /bin/bash   &&   bash -p     "ejecuta bash como el usuario propietario, en este caso root"
