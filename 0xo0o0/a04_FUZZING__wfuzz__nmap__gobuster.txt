@@ -1,0 +1,21 @@
+
+*** *** WFUZZ
+
+		::: Locate directory-list-2.3-medium.txt
+::: wfuzz -c --hc=404 -t 200 -w /usr/share/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-medium.txt -z list,php-html-txt http://$(mvnb)/FUZZ.FUZ2Z
+		
+		-c			 "color Output"
+		-hc   	 "ocultar por codigo de estado: 404, etc..."
+		-t			 "hilos"
+		-w			 "ruta archivo/diccionario"
+		-z list  "extensiones a probar, separalas por - sin espacios"
+
+				FUZ2Z  para usar con -z list   FUZ 2 Z 
+
+
+::: wfuzz -c --hc=404 -t 200 -w $(pwd)/custom_dictionary.txt -z list,php-html-txt http://$(mvnb)/FUZZ.FUZ2Z
+
+			grep -iE "user|name|pass|key|cred|secret|mail|database|db|config" /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt > ./custom_dictionary.txt
+
+					-i   "insensitiveCase"
+					-E	 "Activa expresiones regulares extendidas para usar | "
