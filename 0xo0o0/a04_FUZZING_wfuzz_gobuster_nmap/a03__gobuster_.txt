@@ -1,0 +1,8 @@
+
+*** fuzing de directorios en targed... <3 <3 <3
+	::: gobuster dir -u http://$(mvnb) -w /usr/share/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-medium.txt -x php -b 404,301
+
+			-u  urlTarged
+			-w  dictionary
+			-x  extensionFile
+			-b  excludeCodigoDeEstado... <3 <3 <3
