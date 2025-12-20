@@ -6,3 +6,10 @@
 :::  hashcat -a 0 -m 0  hash /usr/share/wordlists/rockyou.txt
 
   :  hashcat -a 0 -m 0  hash /usr/share/wordlists/rockyou.txt --show
+
+
+
+
+*** Hash
+
+	::: hashcat ./hash_file /usr/share/worldlists/rockyou.txt --user					"::: locate rockyou.txt  {.tar.gz  tar -xzvf ./rock.tar.gz} {.gz  gzip -d ./rock.gz} "

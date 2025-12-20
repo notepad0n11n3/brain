@@ -1,8 +1,19 @@
 
 *** fuzing de directorios en targed... <3 <3 <3
 	::: gobuster dir -u http://$(mvnb) -w /usr/share/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-medium.txt -x php -b 404,301
+							 vhost
 
 			-u  urlTarged
 			-w  dictionary
 			-x  extensionFile
 			-b  excludeCodigoDeEstado... <3 <3 <3
+
+	::: gobuster vhost -u http://$(mvnb) -w /usr/share/SecLists/Discovery/DNS/subdomains-top1million-110000.txt --append-domain -t 200 -r
+
+
+				vhost			virtualHosting...<3
+
+				--append-domain					" test_here.ipTarged.com    'subdomains'...<3 <3 <3  "
+
+				-t			hilos
+				-r     " sigue el redirect 301 hasta el codigoDeEstado final"
