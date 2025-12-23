@@ -1,0 +1,3 @@
+
+*** Directory listin wordpress
+	firXs::  $(mvnb)/wp-content/plugins
