@@ -1,0 +1,7 @@
+
+
+::: cat /proc/cpuinfo
+
+::: cat /proc/{PID}/cmdline
+
+				PID == process ID  , script en python del 1 - 1000

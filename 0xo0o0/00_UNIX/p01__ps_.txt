@@ -1,0 +1,9 @@
+
+*** *** *** Procesos en Ejecucion *** *** *** 
+
+::: ps -eo command
+
+::: ps -aux | grep program_name
+
+::: ps -faux | grep program_name
+    ps -faux | grep tmux

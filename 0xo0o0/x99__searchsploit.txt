@@ -1,5 +1,13 @@
 
+*** ***
+	::: searchsploit "Service Name Here"
 
-::: searchsploit "Service Name Here"
 
-::: searchsploit -x patExploitHere			'visualizar exploit'
+
+
+
+	::: searchsplit wordpress user enumeration
+
+
+*** ***
+	::: searchsploit -x patExploitHere			'visualizar exploit'
