@@ -1,0 +1,2 @@
+
+::: ffuf -w /usr/share/seclists/Username/xato-net-10-million-usernames.txt -u http://ip_targed/\?q=accounts/FUZZ -c -v -mc 403
