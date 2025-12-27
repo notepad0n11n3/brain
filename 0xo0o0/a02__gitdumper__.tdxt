@@ -1,0 +1,25 @@
+
+::: nmap -sCV -p port_here  $(mvnb)
+		http-git:
+		| $(mvnb):80/.git/
+		| Git repository found!					<<-- <3 <3 <3
+		| Repository description: Unnamed repository; edit this file 'description' to
+		name the...
+		|_ Last commit message: todo: customize url aliases.
+
+
+::: mkdir dump_folder
+::: virtualenv env
+::: source ./env/bin/activate
+::: pip3 install git-dumper
+
+::: git-dumper http://$(mvnb)/ dump_folder
+
+
+
+::: deactivate
+
+*** *** Guardar y restaurar dependencias
+::: pip freeze > requirements.txt					("Exportar")
+
+::: pip install -r ./requirements.txt			("Instalar en otro entorno")
