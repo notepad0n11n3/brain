@@ -1,0 +1,11 @@
+
+::: ftp $(mvnb)
+
+ :: help
+
+*** Descarga archivo seleccionado
+ :: get file_here
+
+*** Descarga todo 
+ :: prompt off		("Evita confirmacion para cada archivo <3 <3 <3")
+ :: mget *			

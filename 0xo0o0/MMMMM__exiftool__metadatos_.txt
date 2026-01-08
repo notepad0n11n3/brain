@@ -1,0 +1,6 @@
+
+::: exiftool *.pdf
+
+
+*** Limpiar metadatos de archivos
+	::: exiftool -all= file_here
