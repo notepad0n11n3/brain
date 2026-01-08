@@ -12,6 +12,8 @@
 	::: source pwn-env/bin/activate
 	::: pip install pwntools							&& pip install termcolor
 
+	::: virtualenv env && source ./env/bin/activate && pip3 install pwntools
+
 	::: deactivate
 
 
