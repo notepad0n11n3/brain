@@ -1,0 +1,6 @@
+
+
+	::: ssh user_here@ip_here
+
+*** acceso con archivo id_rsa
+	::: ssh -i id_rsa user_here@ip_here

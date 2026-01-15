@@ -3,9 +3,16 @@
 
 
 
-### ZIP bruteForce 
+*** ZIP bruteForce 
   ::: zip2john  backup.zip > hashesG
 
   ::: john -wordlist=/usr/share/wordlists/rockyou.txt  hashesG
 
   ::: john --show hashesG
+
+
+
+*** id_rsa 
+
+	::: ssh2john id_rsa > hash
+	::: john -w:dictionary.txt ./hash

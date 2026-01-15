@@ -3,11 +3,15 @@
 	::: searchsploit "Service Name Here"
 
 
+		::: searchsplit wordpress user enumeration
 
+		::: searchsploit ssh enumeration user
 
+*** *** muestra el contenido
 
-	::: searchsplit wordpress user enumeration
+	::: searchsploit -x pathExploitHere			    'visualizar exploit'
+											linux/remote/45939.py
 
+*** *** DESCARGA el script... <3 <3 <3
 
-*** ***
-	::: searchsploit -x patExploitHere			'visualizar exploit'
+	::: searchsploit -m pathExploitHere
