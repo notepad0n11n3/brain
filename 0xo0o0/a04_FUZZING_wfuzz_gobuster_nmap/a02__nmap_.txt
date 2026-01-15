@@ -1,0 +1,2 @@
+
+::: sudo nmap --script http-enum -p ports_here_80_443 $(mvnb) -oN ./recon/s01_http-enum_N --stats-every 5s
