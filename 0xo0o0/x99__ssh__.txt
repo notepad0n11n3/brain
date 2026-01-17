@@ -8,3 +8,13 @@
 	*** versiones actuales de ssh ya no tienen por defecto el PubkeyAcceptedKeyTypes
 
 		::: ssh -o PubkeyAcceptedKeyTypes=ssh-rsa -i id_rsa user_here@$(mvnb)
+
+
+*** *** id_rsa ID_RSA  permisos 600 para que funcione...!!!
+
+		::: chmod 600 ./id_rsa
+		
+
+		::: ssh2john ./id_rsa > hash				"si el id_rsa tiene passphrase necesitamos el hash para crackear el password"
+
+		::: john -w:/usr/share/worldlists/rockyou.txt ./hash

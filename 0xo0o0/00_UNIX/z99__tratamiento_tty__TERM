@@ -13,9 +13,10 @@
 
 ::: echo $TERM && export TERM=xterm						"obligatorio"
 
+::: echo $SHELL && export SHELL=bash					"obligatorio"
 
 
-*** Ajustar el filas (rows) y columnas (columns)		VIM - EMCAS - NANO
+*** AJUSTAR EL FILAS (ROWS) Y COLUMNAS (COLUMNS)		VIM - EMCAS - NANO
 
 ::: stty size					"en una shell del sistema principal"
 		64 237
