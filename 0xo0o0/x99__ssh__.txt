@@ -4,3 +4,7 @@
 
 *** acceso con archivo id_rsa
 	::: ssh -i id_rsa user_here@ip_here
+
+	*** versiones actuales de ssh ya no tienen por defecto el PubkeyAcceptedKeyTypes
+
+		::: ssh -o PubkeyAcceptedKeyTypes=ssh-rsa -i id_rsa user_here@$(mvnb)
