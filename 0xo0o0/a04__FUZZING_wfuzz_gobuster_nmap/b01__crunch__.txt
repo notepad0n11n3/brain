@@ -1,0 +1,35 @@
+
+crunch (1)           - generate wordlists from a character set
+
+
+::: crunch 12 12 -t TextPASSWRD							" 11 los caracteres de TextPASSWRD, el 12 es el caracter faltante <3 "
+
+		
+			% = numeros		@ = caracteresMINUSCULAS	 , = caracteresMAYUSCULAS		 ^ = simbolos
+
+::: crunch 12 12 -t TextPASSWRD% > dictionary.txt				" % para numeros "
+
+							Crunch will now generate the following amount of data: 130 bytes
+							0 MB
+							0 GB
+							0 TB
+							0 PB
+							Crunch will now generate the following number of lines: 10
+							testPASSWRD0
+							testPASSWRD1
+							testPASSWRD2
+							testPASSWRD3
+							testPASSWRD4
+							testPASSWRD5
+							testPASSWRD6
+							testPASSWRD7
+							testPASSWRD8
+							testPASSWRD9
+
+::: crunch 13 13 -t TextPASSWRD%% >> dictionary.txt				" % para numeros "
+
+							Crunch will now generate the following number of lines: 100
+							testPASSWRD00
+							testPASSWRD01
+							testPASSWRD02
+							testPASSWRD03

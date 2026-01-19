@@ -1,0 +1,41 @@
+
+		"" no redimensionar la ventana, --hc=404 no va a funcionar   &&			Ctr-z   y   ::: kill %    para cerrar el wfuzz en segundo plano para evitar el stderr ""
+
+*** *** WFUZZ
+
+		::: Locate directory-list-2.3-medium.txt
+
+::: wfuzz -c --hc=404 -t 200 -w /usr/share/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-medium.txt -z list,php-html-txt http://$(mvnb)/FUZZ.FUZ2Z
+		
+
+	 ===============================================================
+	    ID        Response    Lines   Word    Chars     Payload
+	 ===============================================================
+		000000001:     303       6 L    34 W    453 Ch  "TestKeyReady"
+
+		-c			 "color Output"
+		--hc=    "oculta por codigo de estado(Response): 404,303 etc..."  --hc=303
+		--hh=    "oculta por Chars(Ch)"     --hh=453
+		--hw=		 "oculta por Word(W)"				--hw=34
+		-t			 "hilos"     -t 200
+		-w			 "ruta archivo/diccionario"  -w ./my_dictionary.txt
+
+		-z list  "extensiones a probar, separalas por - sin espacios"
+
+				FUZ2Z  para usar con -z list   FUZ 2 Z 
+
+
+::: wfuzz -c --hc=404 -t 200 -w $(pwd)/custom_dictionary.txt -z list,php-html-txt http://$(mvnb)/FUZZ.FUZ2Z
+
+			grep -iE "user|name|pass|key|cred|secret|mail|database|db|config" /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt > ./custom_dictionary.txt
+
+					-i   "insensitiveCase"
+					-E	 "Activa expresiones regulares extendidas para usar | "
+
+
+
+*** *** WFUZZ WEB FUZZING
+
+				pre consolaNavegador Ctrl-Shift-e 'Network'  , intenta el logearte y revisa el metodo POST  en su apartado de 'Request' y copialo con la opcion Raw de la pestana... <3 <3 <3
+
+	::: wfuzz -c -t 200 -w ./my_dictionary.txt -d 'username=test_username&password=FUZZ' http://test.com/test/login/index.php
