@@ -1,0 +1,4 @@
+
+::: locate directory-list-2.3-medium.txt
+
+::: locate rocktyou.txt
