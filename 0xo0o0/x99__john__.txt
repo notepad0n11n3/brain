@@ -16,3 +16,13 @@
 
 	::: ssh2john id_rsa > hash
 	::: john -w:dictionary.txt ./hash
+
+				rockyou.txt  ~~  locate rockyou.txt  ~~  sudo gzip -d ./rockyou.txt.gz
+
+
+*** .zip
+
+	::: zip2john ./file_Here.zip > ./hash
+	::: john -w:dictionary.txt ./hash
+
+				rockyou.txt  ~~  locate rockyou.txt  ~~  sudo gzip -d ./rockyou.txt.gz

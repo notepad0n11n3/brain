@@ -2,3 +2,13 @@
 ::: echo 'TEST000TEST0000TEST00=' | base64 -d; echo
 
 ::: echo 'TEST000TEST0000TEST00=' | base64 -d
+
+
+*** *** file .zip a base64
+
+	::: base64 -w 0 ./file_Here.zip ; echo
+
+		 vim:: w data      "pega el output de $(base64 -w 0 ./file_Here.zip ; echo) "
+		    :: sudo apt install moreutils -y
+
+	 :: cat data | base64 -d | sponge data

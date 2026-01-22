@@ -1,0 +1,9 @@
+					id  vulnerabilidades por grupo de usuario actual... <3 <3 <3
+
+*** ***   lxd    LXD
+
+	::: searchsploit lxd
+
+				 Exploit Title                                             |  Path
+				----------------------------------------------------------- ---------------------------------
+				Ubuntu 18.04 - 'lxd' Privilege Escalation                  | linux/local/46978.sh
