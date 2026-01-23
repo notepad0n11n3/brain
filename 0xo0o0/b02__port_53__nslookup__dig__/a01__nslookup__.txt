@@ -1,0 +1,12 @@
+
+
+::: nslookup
+
+  >  server  ip_Targed_Here
+	  
+		Default server: ......
+		Address: ..........#53
+
+	> ip_Targed_Here
+
+			........     name = test.htb.
