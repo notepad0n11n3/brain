@@ -4,7 +4,7 @@
 
 
 		Ctrl-Shift-p		'salta a la pestana Proxy'
-		Ctrl-t					' ON/OFF INTERCEPT... <3 <3 <3 <3 <3.....!!! <3 <3 <3 <3'
+		Ctrl-t					' ON/OFF INTERCEPT... <3 <3 <3 <3 <3.....!!! <3 <3 <3 <3'  "funciona desde cualquier pesta~a, desactiva para actualizar la pagina cuando obtengas acceso postRepeater/Intruder...<3 <3 <3"
 
 		Ctrl-r					'envia lo obtenido al Repeater... <3 <3 <3'
 		Ctrl-Shift-r		'salta a la pestana Repeater'
@@ -22,9 +22,12 @@
 		Ctrl Shift u		Desencodear  	( previa seleccion... <3 <3 <3 )
 
 
+*** Follow redirection Always
+
+		Repeater -> config(la tuerca) -> Follow redirections -> Always ...<3 <3 <3
 
 
-*** TLS problem
+*** TLS problem					"no necesario si juegas con la extension-firefox  FoxyProxy ...<3 <3 <3"
 
 	http://burp			(download certificate)		(activa el proxyProxy para poder acceder)
 	

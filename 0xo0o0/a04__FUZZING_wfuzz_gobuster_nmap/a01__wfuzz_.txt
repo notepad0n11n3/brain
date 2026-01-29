@@ -5,10 +5,8 @@
 
 		::: Locate directory-list-2.3-medium.txt
 
-::: wfuzz -c --hc=404 -t 200 -w /usr/share/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-medium.txt -z list,php-html-txt http://$(mvnb)/FUZZ.FUZ2Z
+		:::  wfuzz  -c  --hc=404  -t  200  -w  /usr/share/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-medium.txt  -z  list,php-html-txt  http://$(mvnb)/FUZZ.FUZ2Z
 		
-
-	 ===============================================================
 	    ID        Response    Lines   Word    Chars     Payload
 	 ===============================================================
 		000000001:     303       6 L    34 W    453 Ch  "TestKeyReady"
@@ -22,27 +20,36 @@
 
 		-z list  "extensiones a probar, separalas por - sin espacios"
 
-				FUZ2Z  para usar con -z list   FUZ 2 Z 
+	  ->>>	  	FUZ2Z  para usar con -z list   FUZ 2 Z 
 
 
-::: wfuzz -c --hc=404 -t 200 -w $(pwd)/custom_dictionary.txt -z list,php-html-txt http://$(mvnb)/FUZZ.FUZ2Z
+		:::  wfuzz  -c  --hc=404  -t  200  -w  $(pwd)/custom_dictionary.txt  -z  list,php-html-txt  http://$(mvnb)/FUZZ.FUZ2Z
 
-			grep -iE "user|name|pass|key|cred|secret|mail|database|db|config" /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt > ./custom_dictionary.txt
+				:  grep -iE "user|name|pass|key|cred|secret|mail|database|db|config" /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt > ./custom_dictionary.txt
 
-					-i   "insensitiveCase"
-					-E	 "Activa expresiones regulares extendidas para usar | "
-
-
-
-*** *** WFUZZ WEB FUZZING
-
-				pre consolaNavegador Ctrl-Shift-e 'Network'  , intenta el logearte y revisa el metodo POST  en su apartado de 'Request' y copialo con la opcion Raw de la pestana... <3 <3 <3
-
-	::: wfuzz -c -t 200 -w ./my_dictionary.txt -d 'username=test_username&password=FUZZ' http://test.com/test/login/index.php
+						-i   "insensitiveCase"
+						-E	 "Activa expresiones regulares extendidas para usar | "
 
 
-*** *** ***  vhost   VHOST   subdominios
+*** *** ***  VHOST   VHOST   SUBDOMINIOS
 
-	::: wfuzz -c --hh=5480 -t 200 -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt  -H  "Host: preprod-FUZZ.targed.htb"  http://targed.htb
-																	 /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt
- 
+	:::  wfuzz  -c  --hh=5480  -t  200  -w  /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt  -H  "Host:  preprod-FUZZ.targed.htb"  http://targed.htb
+																	        /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt
+
+
+				*#* *#* *#* *#* WEB AVANZADO AVANZADO AVANZADO WEB .............
+
+*** WEB  FUZZING PASSWORD  firefox -> Ctrl-Shift-e | Network -> intenta el logearte y revisa el metodo POST  en su apartado de 'Request' y copialo con la opcion Raw de la pestana... <3 <3 <3
+
+	:::  wfuzz  -c  -t  200  -w  ./my_dictionary.txt  -d  'username=test_username&password=FUZZ'  http://test.com/test/login/index.php
+
+
+*** COOKIES DE SESSION FIREFOX STORAGE				firefox -> Shift-f9 | Storage -> Cookies  ->>   Name: Value
+
+				-H		"Header/Cabecera"
+
+	::: wfuzz -c -t 200 --hc=503,404 -w /usr/share/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-medium.txt  -H  "Name1: Value1; Name2: Value2"  http://test.htb/FUZZ
+
+	::: wfuzz -c -t 200 -L --hc=503,404 -w /usr/share/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-medium.txt  -H  "Name1: Value1; Name2: Value2"  -H "Host: FUZZ.test.htb" http://test.htb/
+
+						-L   "FOLLOW REDIRECT, por los estados 301... <3 <3 <3"

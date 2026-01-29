@@ -8,11 +8,13 @@
                                                                                                   8s
                                                                                     --stats-every 
 
-        -n                 no aplica resolucion DNS
-        -Pn   
-       -stats-every ?s     mostrar porcentajeProgreso cada N segundos ('Ns')
+        -n          "no aplica resolucion DNS"
 
-     nmap -T1 -T2 -T3 -T4 -T5
+        -Pn					"no Host Discovery por ARP"
+
+       -stats-every 5s     mostrar porcentajeProgreso cada N segundos ('Ns')
+
+     nmap -T1 -T2 -T3 -T4 -T5     T1  slow			T5 fast
 
 ::: sudo nmap -sC -sV -p80,445,etc...   ipTargedHere -oN archivoFormatoNmap -oX archivoSalidaXML(para verElOutput en html/navegador)
 

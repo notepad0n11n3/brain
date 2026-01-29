@@ -1,0 +1,4 @@
+
+::: for a in {a..z}; do echo ${a}; done > dictionary_intruderBurp.txt
+
+::: for a in {A..Z}; do echo ${a}; done >> dictionary_intruderBurp.txt
