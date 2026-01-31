@@ -8,9 +8,9 @@
                                                                                                   8s
                                                                                     --stats-every 
 
-        -n          "no aplica resolucion DNS"
+        -n          "No DNS Resolution"
 
-        -Pn					"no Host Discovery por ARP"
+        -Pn					"no Host Discovery [ARP] "
 
        -stats-every 5s     mostrar porcentajeProgreso cada N segundos ('Ns')
 
