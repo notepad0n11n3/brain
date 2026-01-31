@@ -12,4 +12,8 @@
 
 *** Hash
 
-	::: hashcat ./hash_file /usr/share/worldlists/rockyou.txt --user					"::: locate rockyou.txt  {.tar.gz  tar -xzvf ./rock.tar.gz} {.gz  gzip -d ./rock.gz} "
+	::: echo 'user_Here:$apr1$1ONUB/S1$58eeNVirnRDB5zAIbIxTY0' > ./hash_file
+
+	 :: hashcat ./hash_file /usr/share/worldlists/rockyou.txt --user					"::: locate rockyou.txt  { .tar.gz  tar -xzvf ./rock.tar.gz } { .gz  ::: sudo gzip -d ./rock.gz } "
+
+																														--user        "  obligado si tienes un  user_Here:  "

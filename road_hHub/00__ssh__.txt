@@ -1,0 +1,11 @@
+
+***  vm ( vm ->  Host)
+	:::  scp  -r  -v  ./folder_machine  main_user@ip_main_host:/home/main_user/Desktop/
+
+
+			-v				verbose
+			-r   			recursive
+			-P 69			puerto ssh custom
+
+*** Host ( vm -> Host)
+	:::  scp  -r  -v  vm_user@ip_main_host:/home/vm_user/Desktop/test/  ./Folders/
