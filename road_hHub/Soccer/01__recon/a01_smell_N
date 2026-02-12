@@ -1,0 +1,12 @@
+# Nmap 7.98 scan initiated Tue Feb 10 00:45:52 2026 as: /usr/lib/nmap/nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn -oN ./01__recon/a01_smell_N -oG ./01__recon/a01_smell_G --stats-every 5s 10.129.118.118
+Nmap scan report for 10.129.118.118
+Host is up, received user-set (0.22s latency).
+Scanned at 2026-02-10 00:45:52 -05 for 14s
+Not shown: 65532 closed tcp ports (reset)
+PORT     STATE SERVICE        REASON
+22/tcp   open  ssh            syn-ack ttl 63
+80/tcp   open  http           syn-ack ttl 63
+9091/tcp open  xmltec-xmlmail syn-ack ttl 63
+
+Read data files from: /usr/share/nmap
+# Nmap done at Tue Feb 10 00:46:06 2026 -- 1 IP address (1 host up) scanned in 13.91 seconds

@@ -1,0 +1,8 @@
+# Nmap 7.98 scan initiated Tue Feb 10 00:52:35 2026 as: /usr/lib/nmap/nmap --script http-enum -p80 -oN ./01__recon/s01_http-enum_N --stats-every 5s 10.129.118.118
+Nmap scan report for soccer.htb (10.129.118.118)
+Host is up (0.19s latency).
+
+PORT   STATE    SERVICE
+80/tcp filtered http
+
+# Nmap done at Tue Feb 10 00:52:38 2026 -- 1 IP address (1 host up) scanned in 3.59 seconds

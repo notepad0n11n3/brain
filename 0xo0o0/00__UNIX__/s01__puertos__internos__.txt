@@ -17,3 +17,22 @@
 					A336
 					B09A" | sort -u | while read port; do echo "==> $port -> $((0x$port))"; done					.....<3 <3 <3 mejor metodo y no usa bc  ....<3 <3 <3
 					............... | while read port; do echo "==> $port -> $(echo "obase=10; ibase=16; $port" | bc)"; done
+
+
+
+*** PUERTOS INTERNOS CON ss -nltp (conexiones TCP escucha y activas)  y   ss -apt  (solo puertos TCP en escucha 'modo servidor')
+
+		::: ss -nltp
+
+				State   Recv-Q   Send-Q     Local Address:Port   Peer Address:PortProcess   Process
+				LISTEN    0        151       127.0.0.1:3306         0.0.0.0:*								
+
+		::: ss -apt
+			
+				State Recv-Q Send-Q Local Address:Port   Peer Address:Port Process                                 
+				ESTAB 0      0      192.168.18.23:47056 34.107.243.93:https users:(("firefox-esr",pid=1668,fd=127))
+				ESTAB 0      0      192.168.18.23:47384 109.176.239.0:https users:(("firefox-esr",pid=1668,fd=148))
+				ESTAB 0      0      192.168.18.23:59014 109.176.239.0:https users:(("firefox-esr",pid=1668,fd=226))
+				ESTAB 0      0      192.168.18.23:58814   35.82.5.127:https users:(("firefox-esr",pid=1668,fd=221))
+				ESTAB 0      0      192.168.18.23:36066   18.97.36.66:https users:(("firefox-esr",pid=1668,fd=280))
+

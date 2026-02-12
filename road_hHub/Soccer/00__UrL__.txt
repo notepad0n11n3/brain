@@ -1,0 +1,6 @@
+
+https://10.129.1.160
+http://10.129.1.160
+http://soccer.htb
+http://soccer.htb/tiny
+http://soc-player.soccer.htb
