@@ -1,6 +1,8 @@
 
 		"" no redimensionar la ventana, --hc=404 no va a funcionar   &&			Ctr-z   y   ::: kill %    para cerrar el wfuzz en segundo plano para evitar el stderr ""
 
+				  http://$(mvnb)/FUZZ		http://$(mvnb)/FUZZ/     ("aveces / al final ayuda, FORBIDEN, existe")
+
 *** *** WFUZZ
 
 		::: Locate directory-list-2.3-medium.txt

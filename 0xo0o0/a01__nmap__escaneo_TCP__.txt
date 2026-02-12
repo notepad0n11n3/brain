@@ -1,13 +1,12 @@
-::: ping -c 4 -4  "ipHere" -R
+
+::: ping  -c 4  -4  "ipHere"  -R
     -c numberHere   cantidadDe_paquetes
     -4    ipv4
     -6    ipv6
     -R    nodosIntermediarios(disponible solo en linux :\ )
 
-### TCP TCP TCP
-	::: nmap -p- --open -sS --min-rate 5000 -vv -n -Pn ipHere -oG archivoSalidaGrepeable -stats-every 1s
-																																																		8s
-																																											--stats-every 
+*** *** TCP TCP TCP
+	::: nmap  -p-  --open  -sS  --min-rate 5000  -vvv  -n  -Pn  ipHere  -oG archivoSalidaGrepeable  --stats-every 5s
 
 					-n          "No DNS Resolution"
 
@@ -17,7 +16,7 @@
 
 			 nmap -T1 -T2 -T3 -T4 -T5     T1  slow			T5 fast
 
-	::: sudo nmap -sC -sV -p80,445,etc...   ipTargedHere -oN archivoFormatoNmap -oX archivoSalidaXML(para verElOutput en html/navegador)
+	::: sudo  nmap  -sC  -sV  -p80,445,etc...  ipTargedHere  -oN archivoFormatoNmap  -oX archivoSalidaXML(para verElOutput en html/navegador)
 
 				-sCV
 											=>> Para -oX file.xml
@@ -25,13 +24,27 @@
 
 
 
-	::: nmap --script http-enum -p80 ipHere -oN archivoSalida                     // fuzzer
+	::: nmap  --script  http-enum  -p80  ipHere  -oN archivoSalida                     // fuzzer
 
 	::: locate .nse | xargs grep "categories" | grep -oP '".*?"' | sort -u
-	 :: nmap --script "vuln and safe" -p445 ipHere  -oN smbVulnScan
+
+	 :: nmap  --script  "vuln and safe"  -p445  ipHere  -oN  smbVulnScan
 
 					para Ethernal Blue:  https://github.com/worawit/MS17-010.git
 
-### UDP UDP UDP
+*** *** SCRIPTS  
+
+				ShellShock ***
+	::: locate shellshock | grep "\.nse"
+		  /usr/share/nmap/scripts/http-shellshock.nse
+
+	 :: nmap  --script  http-shellshock.nse  --script-args  uri=/folderTarged/exampla.sh  -p80  $(mvnb)
+
+				Ethernal Blue ***
+	::: nmap  --script  "vuln and safe"  -p445  ipHere  -oN  smbVulnScan
+					para Ethernal Blue:  https://github.com/worawit/MS17-010.git
+
+
+*** *** UDP UDP UDP
 	
-	::: nmap -p- -sU --min-rate 10000 -vvv -n -Pn $(mvnb)
+	::: nmap  -p-  -sU  --min-rate  10000  -vvv  -n  -Pn  $(mvnb)

