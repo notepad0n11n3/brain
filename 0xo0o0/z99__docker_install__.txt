@@ -1,5 +1,0 @@
-
-
-
-::: sudo apt show docker.io
-::: sudo apt install docker.io -y
