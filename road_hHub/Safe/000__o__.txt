@@ -1,0 +1,8 @@
+
+rdi, rsi, rdx, rcx, r8, r9
+
+buferoverflow
+bufer overflow
+gdb
+gef
+reversing
