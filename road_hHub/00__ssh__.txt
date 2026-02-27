@@ -3,6 +3,7 @@
 
 ***  vm ( vm ->  Host)
 	:::  scp  -r  -v  ./folder_machine  main_user@ip_main_host:/home/main_user/Desktop/
+																														:$hHub
 
 
 			-v				verbose

