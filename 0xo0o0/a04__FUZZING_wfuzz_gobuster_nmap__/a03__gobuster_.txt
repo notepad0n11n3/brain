@@ -4,11 +4,15 @@
 	:::  gobuster  dir  -u  http://$(mvnb)/  -w  /usr/share/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-medium.txt  -t  200  -x  txt,html,php  -b  404,301
 							 vhost
 
-			-u  urlTarged
-			-w  dictionary
-			-x  extensionFile
-			-b  excludeCodigoDeEstado... <3 <3 <3
+			-u		urlTarged
+			-w		dictionary
+			-x		extensionFile
+			-b	  excludeCodigoDeEstado... <3 <3 <3 si quiere agregar otro codigo de estado tambien tienes que poder el 404 para no dar error, no lo agrega por defecto...!!!
+			-t		hilos
+			-r    "sigue el redirect 301 hasta el codigoDeEstado final"
 
+			--no-error					"no mensajes de error...<3 <3"
+			--append-domain			'obligado para usar con VHOST  "SUBDOMAINS.ipTarged.com    'SUBDOMAINS'...<3 <3 <3" '
 
 
 	:::  gobuster  vhost  -u  http://$(mvnb)/  -w  /usr/share/SecLists/Discovery/DNS/subdomains-top1million-110000.txt  --append-domain  -t  200  -r
