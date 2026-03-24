@@ -1,0 +1,9 @@
+
+
+
+
+
+
+*** Console Consola			Ctrl-Shift-k
+
+		:window.location.href.replace(/&/g, "%26")						"remplaza & por %26 en la url actual...<3 <3 <3"
