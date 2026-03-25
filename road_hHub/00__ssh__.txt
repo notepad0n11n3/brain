@@ -1,5 +1,6 @@
 
-		*** cp /etc/hosts  ./hosts			(no olvides jalar el /etc/hosts para usar vimn despues...<3)
+
+									###... WARNING  prohibido SSH de vm a host WARNING ...###
 
 ***  vm ( vm ->  Host)
 	:::  scp  -r  -v  ./folder_machine  main_user@ip_main_host:/home/main_user/Desktop/
@@ -18,6 +19,7 @@
 
 
 ### *** COPY /etc/hosts  al workFolder  ,  Ctrl-r-= getcwd()
+		*** cp /etc/hosts  ./hosts			(NO OLVIDES JALAR EL /ETC/HOSTS PARA USAR VIMN DESPUES...<3)
 
 	:!cp %:p i_Ctrl-r-= getcwd()					....<3 <3 <3
 
