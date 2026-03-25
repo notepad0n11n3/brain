@@ -3,8 +3,10 @@
 
 ***  vm ( vm ->  Host)
 	:::  scp  -r  -v  ./folder_machine  main_user@ip_main_host:/home/main_user/Desktop/
-																														:$hHub
 
+	:::  scp  -r  -v  ./folder_machine  main_user@ip_main_host:$hHub
+													
+													$hHub = /home/aeo8/.0n11n3/brain/road_hHub/
 
 			-v				verbose
 			-r   			recursive
@@ -12,3 +14,11 @@
 
 *** Host ( vm -> Host)
 	:::  scp  -r  -v  vm_user@ip_main_host:/home/vm_user/Desktop/test/  ./Folders/
+
+
+
+### *** COPY /etc/hosts  al workFolder  ,  Ctrl-r-= getcwd()
+
+	:!cp %:p i_Ctrl-r-= getcwd()					....<3 <3 <3
+
+		pre :Whereami

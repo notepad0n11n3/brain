@@ -1,6 +1,12 @@
+*** *** Creacion de claves privada/publica
+
+		::: ssh-keygen
+						id_rsa.pub				<<-- clave publica
+		::: echo 'id_rsa.pub' >> targed/$HOME/.ssh/authorized_keys
 
 
-	::: ssh user_here@ip_here
+
+::: ssh user_here@ip_here
 
 *** acceso con archivo id_rsa
 	::: ssh -i id_rsa user_here@ip_here
@@ -13,8 +19,20 @@
 *** *** id_rsa ID_RSA  permisos 600 para que funcione...!!!
 
 		::: chmod 600 ./id_rsa
-		
+
 
 		::: ssh2john ./id_rsa > hash				"si el id_rsa tiene passphrase necesitamos el hash para crackear el password"
 
 		::: john -w:/usr/share/worldlists/rockyou.txt ./hash
+
+
+
+*** *** Local Port Forwarding
+
+		::: ssh user_targed@ip_targed -L 8081:127.0.0.1:8080
+
+																			8081 -->  my localPortHost
+
+																			8080 -->  port_targed
+
+																		 8080:127.0.0.1:8080			"burp ya esta en escucha en el 8080 OJO...!!!"
