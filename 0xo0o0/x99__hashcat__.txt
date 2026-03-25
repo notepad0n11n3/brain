@@ -1,4 +1,19 @@
 
+*** Hash
+
+	::: echo 'user_Here:$apr1$1ONUB/S1$58eeNVirnRDB5zAIbIxTY0' > ./hash_file
+
+	 :: hashcat ./hash_file /usr/share/worldlists/rockyou.txt --user					"::: locate rockyou.txt  { .tar.gz  tar -xzvf ./rock.tar.gz } { .gz  ::: sudo gzip -d ./rock.gz } "
+
+																														--user        "  obligado si tienes un  user_Here:  "
+
+
+	::: hashcat hash_file /usr/share/wordlists/rockyou.txt -O
+
+														-O    optimizacion de kernel....<3 <3 <3
+
+
+
 :::  hashid  2cb42f8734ea607eefed3b70af13bbd3      
 
 :::  echo  '2cb42f8734ea607eefed3b70af13bbd3'  >  hash
@@ -8,12 +23,3 @@
   :  hashcat -a 0 -m 0  hash /usr/share/wordlists/rockyou.txt --show
 
 
-
-
-*** Hash
-
-	::: echo 'user_Here:$apr1$1ONUB/S1$58eeNVirnRDB5zAIbIxTY0' > ./hash_file
-
-	 :: hashcat ./hash_file /usr/share/worldlists/rockyou.txt --user					"::: locate rockyou.txt  { .tar.gz  tar -xzvf ./rock.tar.gz } { .gz  ::: sudo gzip -d ./rock.gz } "
-
-																														--user        "  obligado si tienes un  user_Here:  "

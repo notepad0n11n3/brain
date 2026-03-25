@@ -1,5 +1,8 @@
 
 
+*** Filtrar palabra clave paginaWeb
+
+		Ctrl-f										....<3 <3 <3 <3
 
 
 
@@ -7,3 +10,15 @@
 *** Console Consola			Ctrl-Shift-k
 
 		:window.location.href.replace(/&/g, "%26")						"remplaza & por %26 en la url actual...<3 <3 <3"
+
+
+		:location.reaload();												"actualiza pagina"
+
+				Network -> Disable Cache -> Console: location.reload();     "like Ctrl-Shift-r  Actualiza sin Cache...<3"
+
+
+*** Atajos de teclado
+
+		Ctrl-Shift-k			'Console'
+		Ctrl-Shift-e			'Network'
+		Ctrl-Shift-i			'abrir y CERRAR DevTools con el mismo atajo....<3 <3 <3'
