@@ -1,4 +1,3 @@
-
 ::: ping  -c 4  -4  "ipHere"  -R
     -c numberHere   cantidadDe_paquetes
     -4    ipv4
@@ -7,6 +6,7 @@
 
 *** *** TCP TCP TCP
 	::: nmap  -p-  --open  -sS  --min-rate 5000  -vvv  -n  -Pn  ipHere  -oG archivoSalidaGrepeable  --stats-every 5s
+	::: nmap  -p-  --open  -sS  --min-rate 5000  -vvv  -n  -Pn  ipHere  -oG $recon/a01_smell_G  -oN $recon/a01_smell_N  --stats-every 5s
 
 					-n          "No DNS Resolution"
 
@@ -16,19 +16,25 @@
 
 			 nmap -T1 -T2 -T3 -T4 -T5     T1  slow			T5 fast
 
+
+	::: ports					"obtiene los puertos del archivo $recon/a01_smell_G y los mete en clipboard con xclip -sel clip ...<3 <3 <3"
+	 :: portsn				"muestra el archivo $recon/a01_smell_N"
+	 :: vimn					"abre los archivos del area de trabajo...<3 <3"
+
 	::: sudo  nmap  -sC  -sV  -p80,445,etc...  ipTargedHere  -oN archivoFormatoNmap  -oX archivoSalidaXML(para verElOutput en html/navegador)
-
-				-sCV
-											=>> Para -oX file.xml
-											::: xsltproc file.xml > index.html && firefox ./index.html >/dev/null 2>&1 & disown
-
+	::: sudo  nmap  -sC  -sV  -p80,445...  ipTargedHere  -oN $recon/a02_bite_N
+									-sCV
+																																								=>> Para -oX file.xml
+																																								::: xsltproc file.xml > index.html && firefox ./index.html >/dev/null 2>&1 & disown
 
 
 	::: nmap  --script  http-enum  -p80  ipHere  -oN archivoSalida                     // fuzzer
+	::: nmap  --script  http-enum  -p80  ipHere  -oN $recon/s01_http-enum_N
 
 	::: locate .nse | xargs grep "categories" | grep -oP '".*?"' | sort -u
 
 	 :: nmap  --script  "vuln and safe"  -p445  ipHere  -oN  smbVulnScan
+	 :: nmap  --script  "vuln and safe"  -p445  ipHere  -oN  $recon/smbVulnScan
 
 					para Ethernal Blue:  https://github.com/worawit/MS17-010.git
 
