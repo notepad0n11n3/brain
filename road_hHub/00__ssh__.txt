@@ -2,6 +2,8 @@
 
 									###... WARNING  prohibido SSH de vm a host WARNING ...###
 
+												vm::: sudo systemctl start ssh
+
 ***  vm ( vm ->  Host)
 	:::  scp  -r  -v  ./folder_machine  main_user@ip_main_host:/home/main_user/Desktop/
 
