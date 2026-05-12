@@ -1,0 +1,7 @@
+https://10.129.15.165
+http://10.129.15.165
+
+http://sea.htb
+http://sea.htb/loginURL
+http://sea.htb/contact.php
+

@@ -1,0 +1,25 @@
+https://10.129.231.223
+http://10.129.231.223
+
+http://dog.htb/.git
+http://dog.htb/?q=user/login
+
+
+mochimango_testo /core/
+mochimango_testo /profiles/
+mochimango_testo /README.md
+mochimango_testo /web.config
+mochimango_testo /admin
+
+mochimango_testo /comment/reply
+mochimango_testo /filter/tips
+mochimango_testo /node/add
+mochimango_testo /search
+mochimango_testo /user/register
+
+mochimango_testo /user/password
+mochimango_testo /user/login
+mochimango_testo /user/logout
+mochimango_testo /?q=admin
+mochimango_testo /?q=comment/reply
+

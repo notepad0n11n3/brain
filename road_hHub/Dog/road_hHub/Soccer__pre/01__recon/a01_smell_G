@@ -1,0 +1,5 @@
+# Nmap 7.98 scan initiated Tue Feb 10 00:45:52 2026 as: /usr/lib/nmap/nmap -p- --open -sS --min-rate 5000 -vvv -n -Pn -oN ./01__recon/a01_smell_N -oG ./01__recon/a01_smell_G --stats-every 5s 10.129.118.118
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.129.118.118 ()	Status: Up
+Host: 10.129.118.118 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 9091/open/tcp//xmltec-xmlmail///	Ignored State: closed (65532)
+# Nmap done at Tue Feb 10 00:46:06 2026 -- 1 IP address (1 host up) scanned in 13.91 seconds

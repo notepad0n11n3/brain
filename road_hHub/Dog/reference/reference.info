@@ -1,0 +1,13 @@
+name = Reference
+description = Defines a field type for referencing other entities.
+package = Fields
+version = BACKDROP_VERSION
+type = module
+backdrop = 1.x
+dependencies[] = field
+dependencies[] = entity
+
+; Added by Backdrop CMS packaging script on 2021-06-24
+project = reference
+version = 1.x-1.0.0
+timestamp = 1624580863

