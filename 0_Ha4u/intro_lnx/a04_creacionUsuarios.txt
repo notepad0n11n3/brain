@@ -5,6 +5,12 @@
 
    :: cat /etc/passwd | grep "newUserName"
 
+	::: mkdir /home/newUserName
+	 :: chgrp newUserName newUserName.folderHome			"asignar el grupo al al respectivo usuario".sudo
+	 :: chown newUserName newUserName.folderHome			"asignar nuevo propietario a la carpeta".sudo
+
+	  : chown  propietarioHere:grupoHere  ./folderHere		"asigna propietario y grupo con chown ".sudo
+
 # ASIGNAR CONTRASE~A y CAMBIAR CONTRASE~A DE USUARIO
 
    ROOT:: passwd newUserName
