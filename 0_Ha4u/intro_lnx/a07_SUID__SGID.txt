@@ -1,10 +1,13 @@
 
-                  SUID         +4000     o      u+s            'chmod'
-                  SGID         +2000     o      g+s            'chmod'
-            sticky bit         +1000     o      o+t            'chmod'
+Set Group ID         SUID         +4000     o      u+s            'chmod'
+Set Group ID         SGID         +2000     o      g+s            'chmod'
 
-                               +7000               
+				       sticky bit         +1000     o      o+t            'chmod'
 
+                                  +7000               
+
+
+		chmod 1755 = sticky + rwxr-xr-x  ;   chmod 4755 = SUID   ;   chmod 2755 = SGID    ;   chmod 6755 = SUID+SGID    El primer dígito es la suma.
 
 
 # BUSCAR ARCHIVOS CON PERMISO SUID ACTIVADO ('::: chmod u+s fileName   ::: chmod 4000 fileName')

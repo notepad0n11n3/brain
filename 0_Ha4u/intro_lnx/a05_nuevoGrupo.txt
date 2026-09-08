@@ -22,3 +22,9 @@
 # ELIMINAR GRUPO
 
     ::: sudo groupdel nuevoGrupo
+
+
+
+###  Grupo de un archivo/carpeta
+
+		::: chgrp nameGroupHere ./file_folder_here

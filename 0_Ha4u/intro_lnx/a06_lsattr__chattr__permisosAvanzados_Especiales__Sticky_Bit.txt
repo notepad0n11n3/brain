@@ -1,0 +1,24 @@
+# Sticky Bit				( Ejm: ->  /etc/tmp ) util solo en directorios
+
+	::: chmod +t ./test_Folder	"solo el usuario creador puede eliminar o renombrar dentro"
+															"root se salta el sticky bit .... ojo..."
+
+
+
+### MOSTRAR LOS PERMISOS ESPECIALES
+
+	  ::: lsattr
+
+ # Modificar       ::: man chattr
+
+		::: sudo chattr +i  ./fileName
+
+						+i   "archivo inmutable" - archivo
+								 "no puedes crear, borrar, renombrar o modificar la estructura" - directorio
+
+						+a   "solo append"
+						+A   "no se actualiza el tiempo de ultimo acceso (atime) cuando se lee el archivo "
+
+		::: chattr  +i  ./fileName
+		::: chattr  -i  ./fileName
+
