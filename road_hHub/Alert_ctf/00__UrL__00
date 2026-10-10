@@ -1,0 +1,10 @@
+# Urls/Ips Target, http/https, subdominios : 
+https://10.129.231.188
+http://10.129.231.188
+
+http://alert.htb
+http://alert.htb/index.php?page=contact
+
+
+http://alert.htb/statistics.alert.htb
+
